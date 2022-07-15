@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
+
+    <!-- Map CSS -->
+    <!-- <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" /> -->
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+
+    <!-- 
+      Theme Sans Serif CSS
+      Remove the "disabled" attribute if you want to enable Sans Serif for headings.
+    -->
+    <link rel="stylesheet" href="./assets/css/theme-sans-serif.bundle.css" id="themeSansSerif" disabled />
+
+    <!--
+      Demo JS
+      Remove the code below on a production website.
+    -->
+    <script src="./assets/js/demo.bundle.js"></script>
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+    <!-- RTL STYLES -->
+    <link rel="stylesheet" href="./assets/css/rtl.css" />
+    <!-- Title -->
+    <title>Gilan Devs</title>
+  </head>
+  <body style="padding-top: 108px">
+    <!-- MODALS -->
+    <!-- Sign in -->
+    <div
+      class="modal fade"
+      id="modalSignIn"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalSignInHeading"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <!-- Close -->
+            <button class="btn-close" data-bs-dismiss="modal" type="button" aria-label="Close"></button>
+
+            <!-- Heading -->
+            <h1 class="mb-4" id="modalSignInHeading">Sign In</h1>
+
+            <!-- Text -->
+            <p>Don’t have an account? <a href="sign-up.html">Sign up</a></p>
+
+            <!-- Form -->
+            <form class="mb-6">
+              <!-- Email -->
+              <div class="form-group">
+                <label class="visually-hidden" for="signInEmail"> Your email </label>
+                <input class="form-control" id="signInEmail" type="email" placeholder="Your email" />
+              </div>
+
+              <!-- Password -->
+              <div class="form-group">
+                <div class="input-group inpit-group-merge">
+                  <input
+                    class="form-control"
+                    id="signInPassword"
+                    placeholder="Your password"
+                    type="password"
+                    aria-label="Your password"
+                    aria-describedby="signInPasswordCaption"
+                  />
+                  <a
+                    class="input-group-text text-decoration-none text-gray-500"
+                    id="signInPasswordCaption"
+                    data-toggle="password"
+                    href="#signInPassword"
+                  >
+                    <i class="fe fe-eye"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Button -->
+              <button class="btn w-100 btn-primary">Sign in</button>
+            </form>
+
+            <!-- Link -->
+            <a class="fs-sm" href="password-reset.html"> Forgot your password? </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign up -->
+    <div
+      class="modal fade"
+      id="modalSignUp"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalSignUpHeading"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <!-- Close -->
+            <button class="btn-close" data-bs-dismiss="modal" type="button" aria-label="Close"></button>
+
+            <!-- Heading -->
+            <h1 class="mb-4" id="modalSignUpHeading">Sign Up</h1>
+
+            <!-- Text -->
+            <p>Create beautiful marketing websites in hours instead of weeks.</p>
+
+            <!-- Form -->
+            <form class="mb-6">
+              <!-- Email -->
+              <div class="form-group">
+                <label class="visually-hidden" for="signUpEmail"> Your email </label>
+                <input class="form-control" id="signUpEmail" type="email" placeholder="Your email" />
+              </div>
+
+              <!-- Password -->
+              <div class="form-group">
+                <div class="input-group inpit-group-merge">
+                  <input
+                    class="form-control"
+                    id="signUpPassword"
+                    placeholder="Your password"
+                    type="password"
+                    aria-label="Your password"
+                    aria-describedby="signUpPasswordCaption"
+                  />
+                  <a
+                    class="input-group-text text-decoration-none text-gray-500"
+                    id="signUpPasswordCaption"
+                    data-toggle="password"
+                    href="#signUpPassword"
+                  >
+                    <i class="fe fe-eye"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Button -->
+              <button class="btn w-100 btn-primary">Sign up</button>
+            </form>
+
+            <!-- Link -->
+            <small class="text-muted"> Already have an account? <a href="sign-in.html">Login</a> </small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Password reset -->
+    <div
+      class="modal fade"
+      id="modalPasswordReset"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalPasswordResetHeading"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <!-- Close -->
+            <button class="btn-close" data-bs-dismiss="modal" type="button" aria-label="Close"></button>
+
+            <!-- Heading -->
+            <h1 class="display-4 mb-4" id="modalPasswordResetHeading">Password reset</h1>
+
+            <!-- Text -->
+            <p class="text-muted">Enter your email to reset your password.</p>
+
+            <!-- Form -->
+            <form class="mb-6">
+              <!-- Email -->
+              <div class="form-group">
+                <label class="visually-hidden" for="passwordResetEmail"> Your email </label>
+                <input class="form-control" id="passwordResetEmail" type="email" placeholder="Your email" />
+              </div>
+
+              <!-- Button -->
+              <button class="btn w-100 btn-primary">Reset password</button>
+            </form>
+
+            <!-- Text -->
+            <small class="text-muted"> Remember your password? <a href="sign-in.html">Log in</a>. </small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sale -->
+    <div
+      class="modal fade"
+      id="modalSale"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalSaleHeading"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <!-- Close -->
+            <button class="btn-close" data-bs-dismiss="modal" type="button" aria-label="Close"></button>
+
+            <!-- Image -->
+            <img class="img-fluid mb-4 mt-n11" src="./assets/img/illustrations/illustration-4.png" alt="..." />
+
+            <!-- Heading -->
+            <h1 class="mb-4" id="modalSaleHeading">30 Day Free Trial</h1>
+
+            <!-- Text -->
+            <p class="text-muted">We’ll help you get started by getting you guides and all the basic informaiton.</p>
+
+            <!-- Form -->
+            <form class="mb-6">
+              <!-- Email -->
+              <div class="form-group">
+                <label class="visually-hidden" for="saleModalEmail"> Your email </label>
+                <input class="form-control" id="saleModalEmail" type="email" placeholder="Your email" />
+              </div>
+
+              <!-- Button -->
+              <button class="btn w-100 btn-primary">Start Trial</button>
+            </form>
+
+            <!-- Text -->
+            <small class="text-muted">
+              <a class="text-reset" data-bs-dismiss="modal" href="#!">No thanks, I hate free stuff.</a>
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-reveal fixed-top bg-white">
+      <div class="container-lg">
+        <!-- Brand -->
+        <a class="navbar-brand d-lg-none" href="./index.html">GilanDevs</a>
+
+        <!-- Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Navigation -->
+          <ul class="navbar-nav justify-content-end w-100">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="landingsDropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                کی هستبم
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="pagesDropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                هدفمون
+              </a>
+            </li>
+          </ul>
+
+          <!-- Brand -->
+          <a class="navbar-brand d-none d-lg-block px-lg-6" href="./index.html">GilanDevs</a>
+
+          <!-- Navigation -->
+          <ul class="navbar-nav justify-content-start w-100">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="accountDropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                برنامه ها
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="docsDropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                گروهمون
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- WELCOME -->
+    <section class="pt-6 pt-md-11 pb-11 pb-md-13">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-8 col-xl-7 text-center" data-aos="fade-up">
+            <!-- Heading -->
+            <!-- <h1 class="display-2 mb-4 text-900">
+							ما خفنای گیلان هستیم
+							<span class="text-underline-warning">تو کیسی عن آقا؟</span>
+						</h1> -->
+
+            <!-- Heading -->
+            <h1 class="display-2 mb-4 text-900 mb-4">
+              ما خفنای گیلان هستیم
+              <span class="text-underline-warning d-none d-xl-inline"
+                ><span
+                  data-typed='{"strings": ["تو کیسی گوه آقا؟", "تو کیسی عن آقا؟<", "تو کیسی حاج آقا؟", "تو کیسی گاو آقا؟", "تو کیسی عن آقا؟"]}'
+                ></span></span
+              ><span class="text-underline-warning d-xl-none">متن </span>.
+            </h1>
+
+            <!-- Text -->
+            <p class="fs-lg text-muted">
+              ما کلی ایده خفن داریم <br />
+              که به کمک شما وپیاده سازیشون میکنیم آره عن آقا
+            </p>
+
+            <!-- Button -->
+            <a class="btn btn-primary lift" href="#!"> ورود به کامیونیتی </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-fluid-x shape-bottom text-white pb-14">
+        <div class="shape-img pb-8 pb-md-11">
+          <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+            <path d="M0 0h100v25H75L25 50H0z" fill="currentColor" />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDER -->
+    <section class="bg-light">
+      <!-- Slider -->
+      <div
+        class="flickity-buttons-responsive flickity-items-fade"
+        data-flickity='{"imagesLoaded": true, "wrapAround": true}'
+      >
+        <div style="width: calc(100% - 2rem); max-width: 920px">
+          <!-- Image -->
+          <a href="./blog-post.html">
+            <img class="img-fluid rounded" src="assets/img/screenshots/desktop/page-blog-article.jpg" alt="..." />
+          </a>
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">Blog Article</h6>
+
+            <!-- Text -->
+            <p class="fs-sm text-center text-white-80 mb-0">Featured image with beautiful type and galleries.</p>
+          </div>
+        </div>
+        <div style="width: calc(100% - 2rem); max-width: 920px">
+          <!-- Image -->
+          <a href="./contact.html">
+            <img class="img-fluid rounded" src="assets/img/screenshots/desktop/page-contact.jpg" alt="..." />
+          </a>
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">Contact Us</h6>
+
+            <!-- Text -->
+            <p class="fs-sm text-center text-white-80 mb-0">Multiple communication options and contact form.</p>
+          </div>
+        </div>
+        <div style="width: calc(100% - 2rem); max-width: 920px">
+          <!-- Image -->
+          <a href="./pricing.html">
+            <img class="img-fluid rounded" src="assets/img/screenshots/desktop/page-pricing.jpg" alt="..." />
+          </a>
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">Pricing</h6>
+
+            <!-- Text -->
+            <p class="fs-sm text-center text-white-80 mb-0">
+              3-tier options with grid of features, testimonial, and faq.
+            </p>
+          </div>
+        </div>
+        <div style="width: calc(100% - 2rem); max-width: 920px">
+          <!-- Image -->
+          <a href="./career-benefits.html">
+            <img class="img-fluid rounded" src="assets/img/screenshots/desktop/page-benefits.jpg" alt="..." />
+          </a>
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">Career Benefits</h6>
+
+            <!-- Text -->
+            <p class="fs-sm text-center text-white-80 mb-0">
+              Image header, benefits and values, galleries, and team list
+            </p>
+          </div>
+        </div>
+        <div style="width: calc(100% - 2rem); max-width: 920px">
+          <!-- Image -->
+          <a href="./career-listing.html">
+            <img class="img-fluid rounded" src="assets/img/screenshots/desktop/page-careers.jpg" alt="..." />
+          </a>
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">Career Listing</h6>
+
+            <!-- Text -->
+            <p class="fs-sm text-center text-white-80 mb-0">Simple listing of careers with search and filters.</p>
+          </div>
+        </div>
+        <div style="width: calc(100% - 2rem); max-width: 920px">
+          <!-- Image -->
+          <a href="./pricing-feature-list.html">
+            <img class="img-fluid rounded" src="assets/img/screenshots/desktop/page-pricing-table.jpg" alt="..." />
+          </a>
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">Pricing Table</h6>
+
+            <!-- Text -->
+            <p class="fs-sm text-center text-white-80 mb-0">
+              Two-tiered pricing with a large feature comparison table.
+            </p>
+          </div>
+        </div>
+        <div style="width: calc(100% - 2rem); max-width: 920px">
+          <!-- Image -->
+          <a href="./faq.html">
+            <img class="img-fluid rounded" src="assets/img/screenshots/desktop/page-faq.jpg" alt="..." />
+          </a>
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">FAQ</h6>
+
+            <!-- Text -->
+            <p class="fs-sm text-center text-white-80 mb-0">
+              Multi-section FAQ with sticky headers and collapsing questions.
+            </p>
+          </div>
+        </div>
+        <div style="width: calc(100% - 2rem); max-width: 920px">
+          <!-- Image -->
+          <a href="./blog-listing.html">
+            <img class="img-fluid rounded" src="assets/img/screenshots/desktop/page-blog.jpg" alt="..." />
+          </a>
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">Blog Listing</h6>
+
+            <!-- Text -->
+            <p class="fs-sm text-center text-white-80 mb-0">
+              Flexible grid based cards for easy, beautiful blog layouts.
+            </p>
+          </div>
+        </div>
+        <div style="width: calc(100% - 2rem); max-width: 920px">
+          <!-- Image -->
+          <a href="./blog-post-cover.html">
+            <img class="img-fluid rounded" src="assets/img/screenshots/desktop/page-blog-article-cover.jpg" alt="..." />
+          </a>
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">Blog Article (Cover)</h6>
+
+            <!-- Text -->
+            <p class="fs-sm text-center text-white-80 mb-0">Minimal blog layout with organize typography and images.</p>
+          </div>
+        </div>
+        <div style="width: calc(100% - 2rem); max-width: 920px">
+          <!-- Image -->
+          <a href="./terms.html">
+            <img class="img-fluid rounded" src="assets/img/screenshots/desktop/page-terms.jpg" alt="..." />
+          </a>
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">Terms of Service</h6>
+
+            <!-- Text -->
+            <p class="fs-sm text-center text-white-80 mb-0">A versatile simple text page for any legal mumbo jumbo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="pt-10 pt-md-12 pb-9 pb-md-11 bg-light">
+      <div class="container-lg">
+        <div class="row justify-content-center mt-n8">
+          <div class="col-md-6 px-lg-9 border-end-md">
+            <!-- Blockquote -->
+            <blockquote class="mt-8">
+              <!-- Text -->
+              <p class="lead text-center mb-5 mb-md-8">
+                <q>
+                  امسال هم کافه رئیس در #فریلند کنار ما خواهد بود تا با قهوه‌‌ها‌ی خوش‌ عطر و نوشیدنی‌های جذابش، دو روز
+                  به یادمونی رو برامون رقم بزنه.
+                </q>
+              </p>
+
+              <!-- Footer -->
+              <div class="d-flex align-items-center justify-content-center">
+                <!-- Avatar -->
+                <div class="avatar avatar-sm">
+                  <img class="avatar-img rounded-circle" src="assets/img/avatars/sani.jpg" alt="..." />
+                </div>
+
+                <!-- Body -->
+                <div class="ms-4">
+                  <!-- Title -->
+                  <p class="fw-bold mb-0">ساناز عصمتجو</p>
+
+                  <!-- Position -->
+                  <p class="small text-muted mt-n1 mb-0">بنیانگذار ماگتو بیار</p>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          <div class="col-md-6 px-lg-9">
+            <!-- Blockquote -->
+            <blockquote class="mt-8">
+              <!-- Text -->
+              <p class="lead text-center mb-5 mb-md-8">
+                <q>
+                  امسال هم کافه رئیس در #فریلند کنار ما خواهد بود تا با قهوه‌‌ها‌ی خوش‌ عطر و نوشیدنی‌های جذابش، دو روز
+                  به یادمونی رو برامون رقم بزنه.
+                </q>
+              </p>
+
+              <!-- Footer -->
+              <div class="d-flex align-items-center justify-content-center">
+                <!-- Avatar -->
+                <div class="avatar avatar-sm">
+                  <img class="avatar-img rounded-circle" src="assets/img/avatars/amin.jpg" alt="..." />
+                </div>
+
+                <!-- Body -->
+                <div class="ms-4">
+                  <!-- Title -->
+                  <p class="fw-bold mb-0">امین فرهنگ</p>
+
+                  <!-- Position -->
+                  <p class="small text-muted mt-n1 mb-0">منابع انسانی در دیجی کالا</p>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-fluid-x shape-bottom text-light">
+        <div class="shape-img pb-8 pb-md-11">
+          <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+            <path d="M0 0h100v50H75L25 25H0z" fill="currentColor" />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="pt-11 pt-md-13">
+      <div class="container-lg">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-6 col-lg-5">
+            <!-- Image -->
+            <img class="img-fluid mb-8 mb-md-0" src="assets/img/e-commerce/rasht.jpg" alt="..." />
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <!-- Heading -->
+            <h2 class="display-4 mb-4">جامعه‌ توسعه‌دهندگان</h2>
+
+            <!-- Text -->
+            <p class="text-muted mb-3">
+              اینجا محفلی برای گفتگوی توسعه‌دهنده‌های گیلانی است. ما اینجا قصد داریم رویدادها، دوره‌های منتورشیپ و
+              آموزش‌های تخصصی را برای افراد گیلانی علاقه‌مند به برنامه نویسی فراهم کنیم.
+            </p>
+            <p class="text-muted mb-3">
+              به این ترتیب، علاوه بر ایجاد فضایی برای افراد مبتدی جهت ورود به بازار کار، آماده معرفی بسیاری از توسعه
+              دهندگان، به شرکت‌های نیازمند نیز هستیم.
+            </p>
+
+            <!-- Link -->
+            <!-- <a class="h6 text-uppercase text-decoration-none" href="#!">
+							Explore our tools <i class="fe fe-arrow-right ms-2"></i>
+						</a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section>
+      <div class="container-lg position-relative" style="z-index: 1">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-5 order-md-1 pt-10 py-md-8">
+            <!-- Image -->
+            <div class="position-relative">
+              <!-- Decoration -->
+              <div class="position-absolute bottom-end text-warning mb-n8 me-n8">
+                <svg width="185" height="186" viewBox="0 0 185 186" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="2" cy="2" r="2" fill="currentColor" />
+                  <circle cx="22" cy="2" r="2" fill="currentColor" />
+                  <circle cx="42" cy="2" r="2" fill="currentColor" />
+                  <circle cx="62" cy="2" r="2" fill="currentColor" />
+                  <circle cx="82" cy="2" r="2" fill="currentColor" />
+                  <circle cx="102" cy="2" r="2" fill="currentColor" />
+                  <circle cx="122" cy="2" r="2" fill="currentColor" />
+                  <circle cx="142" cy="2" r="2" fill="currentColor" />
+                  <circle cx="162" cy="2" r="2" fill="currentColor" />
+                  <circle cx="182" cy="2" r="2" fill="currentColor" />
+                  <circle cx="2" cy="22" r="2" fill="currentColor" />
+                  <circle cx="22" cy="22" r="2" fill="currentColor" />
+                  <circle cx="42" cy="22" r="2" fill="currentColor" />
+                  <circle cx="62" cy="22" r="2" fill="currentColor" />
+                  <circle cx="82" cy="22" r="2" fill="currentColor" />
+                  <circle cx="102" cy="22" r="2" fill="currentColor" />
+                  <circle cx="122" cy="22" r="2" fill="currentColor" />
+                  <circle cx="142" cy="22" r="2" fill="currentColor" />
+                  <circle cx="162" cy="22" r="2" fill="currentColor" />
+                  <circle cx="182" cy="22" r="2" fill="currentColor" />
+                  <circle cx="2" cy="42" r="2" fill="currentColor" />
+                  <circle cx="22" cy="42" r="2" fill="currentColor" />
+                  <circle cx="42" cy="42" r="2" fill="currentColor" />
+                  <circle cx="62" cy="42" r="2" fill="currentColor" />
+                  <circle cx="82" cy="42" r="2" fill="currentColor" />
+                  <circle cx="102" cy="42" r="2" fill="currentColor" />
+                  <circle cx="122" cy="42" r="2" fill="currentColor" />
+                  <circle cx="142" cy="42" r="2" fill="currentColor" />
+                  <circle cx="162" cy="42" r="2" fill="currentColor" />
+                  <circle cx="182" cy="42" r="2" fill="currentColor" />
+                  <circle cx="2" cy="62" r="2" fill="currentColor" />
+                  <circle cx="22" cy="62" r="2" fill="currentColor" />
+                  <circle cx="42" cy="62" r="2" fill="currentColor" />
+                  <circle cx="62" cy="62" r="2" fill="currentColor" />
+                  <circle cx="82" cy="62" r="2" fill="currentColor" />
+                  <circle cx="102" cy="62" r="2" fill="currentColor" />
+                  <circle cx="122" cy="62" r="2" fill="currentColor" />
+                  <circle cx="142" cy="62" r="2" fill="currentColor" />
+                  <circle cx="162" cy="62" r="2" fill="currentColor" />
+                  <circle cx="182" cy="62" r="2" fill="currentColor" />
+                  <circle cx="2" cy="82" r="2" fill="currentColor" />
+                  <circle cx="22" cy="82" r="2" fill="currentColor" />
+                  <circle cx="42" cy="82" r="2" fill="currentColor" />
+                  <circle cx="62" cy="82" r="2" fill="currentColor" />
+                  <circle cx="82" cy="82" r="2" fill="currentColor" />
+                  <circle cx="102" cy="82" r="2" fill="currentColor" />
+                  <circle cx="122" cy="82" r="2" fill="currentColor" />
+                  <circle cx="142" cy="82" r="2" fill="currentColor" />
+                  <circle cx="162" cy="82" r="2" fill="currentColor" />
+                  <circle cx="182" cy="82" r="2" fill="currentColor" />
+                  <circle cx="2" cy="102" r="2" fill="currentColor" />
+                  <circle cx="22" cy="102" r="2" fill="currentColor" />
+                  <circle cx="42" cy="102" r="2" fill="currentColor" />
+                  <circle cx="62" cy="102" r="2" fill="currentColor" />
+                  <circle cx="82" cy="102" r="2" fill="currentColor" />
+                  <circle cx="102" cy="102" r="2" fill="currentColor" />
+                  <circle cx="122" cy="102" r="2" fill="currentColor" />
+                  <circle cx="142" cy="102" r="2" fill="currentColor" />
+                  <circle cx="162" cy="102" r="2" fill="currentColor" />
+                  <circle cx="182" cy="102" r="2" fill="currentColor" />
+                  <circle cx="2" cy="122" r="2" fill="currentColor" />
+                  <circle cx="22" cy="122" r="2" fill="currentColor" />
+                  <circle cx="42" cy="122" r="2" fill="currentColor" />
+                  <circle cx="62" cy="122" r="2" fill="currentColor" />
+                  <circle cx="82" cy="122" r="2" fill="currentColor" />
+                  <circle cx="102" cy="122" r="2" fill="currentColor" />
+                  <circle cx="122" cy="122" r="2" fill="currentColor" />
+                  <circle cx="142" cy="122" r="2" fill="currentColor" />
+                  <circle cx="162" cy="122" r="2" fill="currentColor" />
+                  <circle cx="182" cy="122" r="2" fill="currentColor" />
+                  <circle cx="2" cy="142" r="2" fill="currentColor" />
+                  <circle cx="22" cy="142" r="2" fill="currentColor" />
+                  <circle cx="42" cy="142" r="2" fill="currentColor" />
+                  <circle cx="62" cy="142" r="2" fill="currentColor" />
+                  <circle cx="82" cy="142" r="2" fill="currentColor" />
+                  <circle cx="102" cy="142" r="2" fill="currentColor" />
+                  <circle cx="122" cy="142" r="2" fill="currentColor" />
+                  <circle cx="142" cy="142" r="2" fill="currentColor" />
+                  <circle cx="162" cy="142" r="2" fill="currentColor" />
+                  <circle cx="182" cy="142" r="2" fill="currentColor" />
+                  <circle cx="2" cy="162" r="2" fill="currentColor" />
+                  <circle cx="22" cy="162" r="2" fill="currentColor" />
+                  <circle cx="42" cy="162" r="2" fill="currentColor" />
+                  <circle cx="62" cy="162" r="2" fill="currentColor" />
+                  <circle cx="82" cy="162" r="2" fill="currentColor" />
+                  <circle cx="102" cy="162" r="2" fill="currentColor" />
+                  <circle cx="122" cy="162" r="2" fill="currentColor" />
+                  <circle cx="142" cy="162" r="2" fill="currentColor" />
+                  <circle cx="162" cy="162" r="2" fill="currentColor" />
+                  <circle cx="182" cy="162" r="2" fill="currentColor" />
+                  <circle cx="2" cy="182" r="2" fill="currentColor" />
+                  <circle cx="22" cy="182" r="2" fill="currentColor" />
+                  <circle cx="42" cy="182" r="2" fill="currentColor" />
+                  <circle cx="62" cy="182" r="2" fill="currentColor" />
+                  <circle cx="82" cy="182" r="2" fill="currentColor" />
+                  <circle cx="102" cy="182" r="2" fill="currentColor" />
+                  <circle cx="122" cy="182" r="2" fill="currentColor" />
+                  <circle cx="142" cy="182" r="2" fill="currentColor" />
+                  <circle cx="162" cy="182" r="2" fill="currentColor" />
+                  <circle cx="182" cy="182" r="2" fill="currentColor" />
+                </svg>
+              </div>
+
+              <!-- Image -->
+              <img
+                class="img-fluid position-relative border border-7 border-white shadow-lg"
+                src="assets/img/e-commerce/Mammadk9.jpg"
+                alt="..."
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5 order-md-0 py-10 py-md-12">
+            <!-- Heading -->
+            <h2 class="display-4 mb-4">منتورینگ جهانی</h2>
+
+            <!-- Text -->
+            <p class="text-muted">
+              از این رو، با هدف گردآوری افراد متخصص و توسعه‌دهنده در گیلان، از علاقه‌مندان به این حوزه دعوت می‌کنیم تا
+              به جمع ما اضافه شوند و ما را در راستای این اهداف بلند مدت همراهی کنند.
+            </p>
+
+            <!-- Link -->
+            <!-- <a class="h6 text-uppercase text-decoration-none" href="#!">
+							Explore our tools <i class="fe fe-arrow-right ms-2"></i>
+						</a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative mt-n7 mt-md-n15">
+      <div class="shape shape-fluid-x shape-bottom text-white">
+        <div class="shape-img pb-9 pb-md-15">
+          <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+            <path d="M0 0h100v25H75L25 50H0z" fill="currentColor" />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- CASES -->
+    <section
+      class="pt-12 pt-md-18 pb-11 pb-md-16 bg-dark"
+      style="background-image: url(assets/img/patterns/pattern-1.svg)"
+    >
+      <!-- Content -->
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-8 text-center">
+            <!-- Preheading -->
+            <h6 class="text-uppercase text-warning mb-5">Selling on the go</h6>
+
+            <!-- Heading -->
+            <h2 class="display-4 text-white mb-9">
+              Our mobile app makes it dead simple to
+              <span class="text-underline-primary-light">run your entire shop</span>.
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider -->
+      <div class="flickity-items-fade" data-flickity='{"imagesLoaded": true, "pageDots": false, "wrapAround": true}'>
+        <div style="width: calc(100% - 2rem); max-width: 380px">
+          <!-- Image -->
+          <img class="img-fluid rounded" src="assets/img/screenshots/mobile/screenshot-1.jpg" alt="..." />
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">Account Management</h6>
+
+            <!-- Text -->
+            <p class="fs-sm text-center text-white-80 mb-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan.
+            </p>
+          </div>
+        </div>
+        <div style="width: calc(100% - 2rem); max-width: 380px">
+          <!-- Image -->
+          <img class="img-fluid rounded" src="assets/img/screenshots/mobile/screenshot-2.jpg" alt="..." />
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">Customer Communication</h6>
+
+            <!-- Text -->
+            <p class="fs-sm text-center text-white-80 mb-0">
+              In urna lectus, mattis non accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <div style="width: calc(100% - 2rem); max-width: 380px">
+          <!-- Image -->
+          <img class="img-fluid rounded" src="assets/img/screenshots/mobile/screenshot-4.jpg" alt="..." />
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">Appointment Scheduling</h6>
+
+            <!-- Text -->
+            <p class="fs-sm text-center text-white-80 mb-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan.
+            </p>
+          </div>
+        </div>
+        <div style="width: calc(100% - 2rem); max-width: 380px">
+          <!-- Image -->
+          <img class="img-fluid rounded" src="assets/img/screenshots/mobile/screenshot-5.jpg" alt="..." />
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">Calendar Sharing</h6>
+
+            <!-- Text -->
+            <p class="fs-sm text-center text-white-80 mb-0">
+              In urna lectus, mattis non accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <div style="width: calc(100% - 2rem); max-width: 380px">
+          <!-- Image -->
+          <img class="img-fluid rounded" src="assets/img/screenshots/mobile/screenshot-6.jpg" alt="..." />
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">Project Management</h6>
+
+            <!-- Text -->
+            <p class="fs-sm text-center text-white-80 mb-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan.
+            </p>
+          </div>
+        </div>
+        <div style="width: calc(100% - 2rem); max-width: 380px">
+          <!-- Image -->
+          <img class="img-fluid rounded" src="assets/img/screenshots/mobile/screenshot-7.jpg" alt="..." />
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">Automatic Scheduling</h6>
+
+            <!-- Text -->
+            <p class="fs-sm text-center text-white-80 mb-0">
+              In urna lectus, mattis non accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <div style="width: calc(100% - 2rem); max-width: 380px">
+          <!-- Image -->
+          <img class="img-fluid rounded" src="assets/img/screenshots/mobile/screenshot-1.jpg" alt="..." />
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">Account Management</h6>
+
+            <!-- Text -->
+            <p class="fs-sm text-center text-white-80 mb-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan.
+            </p>
+          </div>
+        </div>
+        <div style="width: calc(100% - 2rem); max-width: 380px">
+          <!-- Image -->
+          <img class="img-fluid rounded" src="assets/img/screenshots/mobile/screenshot-2.jpg" alt="..." />
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">Customer Communication</h6>
+
+            <!-- Text -->
+            <p class="fs-sm text-center text-white-80 mb-0">
+              In urna lectus, mattis non accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <div style="width: calc(100% - 2rem); max-width: 380px">
+          <!-- Image -->
+          <img class="img-fluid rounded" src="assets/img/screenshots/mobile/screenshot-4.jpg" alt="..." />
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">Appointment Scheduling</h6>
+
+            <!-- Text -->
+            <p class="fs-sm text-center text-white-80 mb-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan.
+            </p>
+          </div>
+        </div>
+        <div style="width: calc(100% - 2rem); max-width: 380px">
+          <!-- Image -->
+          <img class="img-fluid rounded" src="assets/img/screenshots/mobile/screenshot-5.jpg" alt="..." />
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">Calendar Sharing</h6>
+
+            <!-- Text -->
+            <p class="fs-sm text-center text-white-80 mb-0">
+              In urna lectus, mattis non accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <div style="width: calc(100% - 2rem); max-width: 380px">
+          <!-- Image -->
+          <img class="img-fluid rounded" src="assets/img/screenshots/mobile/screenshot-6.jpg" alt="..." />
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">Project Management</h6>
+
+            <!-- Text -->
+            <p class="fs-sm text-center text-white-80 mb-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <!-- Shape -->
+      <div class="shape shape-fluid-x shape-top text-white">
+        <div class="shape-img pb-9 pb-md-15">
+          <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+            <path d="M0 0h25l50 25h25v75H0z" fill="currentColor" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Decoration -->
+      <div class="position-absolute top-end text-primary-dark mt-n12">
+        <svg width="129" height="208" viewBox="0 0 129 208" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#decoration5clip0)">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M142.812 201.281a6.47 6.47 0 1112.94.002 6.47 6.47 0 01-12.94-.002zm1.618 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.811-4.811-4.811 4.811-1.143-1.144 4.811-4.811-4.811-4.811 1.143-1.143 4.811 4.811zm-32.343 1.143a6.468 6.468 0 1112.936 0 6.468 6.468 0 01-12.936 0zm1.617 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.811-4.811-4.811 4.811-1.143-1.144 4.811-4.811-4.811-4.811 1.143-1.143 4.811 4.811z"
+              fill="currentColor"
+            />
+          </g>
+          <g clip-path="url(#decoration5clip1)">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M142.812 149.281a6.47 6.47 0 1112.94.002 6.47 6.47 0 01-12.94-.002zm1.618 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.811-4.811-4.811 4.811-1.143-1.144 4.811-4.811-4.811-4.811 1.143-1.143 4.811 4.811zm-32.343 1.143a6.468 6.468 0 1112.936 0 6.468 6.468 0 01-12.936 0zm1.617 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.811-4.811-4.811 4.811-1.143-1.144 4.811-4.811-4.811-4.811 1.143-1.143 4.811 4.811z"
+              fill="currentColor"
+            />
+          </g>
+          <g clip-path="url(#decoration5clip2)">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M142.812 97.281a6.47 6.47 0 1112.939.002 6.47 6.47 0 01-12.939-.002zm1.618 0a4.851 4.851 0 119.703 0 4.851 4.851 0 01-9.703 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.811-4.811-4.811 4.81-1.143-1.143 4.811-4.81-4.811-4.812 1.143-1.143 4.811 4.81zm-32.343 1.143a6.469 6.469 0 1112.937 0 6.469 6.469 0 01-12.937 0zm1.617 0a4.851 4.851 0 119.703 0 4.851 4.851 0 01-9.703 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.811-4.811-4.811 4.811-1.143-1.144 4.811-4.81-4.811-4.812 1.143-1.143 4.811 4.81z"
+              fill="currentColor"
+            />
+          </g>
+          <g clip-path="url(#decoration5clip3)">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M38.813 149.281a6.47 6.47 0 1112.938 0 6.47 6.47 0 01-12.938 0zm1.617 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.811-1.143-1.144 4.81-4.811-4.81-4.811 1.143-1.143 4.811 4.811zm-32.343 1.143a6.469 6.469 0 1112.937.001 6.469 6.469 0 01-12.938-.001zm1.617 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.811-1.143-1.144 4.81-4.811-4.81-4.811 1.143-1.143 4.811 4.811z"
+              fill="currentColor"
+            />
+          </g>
+          <g clip-path="url(#decoration5clip4)">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M38.813 97.281a6.469 6.469 0 1112.937 0 6.469 6.469 0 01-12.938 0zm1.617 0a4.852 4.852 0 119.703 0 4.852 4.852 0 01-9.703 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.81-1.143-1.143 4.81-4.81-4.81-4.812 1.143-1.143 4.811 4.81zm-32.343 1.143a6.469 6.469 0 1112.937 0 6.469 6.469 0 01-12.938 0zm1.617 0a4.852 4.852 0 119.703 0 4.852 4.852 0 01-9.703 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.811-1.143-1.144 4.81-4.81-4.81-4.812 1.143-1.143 4.811 4.81z"
+              fill="currentColor"
+            />
+          </g>
+          <g clip-path="url(#decoration5clip5)">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M38.813 45.281a6.469 6.469 0 1112.937 0 6.469 6.469 0 01-12.938 0zm1.617 0a4.852 4.852 0 119.703 0 4.852 4.852 0 01-9.703 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.81-1.143-1.143 4.81-4.81-4.81-4.812 1.143-1.143 4.811 4.81zm-32.343 1.143a6.469 6.469 0 1112.937 0 6.469 6.469 0 01-12.938 0zm1.617 0a4.852 4.852 0 119.703 0 4.852 4.852 0 01-9.703 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.81-1.143-1.143 4.81-4.81-4.81-4.812 1.143-1.143 4.811 4.81z"
+              fill="currentColor"
+            />
+          </g>
+          <g clip-path="url(#decoration5clip6)">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M90.813 175.281a6.47 6.47 0 1112.938 0 6.47 6.47 0 01-12.939 0zm1.617 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.81-4.811-4.812 4.811-1.143-1.144 4.81-4.811-4.81-4.811 1.143-1.143 4.811 4.811zm-32.344 1.143a6.469 6.469 0 1112.938.001 6.469 6.469 0 01-12.938-.001zm1.618 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.811-1.143-1.144 4.81-4.811-4.81-4.811 1.143-1.143 4.811 4.811z"
+              fill="currentColor"
+            />
+          </g>
+          <g clip-path="url(#decoration5clip7)">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M90.813 123.281a6.47 6.47 0 1112.938 0 6.47 6.47 0 01-12.939 0zm1.617 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.81-4.811-4.812 4.811-1.143-1.144 4.81-4.81-4.81-4.812 1.143-1.143 4.811 4.81zm-32.344 1.143a6.469 6.469 0 1112.938 0 6.469 6.469 0 01-12.938 0zm1.618 0a4.852 4.852 0 119.703 0 4.852 4.852 0 01-9.703 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.811-1.143-1.144 4.81-4.811-4.81-4.811 1.143-1.143 4.811 4.811z"
+              fill="currentColor"
+            />
+          </g>
+          <g clip-path="url(#decoration5clip8)">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M90.813 71.281a6.469 6.469 0 1112.937 0 6.469 6.469 0 01-12.938 0zm1.617 0a4.852 4.852 0 119.703 0 4.852 4.852 0 01-9.703 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.81-4.811-4.812 4.81-1.143-1.143 4.81-4.81-4.81-4.812 1.143-1.143 4.811 4.81zm-32.344 1.143a6.469 6.469 0 1112.938 0 6.469 6.469 0 01-12.938 0zm1.618 0a4.852 4.852 0 119.703 0 4.852 4.852 0 01-9.703 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.81-1.143-1.143 4.81-4.81-4.81-4.812 1.143-1.143 4.811 4.81z"
+              fill="currentColor"
+            />
+          </g>
+          <defs>
+            <clipPath id="decoration4clip0">
+              <path transform="matrix(0 -1 -1 0 155.75 207.75)" fill="#fff" d="M0 0h51.75v51.75H0z" />
+            </clipPath>
+            <clipPath id="decoration4clip1">
+              <path transform="rotate(-90 155.75 0)" fill="#fff" d="M0 0h51.75v51.75H0z" />
+            </clipPath>
+            <clipPath id="decoration4clip2">
+              <path transform="matrix(0 -1 -1 0 155.75 103.75)" fill="#fff" d="M0 0h51.75v51.75H0z" />
+            </clipPath>
+            <clipPath id="decoration4clip3">
+              <path transform="matrix(0 -1 -1 0 51.75 155.75)" fill="#fff" d="M0 0h51.75v51.75H0z" />
+            </clipPath>
+            <clipPath id="decoration4clip4">
+              <path transform="matrix(0 -1 -1 0 51.75 103.75)" fill="#fff" d="M0 0h51.75v51.75H0z" />
+            </clipPath>
+            <clipPath id="decoration4clip5">
+              <path transform="matrix(0 -1 -1 0 51.75 51.75)" fill="#fff" d="M0 0h51.75v51.75H0z" />
+            </clipPath>
+            <clipPath id="decoration4clip6">
+              <path transform="matrix(0 -1 -1 0 103.75 181.75)" fill="#fff" d="M0 0h51.75v51.75H0z" />
+            </clipPath>
+            <clipPath id="decoration4clip7">
+              <path transform="matrix(0 -1 -1 0 103.75 129.75)" fill="#fff" d="M0 0h51.75v51.75H0z" />
+            </clipPath>
+            <clipPath id="decoration4clip8">
+              <path transform="matrix(0 -1 -1 0 103.75 77.75)" fill="#fff" d="M0 0h51.75v51.75H0z" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+    </div>
+
+    <!-- GROUP -->
+    <div class="bg-gradient-light">
+      <!-- ABOUT -->
+      <section class="pt-9 pt-md-0">
+        <div class="container-lg">
+          <div class="row">
+            <div class="col-md-8 col-lg-6">
+              <!-- Heading -->
+              <h2 class="display-4 mb-4">
+                Customer service reps to keep sales up
+                <span class="text-underline-warning">every day</span>.
+              </h2>
+
+              <!-- Text -->
+              <p class="fs-lg text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor
+                dictum.
+              </p>
+
+              <!-- Stats -->
+              <div class="row mx-md-n6 mb-8 mb-md-0">
+                <div class="col-auto px-md-6 border-end">
+                  <!-- Heading -->
+                  <div class="h1 mb-0">
+                    <span
+                      data-countup='{"startVal": 0, "decimalPlaces": 1}'
+                      data-to="99.8"
+                      data-aos
+                      data-aos-id="countup:in"
+                      >0</span
+                    >%
+                  </div>
+
+                  <div class="text-muted mt-n1">Approval</div>
+                </div>
+                <div class="col-auto px-md-6 border-end">
+                  <!-- Heading -->
+                  <div class="h1 mb-0">
+                    <span data-countup='{"startVal": 0}' data-to="24" data-aos data-aos-id="countup:in">0</span>/<span
+                      data-countup='{"startVal": 0}'
+                      data-to="7"
+                      data-aos
+                      data-aos-id="countup:in"
+                      >0</span
+                    >
+                  </div>
+
+                  <div class="text-muted mt-n1">Support</div>
+                </div>
+                <div class="col-auto px-md-6">
+                  <!-- Heading -->
+                  <div class="h1 mb-0">
+                    <span
+                      data-countup='{"startVal": 0, "decimalPlaces": 1}'
+                      data-to="42.3"
+                      data-aos
+                      data-aos-id="countup:in"
+                      >0</span
+                    >%
+                  </div>
+
+                  <div class="text-muted mt-n1">Conversion</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-md-n9">
+            <div class="col-12">
+              <!-- Image grid -->
+              <div class="img-grid img-grid-3">
+                <div class="img-grid-item">
+                  <!-- Image -->
+                  <img
+                    class="img-fluid border border-4 border-md-7 border-white shadow"
+                    src="assets/img/e-commerce/customer-service-2.jpg"
+                    alt="..."
+                    data-jarallax-element="-65"
+                  />
+                </div>
+                <div class="img-grid-item">
+                  <!-- Image -->
+                  <img
+                    class="img-fluid border border-4 border-md-7 border-white shadow"
+                    src="assets/img/e-commerce/customer-service-1.jpg"
+                    alt="..."
+                    data-jarallax-element="-40"
+                  />
+                </div>
+                <div class="img-grid-item">
+                  <!-- Image -->
+                  <img
+                    class="img-fluid border border-4 border-md-7 border-white shadow"
+                    src="assets/img/e-commerce/customer-service-3.jpg"
+                    alt="..."
+                    data-jarallax-element="-25"
+                  />
+                </div>
+                <div class="img-grid-item">
+                  <!-- Card -->
+                  <div class="card rounded-top-start rounded-bottom-end">
+                    <!-- Image -->
+                    <img
+                      class="card-img-top rounded-top-start"
+                      src="assets/img/e-commerce/customer-service-4.jpg"
+                      alt="..."
+                    />
+
+                    <!-- SHAPE -->
+                    <div class="position-relative">
+                      <div class="shape shape-fluid-x shape-top text-white">
+                        <div class="shape-img pb-6">
+                          <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+                            <path d="M0 25h25L75 0h25v50H0z" fill="currentColor" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Body -->
+                    <div class="card-body">
+                      <!-- Blockquote -->
+                      <blockquote class="text-center mb-0">
+                        <!-- Text -->
+                        <p class="fs-lg">
+                          <strong class="text-primary text-underline-primary">Our mission</strong>
+                          is to help you run your store as efficiently as possible without incurring any costs.
+                        </p>
+
+                        <!-- Footer -->
+                        <footer class="fs-sm">
+                          <!-- Author -->
+                          <p class="fw-bold mb-0">Timmy Turner</p>
+
+                          <!-- Source -->
+                          <p class="text-muted mb-0">Engineer at Pinterest</p>
+                        </footer>
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="position-relative pt-10 pt-md-12 pb-12 pb-md-16">
+        <!-- Decoration -->
+        <div class="position-absolute bottom-end text-warning">
+          <svg width="175" height="179" viewBox="0 0 175 179" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="a" maskUnits="userSpaceOnUse" x="-1" y="-1" width="180" height="180">
+              <path d="M178.946-.354C79.92-.354-.355 79.922-.355 178.948h179.301V-.354z" fill="#C4C4C4" />
+            </mask>
+            <g mask="url(#a)" fill-rule="evenodd" clip-rule="evenodd" fill="currentColor">
+              <path
+                d="M-7.413-19.97c.264.027.533.054.807.08.269.027 1.187.114 1.313.126 7.13.687 11.317 1.681 17.821 4.853 6.453 3.147 9.277 5.475 13.962 10.643.484.533.948 1.037 1.4 1.516L31.8-.845c-1.353-1.228-2.71-2.637-4.274-4.362-4.795-5.289-7.75-7.724-14.385-10.96-6.675-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-1.838-.178-3.441-.376-4.921-.63l3.98 1.94zm6.128-12.565c-5.866-.612-9.46-1.503-14.534-3.978l.613-1.257c3.608 1.76 6.428 2.689 9.941 3.294l3.98 1.941zm35.303 17.218c4.029 4.272 7.019 6.534 12.986 9.444l.612-1.256c-4.298-2.097-6.986-3.83-9.687-6.28l-3.911-1.908zm-52.9-14.914c5.302 2.586 8.988 3.443 15.34 4.06l1.313.125c7.13.687 11.317 1.68 17.821 4.853 6.453 3.147 9.277 5.475 13.963 10.643C34.35-5.262 37.304-2.827 43.94.41l.612-1.257C38.1-3.994 35.276-6.32 30.59-11.489c-4.795-5.29-7.75-7.724-14.385-10.96-6.675-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-6.2-.601-9.735-1.423-14.863-3.924l-.613 1.256z"
+              />
+              <path
+                d="M-13.54-7.408l.807.081 1.313.126C-4.29-6.514-.103-5.521 6.4-2.348 12.854.799 15.677 3.126 20.363 8.294c.483.533.948 1.037 1.4 1.516l3.91 1.908c-1.353-1.229-2.71-2.637-4.274-4.363-4.795-5.288-7.75-7.723-14.385-10.96C.339-6.86-4.003-7.89-11.286-8.593l-1.312-.125c-1.838-.179-3.441-.376-4.922-.631l3.98 1.94zm6.128-12.564c-5.866-.612-9.46-1.504-14.534-3.979l.613-1.256c3.608 1.76 6.428 2.688 9.941 3.294l3.98 1.94zM27.891-2.755C31.92 1.518 34.91 3.78 40.877 6.69l.611-1.257c-4.297-2.096-6.986-3.829-9.686-6.28L27.89-2.754zm-52.9-14.914c5.302 2.586 8.988 3.443 15.34 4.059l1.313.126c7.13.686 11.317 1.68 17.821 4.853 6.453 3.147 9.276 5.474 13.962 10.642 4.796 5.289 7.75 7.724 14.386 10.96l.611-1.256C31.974 8.568 29.149 6.24 24.464 1.073c-4.795-5.289-7.75-7.724-14.385-10.96-6.675-3.256-11.017-4.286-18.3-4.988L-9.534-15c-6.2-.6-9.735-1.422-14.863-3.924l-.613 1.257zM-19.669 5.16c.264.028.533.055.807.081l1.313.126c7.13.687 11.317 1.68 17.821 4.853 6.453 3.147 9.277 5.475 13.962 10.643.484.533.948 1.037 1.4 1.515l3.91 1.908c-1.353-1.229-2.71-2.637-4.274-4.362C10.475 14.634 7.52 12.2.885 8.964c-6.675-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-1.838-.178-3.441-.376-4.921-.63l3.98 1.94zm6.128-12.564c-5.866-.612-9.46-1.503-14.534-3.978l.613-1.257c3.609 1.76 6.428 2.689 9.942 3.294l3.98 1.94zM21.762 9.814c4.029 4.272 7.019 6.534 12.986 9.444l.613-1.256c-4.3-2.097-6.987-3.83-9.688-6.28l-3.911-1.908zM-31.138-5.1c5.302 2.586 8.988 3.443 15.34 4.06l1.313.125c7.13.687 11.317 1.68 17.821 4.853C9.79 7.085 12.613 9.412 17.3 14.58c4.795 5.29 7.749 7.724 14.385 10.96l.613-1.256c-6.453-3.147-9.277-5.475-13.963-10.643-4.795-5.288-7.75-7.723-14.385-10.96-6.675-3.255-11.017-4.286-18.3-4.987l-1.312-.126c-6.2-.602-9.734-1.423-14.863-3.924l-.613 1.256z"
+              />
+              <path
+                d="M-25.796 17.719c.264.027.533.054.807.08l1.313.127c7.13.686 11.317 1.68 17.821 4.853C.598 25.926 3.422 28.253 8.107 33.42c.484.533.948 1.037 1.4 1.516l3.91 1.907c-1.353-1.228-2.71-2.637-4.274-4.362-4.795-5.288-7.75-7.723-14.385-10.96-6.675-3.255-11.017-4.286-18.3-4.988l-1.312-.125c-1.838-.179-3.441-.376-4.921-.631l3.98 1.94zm6.128-12.565c-5.865-.612-9.46-1.503-14.534-3.978l.613-1.256c3.609 1.76 6.428 2.688 9.942 3.293l3.98 1.941zm35.303 17.219c4.029 4.271 7.019 6.534 12.985 9.443l.614-1.256c-4.3-2.096-6.987-3.829-9.688-6.28l-3.911-1.907zm-52.9-14.914c5.302 2.586 8.988 3.443 15.34 4.059l1.313.126c7.13.686 11.317 1.68 17.821 4.853 6.453 3.147 9.277 5.474 13.963 10.642 4.795 5.288 7.749 7.723 14.384 10.96l.613-1.257c-6.452-3.147-9.276-5.474-13.962-10.642-4.795-5.289-7.75-7.724-14.385-10.96-6.675-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-6.2-.601-9.734-1.423-14.863-3.924l-.613 1.257zM-31.927 30.287a230.839 230.839 0 002.12.207c7.13.686 11.317 1.68 17.821 4.853 6.453 3.147 9.277 5.474 13.963 10.642.483.533.948 1.037 1.399 1.516l3.91 1.907c-1.353-1.228-2.71-2.637-4.274-4.362-4.795-5.289-7.75-7.723-14.385-10.96-6.675-3.256-11.017-4.286-18.3-4.988l-1.312-.125c-1.837-.178-3.441-.376-4.921-.63l3.98 1.94zm6.128-12.564c-5.865-.612-9.46-1.504-14.533-3.978l.612-1.257c3.609 1.76 6.428 2.689 9.942 3.294l3.98 1.94zM9.504 34.94c4.029 4.271 7.019 6.534 12.986 9.444l.612-1.257c-4.298-2.096-6.986-3.829-9.687-6.28l-3.91-1.907zm-52.9-14.914c5.302 2.586 8.988 3.443 15.34 4.059l1.313.126c7.13.687 11.318 1.68 17.822 4.852C-2.47 32.212.355 34.54 5.04 39.707c4.795 5.29 7.75 7.724 14.384 10.96l.613-1.257c-6.452-3.147-9.276-5.474-13.962-10.642-4.795-5.289-7.75-7.724-14.385-10.96-6.675-3.255-11.017-4.286-18.3-4.988l-1.312-.125c-6.2-.602-9.734-1.423-14.863-3.925l-.613 1.257z"
+              />
+              <path
+                d="M-38.053 42.85a2234.048 2234.048 0 002.12.207c7.13.686 11.317 1.68 17.82 4.852 6.453 3.147 9.277 5.475 13.963 10.643.483.533.947 1.037 1.399 1.515l3.91 1.908c-1.353-1.228-2.71-2.637-4.274-4.362-4.795-5.289-7.75-7.724-14.385-10.96-6.675-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-1.837-.178-3.441-.376-4.921-.63l3.98 1.94zm6.127-12.565c-5.865-.612-9.46-1.503-14.533-3.978l.612-1.256c3.609 1.76 6.428 2.688 9.942 3.293l3.98 1.941zM3.377 47.503c4.029 4.272 7.019 6.534 12.986 9.444l.612-1.256c-4.298-2.097-6.986-3.83-9.687-6.28l-3.91-1.908zm-52.9-14.914c5.302 2.586 8.989 3.443 15.34 4.06l1.313.125c7.13.687 11.318 1.681 17.822 4.853 6.452 3.147 9.276 5.474 13.962 10.642 4.795 5.29 7.75 7.724 14.385 10.96l.612-1.256C7.46 58.826 4.635 56.498-.05 51.33c-4.795-5.288-7.75-7.723-14.385-10.959-6.675-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-6.2-.602-9.734-1.423-14.863-3.924l-.612 1.256z"
+              />
+              <path
+                d="M-44.18 55.414a230.839 230.839 0 002.12.207c7.13.686 11.317 1.68 17.82 4.853 6.453 3.147 9.277 5.474 13.963 10.642.483.533.948 1.037 1.4 1.516l3.91 1.907c-1.354-1.228-2.71-2.637-4.275-4.362-4.795-5.289-7.75-7.724-14.385-10.96-6.675-3.256-11.017-4.286-18.3-4.988l-1.312-.126c-1.838-.178-3.44-.375-4.921-.63l3.98 1.941zm6.128-12.565c-5.866-.612-9.46-1.503-14.534-3.978l.612-1.256c3.609 1.76 6.428 2.688 9.942 3.293l3.98 1.941zM-2.75 60.067c4.029 4.272 7.019 6.534 12.986 9.445l.612-1.257c-4.298-2.096-6.986-3.829-9.687-6.28l-3.91-1.908zm-52.9-14.914c5.302 2.587 8.989 3.444 15.34 4.06l1.313.125c7.13.687 11.318 1.681 17.822 4.853 6.452 3.148 9.276 5.475 13.962 10.643 4.795 5.29 7.75 7.723 14.385 10.96l.612-1.257C1.332 71.39-1.492 69.063-6.178 63.895c-4.795-5.289-7.75-7.724-14.385-10.96-6.675-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-6.2-.6-9.734-1.423-14.863-3.924l-.612 1.256zM-50.31 67.98c.265.029.534.056.807.082l1.313.126c7.131.687 11.318 1.68 17.822 4.853 6.452 3.147 9.276 5.474 13.962 10.642.483.533.948 1.038 1.4 1.516l3.91 1.908c-1.354-1.23-2.71-2.637-4.275-4.363-4.795-5.288-7.75-7.723-14.385-10.96-6.675-3.255-11.016-4.286-18.3-4.987l-1.312-.126c-1.837-.178-3.44-.376-4.921-.631l3.98 1.94zm6.129-12.563c-5.866-.612-9.46-1.504-14.534-3.978l.613-1.257c3.608 1.76 6.427 2.689 9.941 3.294l3.98 1.94zM-8.88 72.635c4.029 4.272 7.02 6.534 12.986 9.444l.612-1.256c-4.298-2.097-6.986-3.83-9.687-6.281l-3.91-1.907zm-52.9-14.914c5.302 2.586 8.989 3.443 15.34 4.059l1.313.126c7.131.687 11.318 1.68 17.822 4.853 6.452 3.147 9.276 5.474 13.962 10.642 4.795 5.289 7.75 7.724 14.385 10.96l.612-1.256c-6.452-3.147-9.276-5.475-13.962-10.643-4.795-5.288-7.75-7.723-14.384-10.96-6.676-3.255-11.017-4.286-18.3-4.988l-1.313-.125c-6.2-.602-9.734-1.423-14.862-3.925l-.613 1.257zM67.663-14.459c.264.028.533.055.806.081l1.314.126c7.13.687 11.317 1.68 17.821 4.853 6.452 3.147 9.276 5.474 13.962 10.642.483.533.948 1.037 1.399 1.516l3.911 1.908c-1.353-1.229-2.71-2.637-4.275-4.363-4.795-5.288-7.749-7.723-14.384-10.96-6.676-3.255-11.017-4.286-18.3-4.987l-1.313-.126c-1.837-.178-3.44-.376-4.92-.631l3.98 1.941zm6.128-12.564c-5.866-.612-9.46-1.504-14.534-3.978l.613-1.257c3.608 1.76 6.427 2.689 9.941 3.294l3.98 1.94zm35.302 17.218c4.029 4.272 7.019 6.534 12.986 9.444l.613-1.257c-4.299-2.096-6.987-3.829-9.688-6.28l-3.911-1.907zm-52.9-14.914c5.302 2.586 8.99 3.443 15.34 4.059l1.314.126c7.13.686 11.317 1.68 17.821 4.853 6.452 3.147 9.276 5.474 13.962 10.642 4.795 5.289 7.749 7.724 14.385 10.96l.613-1.256c-6.453-3.147-9.277-5.475-13.963-10.643-4.795-5.289-7.749-7.723-14.384-10.96-6.676-3.256-11.017-4.286-18.3-4.988l-1.313-.126c-6.2-.6-9.734-1.422-14.862-3.924l-.613 1.257z"
+              />
+              <path
+                d="M61.532-1.898c.265.027.534.054.808.08.268.027 1.186.115 1.313.127 7.13.686 11.316 1.68 17.82 4.853 6.453 3.147 9.276 5.474 13.963 10.642.482.533.947 1.037 1.398 1.516l3.911 1.907c-1.353-1.228-2.71-2.637-4.273-4.362-4.796-5.289-7.75-7.724-14.385-10.96C75.41-1.35 71.07-2.38 63.787-3.083l-1.313-.126c-1.837-.178-3.441-.375-4.921-.63l3.98 1.94zm6.129-12.565c-5.867-.612-9.46-1.503-14.535-3.978l.614-1.256c3.607 1.76 6.426 2.688 9.94 3.293l3.98 1.941zm35.302 17.218c4.029 4.272 7.019 6.534 12.986 9.445l.613-1.257c-4.299-2.096-6.987-3.83-9.688-6.28l-3.911-1.908zm-52.9-14.914c5.301 2.587 8.988 3.444 15.34 4.06l1.313.125c7.13.687 11.318 1.681 17.822 4.853C90.99.026 93.813 2.354 98.5 7.522c4.794 5.288 7.75 7.723 14.385 10.96l.612-1.257c-6.453-3.147-9.276-5.474-13.962-10.642-4.795-5.289-7.75-7.724-14.385-10.96-6.675-3.256-11.017-4.287-18.3-4.988l-1.313-.126c-6.2-.601-9.734-1.423-14.862-3.924l-.612 1.256z"
+              />
+              <path
+                d="M55.411 10.668c.264.027.533.055.806.081l1.314.126c7.13.687 11.317 1.68 17.821 4.853 6.452 3.147 9.276 5.474 13.962 10.642.483.533.948 1.037 1.4 1.516l3.91 1.907c-1.353-1.228-2.71-2.636-4.274-4.362-4.796-5.288-7.75-7.723-14.385-10.96-6.676-3.255-11.017-4.286-18.3-4.987l-1.313-.126c-1.837-.178-3.44-.376-4.92-.631l3.98 1.941zM61.54-1.896c-5.866-.612-9.46-1.504-14.534-3.978l.613-1.257c3.608 1.76 6.427 2.688 9.941 3.294l3.98 1.94zm35.302 17.218c4.029 4.272 7.019 6.534 12.986 9.444l.613-1.256c-4.299-2.097-6.987-3.83-9.688-6.28l-3.91-1.908zM43.941.408c5.302 2.586 8.99 3.443 15.34 4.059l1.314.126c7.13.687 11.317 1.68 17.821 4.853 6.452 3.147 9.276 5.474 13.962 10.642 4.795 5.289 7.749 7.724 14.385 10.96l.613-1.257c-6.453-3.146-9.277-5.474-13.962-10.642-4.796-5.289-7.75-7.723-14.385-10.96-6.676-3.255-11.017-4.286-18.3-4.988l-1.313-.125c-6.2-.602-9.734-1.423-14.862-3.925L43.941.408zM49.282 23.235c.265.027.534.054.808.08.268.027 1.186.114 1.313.127 7.13.686 11.316 1.68 17.82 4.852 6.453 3.147 9.276 5.474 13.963 10.642.482.533.947 1.038 1.398 1.517l3.912 1.907c-1.353-1.228-2.71-2.636-4.274-4.362-4.796-5.288-7.75-7.724-14.385-10.96-6.677-3.256-11.018-4.287-18.3-4.988l-1.313-.126c-1.837-.178-3.441-.376-4.921-.63l3.98 1.94zm6.129-12.565c-5.867-.612-9.46-1.503-14.535-3.978l.614-1.256c3.607 1.76 6.426 2.688 9.94 3.293l3.98 1.941zm35.302 17.218c4.029 4.272 7.019 6.534 12.986 9.445l.613-1.258c-4.299-2.096-6.987-3.829-9.688-6.28l-3.911-1.907zm-52.9-14.914c5.301 2.586 8.988 3.443 15.34 4.06l1.314.125c7.13.687 11.317 1.681 17.82 4.853 6.453 3.147 9.276 5.475 13.962 10.642 4.796 5.29 7.75 7.724 14.386 10.96l.612-1.255c-6.453-3.148-9.276-5.476-13.962-10.644-4.795-5.288-7.75-7.723-14.385-10.96-6.675-3.255-11.017-4.286-18.3-4.987l-1.313-.126c-6.2-.601-9.733-1.423-14.861-3.924l-.614 1.256z"
+              />
+              <path
+                d="M43.152 35.796c.264.028.533.055.807.082l1.313.125c7.13.687 11.317 1.681 17.82 4.853 6.454 3.148 9.277 5.475 13.963 10.643.483.533.948 1.037 1.4 1.516l3.91 1.907c-1.353-1.228-2.71-2.637-4.274-4.362-4.796-5.289-7.75-7.724-14.385-10.96-6.676-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-1.838-.177-3.441-.375-4.922-.63l3.98 1.94zm6.128-12.563c-5.866-.612-9.46-1.504-14.534-3.979l.613-1.256c3.608 1.76 6.428 2.688 9.94 3.293l3.98 1.942zM84.583 40.45c4.028 4.272 7.018 6.534 12.985 9.444l.613-1.255c-4.3-2.098-6.987-3.83-9.688-6.28l-3.91-1.909zM31.682 25.537c5.303 2.586 8.989 3.443 15.34 4.059l1.314.125c7.13.688 11.317 1.681 17.82 4.853 6.454 3.147 9.277 5.476 13.963 10.644 4.795 5.287 7.75 7.722 14.385 10.96l.613-1.258c-6.453-3.147-9.276-5.474-13.962-10.642-4.796-5.289-7.75-7.724-14.385-10.96-6.675-3.255-11.017-4.286-18.3-4.988l-1.312-.125c-6.2-.602-9.735-1.423-14.863-3.925l-.613 1.257z"
+              />
+              <path
+                d="M37.025 48.361a219.537 219.537 0 002.12.208c7.13.686 11.317 1.68 17.82 4.852 6.454 3.148 9.277 5.474 13.963 10.643.483.533.948 1.037 1.4 1.516l3.91 1.907c-1.353-1.228-2.71-2.636-4.274-4.362-4.795-5.288-7.75-7.724-14.385-10.96-6.675-3.255-11.017-4.286-18.3-4.989l-1.312-.125c-1.838-.178-3.441-.376-4.922-.63l3.98 1.94zm6.128-12.563c-5.866-.613-9.46-1.505-14.534-3.979l.613-1.256c3.608 1.76 6.428 2.688 9.94 3.293l3.98 1.941zm35.303 17.218c4.028 4.272 7.018 6.534 12.985 9.444l.613-1.258c-4.3-2.096-6.987-3.828-9.688-6.28l-3.91-1.906zM25.555 38.102c5.303 2.586 8.989 3.443 15.34 4.059l1.314.125c7.13.686 11.317 1.68 17.82 4.853 6.454 3.147 9.277 5.474 13.963 10.642 4.795 5.29 7.75 7.724 14.385 10.96l.613-1.255c-6.453-3.148-9.276-5.476-13.962-10.644-4.795-5.288-7.75-7.722-14.385-10.96-6.675-3.255-11.017-4.285-18.3-4.987-.127-.013-1.045-.1-1.312-.127-6.2-.6-9.735-1.422-14.863-3.924l-.613 1.258z"
+              />
+              <path
+                d="M30.898 60.923c.264.028.532.055.806.082l1.313.125c7.13.687 11.317 1.681 17.822 4.853 6.453 3.147 9.276 5.475 13.962 10.643.483.533.948 1.037 1.4 1.516l3.91 1.907c-1.354-1.228-2.71-2.637-4.275-4.362-4.794-5.289-7.75-7.724-14.384-10.96-6.675-3.256-11.017-4.287-18.3-4.988l-1.313-.126c-1.837-.178-3.44-.376-4.921-.631l3.98 1.941zm6.128-12.564c-5.867-.612-9.46-1.503-14.534-3.978l.613-1.256c3.608 1.76 6.427 2.688 9.94 3.293l3.98 1.941zm35.303 17.218c4.028 4.272 7.019 6.534 12.985 9.444l.613-1.256c-4.299-2.097-6.988-3.829-9.689-6.28l-3.91-1.908zM19.428 50.663c5.302 2.586 8.989 3.443 15.34 4.059l1.313.126c7.13.687 11.317 1.681 17.822 4.853 6.453 3.147 9.276 5.475 13.962 10.643 4.796 5.288 7.75 7.723 14.385 10.96l.612-1.257C76.41 76.9 73.587 74.573 68.9 69.405c-4.794-5.289-7.75-7.724-14.385-10.96-6.675-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-6.2-.601-9.734-1.423-14.862-3.924l-.613 1.256zM24.769 73.492a228.518 228.518 0 002.12.207c7.13.686 11.317 1.681 17.82 4.853 6.454 3.147 9.277 5.474 13.963 10.642.484.533.948 1.037 1.4 1.516l3.91 1.907c-1.353-1.228-2.71-2.637-4.274-4.362-4.795-5.288-7.75-7.723-14.385-10.96-6.675-3.255-11.017-4.286-18.3-4.988l-1.313-.125c-1.837-.179-3.44-.376-4.92-.63l3.979 1.94zm6.128-12.565c-5.866-.612-9.46-1.503-14.534-3.978l.613-1.256c3.608 1.76 6.427 2.688 9.941 3.293l3.98 1.941zM66.2 78.147c4.029 4.27 7.019 6.533 12.985 9.443l.613-1.257c-4.298-2.096-6.986-3.829-9.687-6.28L66.2 78.146zM13.299 63.231c5.302 2.586 8.989 3.443 15.34 4.06.27.025 1.188.112 1.314.125 7.13.686 11.317 1.68 17.82 4.853 6.454 3.147 9.278 5.474 13.963 10.642 4.796 5.29 7.75 7.724 14.385 10.96l.613-1.257c-6.452-3.147-9.276-5.474-13.962-10.642-4.795-5.289-7.75-7.724-14.385-10.96-6.675-3.256-11.017-4.287-18.3-4.988l-1.313-.126c-6.2-.6-9.734-1.423-14.862-3.924l-.613 1.257z"
+              />
+              <path
+                d="M18.64 86.055a2154.28 2154.28 0 002.12.207c7.13.687 11.317 1.68 17.82 4.853 6.454 3.147 9.278 5.475 13.963 10.643.484.533.948 1.037 1.4 1.516l3.91 1.907c-1.353-1.228-2.71-2.637-4.274-4.362-4.795-5.29-7.75-7.724-14.385-10.96-6.675-3.256-11.017-4.287-18.3-4.988l-1.313-.126c-1.837-.178-3.44-.376-4.92-.631l3.979 1.94zm6.128-12.564c-5.866-.612-9.46-1.503-14.534-3.978l.613-1.257c3.608 1.76 6.427 2.689 9.941 3.294l3.98 1.94zM60.07 90.709c4.029 4.272 7.019 6.534 12.985 9.444l.613-1.256c-4.298-2.097-6.986-3.83-9.687-6.28l-3.911-1.908zM7.17 75.795c5.302 2.586 8.989 3.443 15.34 4.059l1.314.126c7.13.687 11.317 1.68 17.82 4.853 6.454 3.147 9.278 5.475 13.963 10.642 4.796 5.289 7.75 7.724 14.385 10.96l.613-1.256c-6.452-3.147-9.276-5.474-13.962-10.642-4.795-5.29-7.75-7.724-14.385-10.96-6.675-3.256-11.017-4.287-18.3-4.988l-1.313-.126c-6.2-.601-9.734-1.423-14.862-3.924l-.613 1.256z"
+              />
+              <path
+                d="M12.513 98.62a226.078 226.078 0 002.12.206c7.13.686 11.317 1.68 17.82 4.853 6.454 3.147 9.278 5.474 13.963 10.642.484.533.948 1.037 1.4 1.516l3.91 1.907c-1.353-1.228-2.71-2.637-4.274-4.362-4.795-5.289-7.75-7.723-14.385-10.96-6.676-3.256-11.017-4.286-18.3-4.988l-1.313-.126c-1.837-.178-3.44-.375-4.92-.63l3.979 1.941zm6.128-12.566c-5.866-.612-9.46-1.503-14.534-3.978l.613-1.256c3.608 1.76 6.428 2.688 9.941 3.293l3.98 1.941zm35.303 17.219c4.029 4.271 7.019 6.534 12.985 9.444l.613-1.257c-4.298-2.096-6.986-3.829-9.687-6.28l-3.911-1.907zM1.043 88.359c5.302 2.586 8.989 3.443 15.34 4.06.27.025 1.188.112 1.314.125 7.13.686 11.317 1.68 17.82 4.852 6.454 3.148 9.278 5.475 13.963 10.643 4.796 5.289 7.75 7.724 14.385 10.96l.613-1.257c-6.452-3.147-9.276-5.474-13.962-10.642-4.795-5.289-7.75-7.724-14.385-10.96-6.675-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-6.2-.6-9.735-1.423-14.863-3.924l-.613 1.257z"
+              />
+              <path
+                d="M6.384 111.184c.264.028.533.055.807.081l1.313.126c7.13.687 11.317 1.681 17.821 4.853 6.453 3.147 9.277 5.475 13.963 10.643.483.533.947 1.037 1.399 1.515l3.91 1.908c-1.353-1.228-2.71-2.637-4.274-4.362-4.795-5.289-7.75-7.724-14.385-10.96-6.675-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-1.838-.178-3.442-.376-4.922-.631l3.98 1.941zm6.128-12.564c-5.866-.612-9.46-1.503-14.534-3.978l.613-1.257c3.608 1.76 6.428 2.689 9.941 3.294l3.98 1.94zm35.303 17.218c4.029 4.272 7.019 6.534 12.986 9.444l.612-1.256c-4.298-2.097-6.986-3.83-9.687-6.281l-3.911-1.907zm-52.9-14.914c5.302 2.586 8.988 3.443 15.34 4.059l1.313.126c7.13.687 11.317 1.681 17.822 4.853 6.452 3.147 9.276 5.474 13.962 10.642 4.795 5.289 7.749 7.724 14.384 10.96l.613-1.256c-6.452-3.147-9.276-5.475-13.962-10.643-4.795-5.288-7.75-7.723-14.385-10.959-6.675-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-6.2-.602-9.735-1.423-14.863-3.924l-.613 1.256zM.255 123.75a228.519 228.519 0 002.12.207c7.13.686 11.317 1.68 17.821 4.853 6.453 3.147 9.277 5.474 13.963 10.642.483.533.948 1.037 1.399 1.516l3.91 1.907c-1.353-1.228-2.71-2.637-4.274-4.362-4.795-5.289-7.75-7.724-14.385-10.96-6.675-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-1.838-.178-3.441-.375-4.922-.63l3.98 1.941zm6.128-12.565c-5.866-.612-9.46-1.503-14.534-3.978l.613-1.256c3.608 1.76 6.428 2.688 9.941 3.293l3.98 1.941zm35.303 17.218c4.029 4.272 7.019 6.534 12.986 9.445l.612-1.257c-4.298-2.096-6.986-3.829-9.687-6.28l-3.911-1.908zm-52.9-14.914c5.302 2.587 8.988 3.444 15.34 4.06l1.313.125c7.13.687 11.317 1.681 17.821 4.853 6.453 3.147 9.277 5.475 13.963 10.643 4.795 5.289 7.749 7.723 14.385 10.96l.612-1.257c-6.452-3.147-9.276-5.474-13.962-10.642-4.795-5.289-7.75-7.724-14.385-10.96-6.675-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-6.2-.601-9.735-1.423-14.863-3.924l-.613 1.256z"
+              />
+              <path
+                d="M-5.874 136.313c.264.028.533.055.807.081l1.313.126c7.13.687 11.317 1.681 17.821 4.853 6.453 3.147 9.276 5.475 13.962 10.643.484.533.948 1.037 1.4 1.515l3.91 1.908c-1.354-1.229-2.71-2.637-4.274-4.362-4.795-5.289-7.75-7.724-14.385-10.96-6.675-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-1.838-.178-3.441-.376-4.922-.631l3.98 1.941zm6.128-12.564c-5.866-.612-9.46-1.504-14.534-3.978l.613-1.257c3.608 1.76 6.428 2.689 9.942 3.294l3.98 1.941zm35.302 17.218c4.03 4.272 7.02 6.534 12.986 9.444l.612-1.256c-4.298-2.097-6.985-3.83-9.686-6.281l-3.912-1.907zm-52.9-14.914c5.303 2.586 8.99 3.443 15.34 4.059l1.314.126c7.13.687 11.317 1.681 17.821 4.853 6.453 3.147 9.277 5.474 13.963 10.642 4.795 5.289 7.748 7.724 14.384 10.96l.612-1.256c-6.452-3.147-9.276-5.475-13.962-10.643-4.794-5.288-7.749-7.723-14.384-10.96-6.675-3.255-11.017-4.286-18.3-4.988l-1.312-.125c-6.2-.602-9.734-1.423-14.863-3.925l-.613 1.257z"
+              />
+              <path
+                d="M-12 148.877l.806.081 1.313.126c7.13.686 11.317 1.68 17.821 4.853 6.453 3.147 9.277 5.474 13.962 10.642.484.533.948 1.037 1.4 1.516l3.91 1.907c-1.353-1.228-2.71-2.637-4.274-4.362-4.795-5.289-7.75-7.724-14.385-10.96-6.675-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-1.838-.178-3.441-.376-4.921-.63l3.98 1.941zm6.127-12.565c-5.865-.612-9.46-1.503-14.534-3.978l.613-1.256c3.609 1.76 6.428 2.688 9.942 3.293l3.98 1.941zM29.43 153.53c4.029 4.272 7.019 6.534 12.986 9.444l.613-1.256c-4.3-2.096-6.987-3.829-9.688-6.28l-3.911-1.908zm-52.9-14.914c5.302 2.587 8.988 3.443 15.34 4.059.269.027 1.187.114 1.313.126 7.13.687 11.317 1.681 17.821 4.853 6.453 3.147 9.277 5.475 13.962 10.643 4.796 5.288 7.75 7.723 14.386 10.96l.613-1.257c-6.453-3.147-9.277-5.474-13.963-10.642-4.795-5.289-7.75-7.724-14.385-10.96-6.675-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-6.2-.601-9.734-1.423-14.863-3.924l-.613 1.256zM-18.128 161.442c.264.028.533.055.807.081l1.313.126c7.13.687 11.317 1.681 17.821 4.853 6.453 3.147 9.276 5.474 13.962 10.642.484.533.948 1.037 1.4 1.516l3.91 1.908c-1.353-1.229-2.71-2.637-4.274-4.363-4.795-5.288-7.75-7.723-14.385-10.959-6.675-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-1.838-.178-3.441-.376-4.922-.631l3.98 1.941zM-12 148.878c-5.866-.612-9.46-1.504-14.534-3.978l.613-1.257c3.608 1.76 6.428 2.688 9.942 3.294l3.98 1.941zm35.303 17.218c4.028 4.272 7.018 6.534 12.985 9.444l.614-1.257c-4.3-2.096-6.988-3.829-9.688-6.28l-3.911-1.907zm-52.9-14.914c5.302 2.586 8.988 3.443 15.34 4.059l1.313.126c7.13.686 11.317 1.681 17.821 4.853 6.453 3.147 9.276 5.474 13.962 10.642 4.796 5.289 7.75 7.724 14.386 10.96l.612-1.256c-6.453-3.147-9.276-5.475-13.962-10.643-4.795-5.288-7.75-7.723-14.385-10.96-6.675-3.255-11.017-4.286-18.3-4.988l-1.312-.125c-6.2-.602-9.735-1.423-14.863-3.925l-.613 1.257z"
+              />
+              <path
+                d="M-24.257 174.005c.264.028.533.055.807.082l1.313.125c7.13.687 11.317 1.681 17.821 4.853 6.453 3.148 9.277 5.475 13.962 10.643.484.533.948 1.037 1.4 1.516l3.91 1.907c-1.353-1.228-2.71-2.637-4.274-4.362-4.795-5.289-7.75-7.724-14.385-10.96-6.675-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-1.838-.178-3.441-.376-4.921-.631l3.98 1.941zm6.128-12.564c-5.865-.612-9.46-1.503-14.534-3.978l.613-1.256c3.609 1.76 6.428 2.688 9.942 3.293l3.98 1.941zm35.303 17.218c4.029 4.272 7.019 6.534 12.986 9.444l.613-1.256c-4.3-2.097-6.987-3.829-9.688-6.28l-3.911-1.908zm-52.9-14.914c5.302 2.586 8.988 3.443 15.34 4.059l1.313.126c7.13.687 11.317 1.681 17.821 4.853 6.453 3.147 9.277 5.475 13.963 10.643 4.795 5.288 7.749 7.723 14.384 10.96l.613-1.257c-6.452-3.147-9.276-5.474-13.962-10.642-4.795-5.289-7.75-7.724-14.385-10.96-6.675-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-6.2-.601-9.734-1.423-14.863-3.924l-.613 1.256z"
+              />
+              <path
+                d="M-30.384 186.57a230.839 230.839 0 002.12.207c7.13.687 11.317 1.681 17.822 4.853 6.452 3.147 9.276 5.474 13.962 10.642.483.533.947 1.037 1.399 1.516l3.91 1.908c-1.353-1.229-2.71-2.637-4.274-4.363-4.795-5.288-7.75-7.723-14.385-10.96-6.675-3.255-11.017-4.286-18.3-4.988l-1.312-.125c-1.838-.179-3.441-.376-4.921-.631l3.98 1.941zm6.128-12.564c-5.865-.612-9.46-1.504-14.533-3.978l.612-1.257c3.609 1.76 6.428 2.688 9.942 3.294l3.98 1.941zm35.303 17.218c4.029 4.272 7.019 6.534 12.985 9.444l.613-1.257c-4.298-2.096-6.986-3.829-9.687-6.28l-3.911-1.907zm-52.9-14.914c5.302 2.586 8.988 3.443 15.34 4.059l1.313.126c7.13.686 11.317 1.68 17.821 4.853 6.453 3.147 9.277 5.474 13.963 10.642 4.795 5.289 7.75 7.724 14.384 10.96l.613-1.256c-6.452-3.148-9.276-5.475-13.962-10.643-4.795-5.289-7.75-7.723-14.385-10.96-6.675-3.256-11.017-4.286-18.3-4.988l-1.312-.126c-6.2-.601-9.734-1.422-14.863-3.924l-.612 1.257zM142.747-8.947c.264.027.533.054.806.08l1.313.127c7.131.686 11.318 1.68 17.822 4.853 6.452 3.147 9.276 5.474 13.962 10.642.483.533.948 1.037 1.399 1.516l3.911 1.907c-1.353-1.228-2.71-2.637-4.275-4.362-4.795-5.289-7.749-7.723-14.384-10.96-6.676-3.255-11.017-4.286-18.301-4.988l-1.312-.126c-1.837-.178-3.441-.375-4.921-.63l3.98 1.94zm6.128-12.565c-5.866-.612-9.46-1.503-14.534-3.978l.613-1.256c3.608 1.76 6.427 2.688 9.941 3.293l3.98 1.941zm35.302 17.219c4.029 4.271 7.019 6.534 12.986 9.444l.613-1.257c-4.299-2.096-6.987-3.829-9.688-6.28l-3.911-1.907zm-52.9-14.915c5.302 2.587 8.989 3.444 15.34 4.06l1.314.126c7.13.686 11.317 1.68 17.821 4.853 6.452 3.147 9.276 5.474 13.962 10.642 4.795 5.289 7.749 7.724 14.385 10.96l.613-1.257c-6.453-3.147-9.277-5.474-13.963-10.642-4.795-5.289-7.749-7.724-14.384-10.96-6.676-3.256-11.017-4.287-18.3-4.988l-1.313-.126c-6.2-.601-9.734-1.423-14.862-3.924l-.613 1.256z"
+              />
+              <path
+                d="M136.615 3.613c.264.028.533.055.807.081.269.027 1.187.114 1.313.126 7.13.687 11.317 1.681 17.821 4.853 6.452 3.147 9.276 5.475 13.962 10.643.483.533.948 1.037 1.399 1.516l3.911 1.907c-1.353-1.228-2.71-2.637-4.274-4.362-4.796-5.289-7.75-7.724-14.385-10.96-6.676-3.256-11.017-4.287-18.3-4.988l-1.313-.126c-1.837-.178-3.441-.376-4.921-.63l3.98 1.94zm6.128-12.564c-5.866-.612-9.46-1.503-14.534-3.978l.613-1.256c3.608 1.76 6.427 2.688 9.941 3.293l3.98 1.94zm35.302 17.218c4.029 4.272 7.019 6.534 12.986 9.444l.613-1.256c-4.299-2.097-6.987-3.83-9.688-6.28l-3.911-1.908zm-52.9-14.914c5.302 2.586 8.989 3.443 15.341 4.06l1.313.125c7.13.687 11.317 1.68 17.821 4.853 6.453 3.147 9.276 5.475 13.962 10.643 4.795 5.288 7.75 7.723 14.385 10.96l.613-1.257c-6.453-3.147-9.277-5.474-13.962-10.642-4.796-5.29-7.75-7.724-14.385-10.96-6.676-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-6.2-.601-9.735-1.423-14.863-3.924l-.613 1.256zM130.488 16.182c.264.027.533.054.807.08l1.313.127c7.13.686 11.317 1.68 17.821 4.853 6.453 3.147 9.276 5.474 13.962 10.642.483.533.948 1.037 1.399 1.515l3.911 1.908c-1.353-1.228-2.71-2.637-4.274-4.362-4.796-5.289-7.75-7.724-14.385-10.96-6.676-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-1.838-.178-3.442-.375-4.922-.63l3.98 1.94zm6.128-12.565c-5.866-.612-9.46-1.503-14.534-3.978l.613-1.256c3.608 1.76 6.427 2.688 9.941 3.293l3.98 1.941zm35.303 17.218c4.028 4.272 7.018 6.534 12.985 9.444l.613-1.256c-4.299-2.096-6.987-3.83-9.688-6.28l-3.91-1.907zM119.018 5.921c5.302 2.587 8.989 3.444 15.341 4.06l1.313.126c7.13.686 11.317 1.68 17.821 4.852 6.453 3.148 9.276 5.475 13.962 10.643 4.795 5.288 7.75 7.723 14.385 10.96l.613-1.257c-6.453-3.147-9.276-5.475-13.962-10.642-4.796-5.289-7.75-7.724-14.385-10.96-6.676-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-6.2-.601-9.735-1.423-14.863-3.924l-.613 1.256z"
+              />
+              <path
+                d="M124.361 28.744c.264.028.533.055.807.081l1.313.126c7.13.686 11.317 1.68 17.821 4.853 6.453 3.147 9.276 5.474 13.962 10.642.483.533.948 1.037 1.4 1.516l3.91 1.907c-1.353-1.228-2.71-2.637-4.274-4.362-4.796-5.289-7.75-7.723-14.385-10.96-6.676-3.256-11.017-4.286-18.3-4.987l-1.312-.126c-1.838-.178-3.441-.376-4.922-.63l3.98 1.94zm6.128-12.564c-5.866-.612-9.46-1.503-14.534-3.978l.613-1.257c3.608 1.76 6.428 2.689 9.941 3.294l3.98 1.94zm35.303 17.218c4.028 4.271 7.018 6.534 12.985 9.444l.613-1.257c-4.299-2.096-6.987-3.829-9.688-6.28l-3.91-1.907zm-52.901-14.914c5.303 2.586 8.989 3.443 15.341 4.059l1.313.126c7.13.687 11.317 1.68 17.821 4.853 6.453 3.147 9.276 5.474 13.962 10.642 4.795 5.29 7.75 7.724 14.385 10.96l.613-1.257c-6.453-3.147-9.276-5.474-13.962-10.642-4.796-5.289-7.75-7.724-14.385-10.96-6.676-3.255-11.017-4.286-18.3-4.988l-1.312-.125c-6.2-.602-9.735-1.423-14.863-3.925l-.613 1.257z"
+              />
+              <path
+                d="M118.232 41.309a2087.54 2087.54 0 002.12.207c7.13.686 11.317 1.68 17.821 4.852 6.453 3.148 9.276 5.475 13.962 10.643.483.533.948 1.037 1.4 1.515l3.91 1.908c-1.353-1.227-2.71-2.636-4.274-4.361-4.795-5.29-7.75-7.724-14.385-10.96-6.675-3.257-11.017-4.288-18.3-4.989l-1.312-.126c-1.838-.177-3.441-.375-4.922-.63l3.98 1.94zm6.128-12.565c-5.866-.612-9.46-1.503-14.534-3.978l.613-1.256c3.608 1.76 6.428 2.688 9.941 3.293l3.98 1.941zm35.303 17.218c4.028 4.272 7.019 6.534 12.985 9.444l.613-1.255c-4.298-2.098-6.987-3.83-9.688-6.282l-3.91-1.907zm-52.901-14.914c5.303 2.587 8.989 3.444 15.341 4.06l1.313.126c7.13.686 11.317 1.68 17.821 4.852 6.453 3.148 9.276 5.474 13.962 10.642 4.796 5.29 7.75 7.724 14.385 10.96l.613-1.256c-6.453-3.147-9.276-5.474-13.962-10.643-4.795-5.288-7.75-7.723-14.385-10.959-6.675-3.255-11.017-4.286-18.3-4.987-.127-.014-1.045-.1-1.312-.127-6.2-.602-9.735-1.422-14.863-3.924l-.613 1.256z"
+              />
+              <path
+                d="M112.101 53.873a219.537 219.537 0 002.12.207c7.131.686 11.317 1.68 17.821 4.853 6.453 3.147 9.277 5.474 13.962 10.642.484.533.948 1.037 1.4 1.516l3.911 1.907c-1.354-1.228-2.711-2.637-4.275-4.362-4.795-5.289-7.75-7.724-14.385-10.96-6.675-3.256-11.017-4.286-18.3-4.988l-1.312-.126c-1.838-.178-3.441-.375-4.921-.63l3.979 1.941zm6.128-12.565c-5.866-.612-9.46-1.503-14.534-3.978l.613-1.256c3.609 1.76 6.428 2.688 9.942 3.293l3.979 1.941zm35.303 17.218c4.029 4.272 7.019 6.534 12.985 9.445l.613-1.257c-4.298-2.096-6.986-3.829-9.687-6.28l-3.911-1.908zm-52.901-14.914c5.303 2.587 8.989 3.444 15.341 4.06l1.313.125c7.131.687 11.317 1.681 17.821 4.853 6.453 3.148 9.277 5.475 13.962 10.643 4.796 5.29 7.75 7.723 14.385 10.96l.613-1.257c-6.452-3.147-9.276-5.474-13.962-10.642-4.795-5.289-7.75-7.724-14.385-10.96-6.675-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-6.2-.6-9.734-1.423-14.863-3.924l-.613 1.256zM105.976 66.44a2087.54 2087.54 0 002.12.207c7.131.687 11.317 1.68 17.821 4.853 6.453 3.147 9.277 5.474 13.962 10.642.484.533.948 1.037 1.4 1.516l3.911 1.908c-1.354-1.23-2.711-2.637-4.275-4.363-4.795-5.288-7.75-7.723-14.385-10.96-6.675-3.255-11.017-4.286-18.3-4.987l-1.312-.126c-1.838-.178-3.441-.376-4.921-.631l3.979 1.94zm6.128-12.564c-5.866-.612-9.46-1.504-14.534-3.978l.613-1.257c3.609 1.76 6.428 2.689 9.942 3.294l3.979 1.94zm35.303 17.218c4.029 4.272 7.019 6.534 12.985 9.444l.613-1.256c-4.298-2.097-6.986-3.83-9.687-6.281l-3.911-1.907zM94.506 56.18c5.303 2.586 8.989 3.443 15.341 4.059l1.313.126c7.131.687 11.317 1.68 17.821 4.853 6.453 3.147 9.277 5.474 13.962 10.642 4.796 5.289 7.75 7.724 14.385 10.96l.613-1.256c-6.452-3.147-9.276-5.475-13.962-10.643-4.795-5.288-7.75-7.723-14.385-10.96-6.675-3.255-11.017-4.286-18.3-4.988l-1.312-.125c-6.2-.602-9.734-1.423-14.863-3.925l-.613 1.257z"
+              />
+              <path
+                d="M99.847 79.002l.807.081 1.313.126c7.131.686 11.317 1.68 17.821 4.853 6.453 3.147 9.277 5.474 13.962 10.642.484.533.948 1.037 1.4 1.516l3.911 1.907c-1.354-1.228-2.711-2.637-4.275-4.362-4.795-5.289-7.749-7.724-14.385-10.96-6.675-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-1.838-.178-3.441-.376-4.921-.63l3.979 1.941zm6.128-12.565c-5.865-.612-9.46-1.503-14.534-3.978l.613-1.256c3.609 1.76 6.428 2.688 9.942 3.293l3.979 1.941zm35.303 17.218c4.029 4.272 7.019 6.534 12.985 9.444l.613-1.256c-4.298-2.096-6.986-3.829-9.687-6.28l-3.911-1.908zM88.377 68.741c5.303 2.587 8.989 3.443 15.341 4.06l1.313.125c7.131.687 11.317 1.681 17.821 4.853 6.453 3.147 9.277 5.475 13.962 10.643 4.796 5.288 7.75 7.723 14.385 10.96l.613-1.257c-6.452-3.147-9.276-5.474-13.962-10.642-4.795-5.289-7.749-7.724-14.385-10.96-6.675-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-6.2-.6-9.734-1.423-14.863-3.924l-.613 1.256z"
+              />
+              <path
+                d="M93.718 91.567a2087.54 2087.54 0 002.12.207c7.131.687 11.317 1.68 17.821 4.853 6.453 3.147 9.277 5.474 13.963 10.642.483.533.947 1.037 1.399 1.516l3.911 1.908c-1.354-1.229-2.711-2.637-4.275-4.363-4.795-5.288-7.749-7.723-14.385-10.96-6.675-3.255-11.017-4.286-18.3-4.987l-1.312-.126c-1.838-.178-3.44-.376-4.92-.631l3.978 1.94zm6.128-12.564c-5.865-.612-9.46-1.504-14.534-3.978l.613-1.257c3.609 1.76 6.428 2.688 9.942 3.294l3.98 1.94zM135.15 96.22c4.029 4.272 7.019 6.534 12.985 9.444l.613-1.257c-4.298-2.096-6.986-3.829-9.687-6.28l-3.911-1.907zM82.248 81.307c5.303 2.586 8.99 3.443 15.341 4.059l1.313.126c7.131.686 11.317 1.68 17.821 4.853 6.453 3.147 9.277 5.474 13.963 10.642 4.795 5.289 7.749 7.724 14.384 10.96l.613-1.256c-6.452-3.147-9.276-5.475-13.962-10.643-4.795-5.288-7.749-7.723-14.385-10.96-6.675-3.255-11.017-4.286-18.3-4.988l-1.312-.125c-6.2-.602-9.734-1.423-14.863-3.925l-.613 1.257z"
+              />
+              <path
+                d="M87.595 104.129l.807.081 1.313.126c7.131.686 11.317 1.68 17.821 4.852 6.453 3.148 9.277 5.475 13.962 10.643.484.533.948 1.037 1.4 1.516l3.911 1.907c-1.354-1.228-2.711-2.637-4.275-4.362-4.795-5.289-7.749-7.724-14.385-10.96-6.675-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-1.838-.178-3.441-.376-4.921-.63l3.979 1.941zm6.128-12.565c-5.865-.612-9.46-1.503-14.534-3.978l.613-1.256c3.609 1.76 6.428 2.688 9.942 3.293l3.979 1.941zm35.303 17.218c4.029 4.272 7.019 6.534 12.985 9.444l.613-1.256c-4.298-2.097-6.986-3.829-9.687-6.28l-3.911-1.908zM76.125 93.868c5.303 2.586 8.989 3.443 15.341 4.06l1.313.125c7.131.687 11.317 1.681 17.821 4.853 6.453 3.147 9.277 5.475 13.963 10.643 4.795 5.288 7.749 7.723 14.384 10.96l.613-1.257c-6.452-3.147-9.276-5.474-13.962-10.642-4.795-5.289-7.749-7.724-14.385-10.96-6.675-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-6.2-.6-9.734-1.423-14.863-3.924l-.613 1.256zM81.461 116.695l.807.081 1.313.126c7.131.687 11.318 1.681 17.822 4.853 6.452 3.147 9.276 5.474 13.962 10.642.483.533.948 1.037 1.399 1.516l3.911 1.908c-1.354-1.229-2.71-2.637-4.275-4.363-4.795-5.288-7.749-7.723-14.385-10.96-6.675-3.255-11.017-4.286-18.3-4.988l-1.312-.125c-1.837-.179-3.44-.376-4.92-.631l3.978 1.941zm6.13-12.564c-5.867-.612-9.46-1.504-14.535-3.978l.612-1.257c3.61 1.76 6.428 2.688 9.942 3.294l3.98 1.941zm35.301 17.218c4.029 4.272 7.019 6.534 12.986 9.444l.612-1.257c-4.298-2.096-6.986-3.829-9.687-6.28l-3.911-1.907zm-52.9-14.914c5.302 2.586 8.99 3.443 15.34 4.059l1.313.126c7.131.686 11.318 1.68 17.822 4.853 6.452 3.147 9.276 5.474 13.962 10.642 4.795 5.289 7.749 7.724 14.385 10.96l.612-1.256c-6.452-3.148-9.276-5.475-13.962-10.643-4.795-5.289-7.749-7.723-14.385-10.96-6.675-3.256-11.016-4.286-18.3-4.988l-1.312-.126c-6.2-.601-9.734-1.422-14.863-3.924l-.612 1.257zM75.333 129.266c.264.028.533.055.806.081l1.313.126c7.131.687 11.318 1.681 17.822 4.853 6.452 3.147 9.276 5.475 13.962 10.643.483.533.948 1.037 1.399 1.515l3.911 1.908c-1.354-1.228-2.71-2.637-4.275-4.362-4.795-5.289-7.749-7.724-14.385-10.96-6.675-3.256-11.016-4.287-18.3-4.988l-1.312-.126c-1.837-.178-3.44-.376-4.92-.631l3.98 1.941zm6.128-12.564c-5.866-.612-9.46-1.503-14.534-3.978l.613-1.257c3.608 1.76 6.427 2.689 9.941 3.294l3.98 1.941zm35.302 17.218c4.029 4.272 7.019 6.534 12.986 9.444l.613-1.256c-4.299-2.097-6.987-3.829-9.688-6.281l-3.911-1.907zm-52.9-14.914c5.302 2.586 8.99 3.443 15.34 4.059l1.313.126c7.131.687 11.318 1.681 17.822 4.853 6.452 3.147 9.276 5.474 13.962 10.642 4.795 5.289 7.749 7.724 14.385 10.96l.612-1.256c-6.452-3.147-9.276-5.475-13.962-10.643-4.795-5.288-7.749-7.723-14.384-10.959-6.676-3.256-11.017-4.287-18.3-4.988l-1.313-.126c-6.2-.602-9.734-1.423-14.862-3.924l-.613 1.256z"
+              />
+              <path
+                d="M69.204 141.826a243.037 243.037 0 002.12.207c7.13.686 11.317 1.681 17.821 4.853 6.452 3.147 9.276 5.474 13.962 10.642.483.533.948 1.037 1.399 1.516l3.911 1.907c-1.353-1.228-2.71-2.637-4.275-4.362-4.795-5.289-7.749-7.723-14.384-10.96-6.676-3.256-11.017-4.286-18.3-4.988l-1.313-.126c-1.837-.178-3.44-.375-4.92-.63l3.98 1.941zm6.128-12.565c-5.866-.612-9.46-1.503-14.534-3.978l.613-1.256c3.608 1.76 6.427 2.688 9.941 3.293l3.98 1.941zm35.302 17.219c4.029 4.271 7.019 6.534 12.986 9.444l.613-1.257c-4.299-2.096-6.987-3.829-9.688-6.28l-3.911-1.907zm-52.9-14.914c5.302 2.586 8.99 3.443 15.34 4.059l1.314.126c7.13.686 11.317 1.68 17.821 4.853 6.452 3.147 9.276 5.474 13.962 10.642 4.795 5.289 7.749 7.724 14.385 10.96l.613-1.257c-6.453-3.147-9.277-5.474-13.962-10.642-4.796-5.289-7.75-7.724-14.385-10.96-6.676-3.256-11.017-4.287-18.3-4.988l-1.313-.126c-6.2-.601-9.734-1.423-14.862-3.924l-.613 1.257z"
+              />
+              <path
+                d="M63.08 154.387c.263.028.532.055.805.081.27.027 1.188.114 1.314.126 7.13.687 11.317 1.681 17.821 4.853 6.452 3.147 9.276 5.475 13.962 10.643.483.533.948 1.037 1.4 1.516l3.91 1.907c-1.353-1.228-2.71-2.637-4.275-4.362-4.795-5.289-7.749-7.724-14.384-10.96-6.676-3.256-11.017-4.287-18.3-4.988l-1.313-.126c-1.837-.178-3.44-.376-4.92-.631l3.98 1.941zm6.127-12.564c-5.866-.612-9.46-1.503-14.534-3.978l.613-1.257c3.608 1.76 6.427 2.689 9.941 3.294l3.98 1.941zm35.302 17.218c4.029 4.272 7.019 6.534 12.986 9.444l.613-1.256c-4.299-2.097-6.987-3.829-9.688-6.28l-3.911-1.908zm-52.9-14.914c5.302 2.586 8.99 3.443 15.34 4.059l1.314.126c7.13.687 11.317 1.681 17.821 4.853 6.452 3.147 9.276 5.475 13.962 10.643 4.795 5.288 7.749 7.723 14.385 10.959l.613-1.256c-6.453-3.147-9.277-5.474-13.962-10.642-4.796-5.289-7.75-7.724-14.385-10.96-6.676-3.256-11.017-4.287-18.3-4.988l-1.313-.126c-6.2-.601-9.734-1.423-14.862-3.924l-.613 1.256z"
+              />
+              <path
+                d="M56.949 166.951a219.537 219.537 0 002.12.207c7.13.686 11.316 1.681 17.82 4.853 6.453 3.147 9.276 5.474 13.963 10.642.483.533.947 1.037 1.398 1.516l3.912 1.907c-1.354-1.228-2.71-2.637-4.275-4.362-4.796-5.289-7.75-7.723-14.385-10.96-6.675-3.256-11.016-4.286-18.3-4.988l-1.313-.126c-1.837-.178-3.44-.375-4.92-.63l3.98 1.941zm6.128-12.565c-5.866-.612-9.46-1.503-14.535-3.978l.614-1.256c3.608 1.76 6.427 2.688 9.94 3.293l3.98 1.941zm35.302 17.219c4.029 4.271 7.019 6.534 12.986 9.444l.613-1.257c-4.299-2.096-6.987-3.829-9.688-6.28l-3.912-1.907zm-52.9-14.914c5.302 2.586 8.989 3.443 15.34 4.059l1.313.126c7.13.686 11.318 1.68 17.822 4.853 6.452 3.147 9.276 5.474 13.962 10.642 4.794 5.289 7.75 7.724 14.385 10.96l.613-1.257c-6.453-3.147-9.278-5.474-13.963-10.642-4.795-5.289-7.75-7.724-14.384-10.96-6.676-3.256-11.017-4.287-18.3-4.988l-1.313-.126c-6.2-.601-9.735-1.423-14.862-3.924l-.614 1.257z"
+              />
+              <path
+                d="M50.822 179.516c.264.028.533.055.807.081l1.313.126c7.13.687 11.317 1.681 17.82 4.853 6.454 3.147 9.277 5.475 13.963 10.643.483.533.948 1.037 1.399 1.515l3.91 1.908c-1.352-1.228-2.71-2.637-4.273-4.362-4.796-5.289-7.75-7.724-14.385-10.96-6.676-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-1.838-.178-3.442-.376-4.922-.631l3.98 1.941zm6.128-12.564c-5.866-.612-9.46-1.503-14.534-3.978l.613-1.257c3.608 1.76 6.427 2.689 9.94 3.294l3.98 1.941zm35.303 17.218c4.028 4.272 7.018 6.534 12.985 9.444l.613-1.256c-4.299-2.097-6.987-3.829-9.688-6.281l-3.91-1.907zm-52.901-14.914c5.302 2.586 8.989 3.443 15.34 4.059l1.314.126c7.13.687 11.317 1.681 17.82 4.853 6.454 3.147 9.277 5.474 13.963 10.642 4.795 5.289 7.75 7.724 14.385 10.96l.613-1.256c-6.453-3.147-9.276-5.475-13.962-10.643-4.796-5.288-7.75-7.723-14.385-10.959-6.676-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-6.2-.602-9.735-1.423-14.863-3.924l-.613 1.256z"
+              />
+              <path
+                d="M44.69 192.08a219.537 219.537 0 002.12.207c7.13.686 11.318 1.68 17.822 4.853 6.453 3.147 9.276 5.474 13.962 10.642.483.533.948 1.037 1.4 1.516l3.91 1.907c-1.353-1.228-2.71-2.637-4.274-4.362-4.795-5.289-7.75-7.724-14.385-10.96-6.675-3.256-11.017-4.286-18.3-4.988l-1.312-.126c-1.838-.178-3.441-.375-4.922-.63l3.98 1.941zm6.129-12.565c-5.866-.612-9.46-1.503-14.534-3.978l.613-1.256c3.608 1.76 6.428 2.688 9.94 3.293l3.98 1.941zm35.303 17.219c4.028 4.271 7.018 6.533 12.985 9.444l.613-1.257c-4.3-2.096-6.987-3.829-9.688-6.28l-3.91-1.907zM33.22 181.819c5.303 2.587 8.989 3.444 15.34 4.06l1.314.125c7.13.687 11.317 1.681 17.82 4.853 6.454 3.148 9.277 5.475 13.963 10.643 4.796 5.289 7.75 7.724 14.385 10.96l.613-1.257c-6.453-3.147-9.276-5.474-13.962-10.642-4.795-5.289-7.75-7.724-14.385-10.96-6.675-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-6.2-.601-9.735-1.423-14.863-3.924l-.613 1.256zM181.058 71.955a219.275 219.275 0 002.12.207c7.131.686 11.317 1.68 17.821 4.853 6.453 3.147 9.277 5.474 13.962 10.642.484.533.948 1.037 1.4 1.516l3.911 1.907c-1.354-1.228-2.711-2.637-4.275-4.362-4.795-5.289-7.75-7.724-14.385-10.96-6.675-3.256-11.017-4.286-18.3-4.988L182 70.644c-1.838-.178-3.441-.375-4.921-.63l3.979 1.941zm6.128-12.565c-5.866-.612-9.46-1.503-14.534-3.978l.613-1.256c3.609 1.76 6.428 2.688 9.942 3.293l3.979 1.941zm35.303 17.22c4.029 4.27 7.019 6.532 12.985 9.443l.613-1.257c-4.298-2.096-6.986-3.829-9.687-6.28l-3.911-1.907zm-52.901-14.916c5.303 2.587 8.989 3.444 15.341 4.06l1.313.125c7.131.687 11.317 1.681 17.821 4.853 6.453 3.148 9.277 5.475 13.962 10.643 4.796 5.29 7.75 7.724 14.385 10.96l.613-1.257c-6.452-3.147-9.276-5.474-13.962-10.642-4.795-5.289-7.749-7.724-14.385-10.96-6.675-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-6.2-.6-9.734-1.423-14.863-3.924l-.613 1.256z"
+              />
+              <path
+                d="M174.927 84.516a2087.54 2087.54 0 002.12.207c7.131.687 11.317 1.68 17.821 4.853 6.453 3.147 9.277 5.475 13.963 10.643.483.533.947 1.037 1.399 1.515l3.911 1.908c-1.354-1.228-2.711-2.637-4.275-4.362-4.795-5.29-7.749-7.724-14.385-10.96-6.675-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-1.838-.178-3.441-.376-4.921-.631l3.979 1.94zm6.128-12.564c-5.865-.612-9.46-1.503-14.534-3.978l.613-1.257c3.609 1.76 6.428 2.689 9.942 3.294l3.979 1.94zm35.303 17.218c4.029 4.272 7.019 6.534 12.985 9.444l.613-1.256c-4.298-2.097-6.986-3.83-9.687-6.281l-3.911-1.907zm-52.901-14.914c5.303 2.586 8.989 3.443 15.341 4.059l1.313.126c7.131.687 11.317 1.68 17.821 4.853 6.453 3.147 9.277 5.474 13.963 10.642 4.795 5.289 7.749 7.724 14.384 10.96l.613-1.256c-6.452-3.147-9.276-5.475-13.962-10.643-4.795-5.288-7.749-7.723-14.385-10.96-6.675-3.255-11.017-4.286-18.3-4.987l-1.312-.126c-6.2-.602-9.734-1.423-14.863-3.924l-.613 1.256z"
+              />
+              <path
+                d="M168.797 97.078a243.934 243.934 0 002.12.207c7.131.686 11.318 1.68 17.822 4.853 6.452 3.147 9.276 5.474 13.962 10.642.483.533.947 1.037 1.399 1.516l3.911 1.907c-1.354-1.228-2.71-2.637-4.275-4.362-4.795-5.289-7.749-7.723-14.385-10.96-6.675-3.256-11.017-4.286-18.3-4.988l-1.312-.126c-1.838-.178-3.441-.375-4.921-.63l3.979 1.941zm6.128-12.565c-5.865-.612-9.459-1.503-14.533-3.978l.612-1.256c3.609 1.76 6.428 2.688 9.942 3.293l3.979 1.941zm35.303 17.219c4.029 4.271 7.019 6.534 12.986 9.444l.612-1.257c-4.298-2.096-6.986-3.829-9.687-6.28l-3.911-1.907zm-52.9-14.914c5.302 2.586 8.988 3.443 15.34 4.06.269.025 1.188.112 1.313.125 7.131.686 11.318 1.68 17.822 4.852 6.452 3.148 9.276 5.475 13.962 10.643 4.795 5.289 7.749 7.724 14.385 10.96l.612-1.257c-6.452-3.147-9.276-5.474-13.962-10.642-4.795-5.289-7.749-7.724-14.385-10.96-6.675-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-6.2-.6-9.734-1.423-14.863-3.924l-.612 1.257z"
+              />
+              <path
+                d="M162.669 109.643c.264.028.532.055.806.081l1.313.126c7.131.687 11.318 1.681 17.822 4.853 6.452 3.147 9.276 5.475 13.962 10.643.483.533.948 1.037 1.399 1.515l3.911 1.908c-1.354-1.228-2.71-2.637-4.275-4.362-4.795-5.289-7.749-7.724-14.385-10.96-6.675-3.256-11.016-4.287-18.3-4.988l-1.312-.126c-1.837-.178-3.441-.376-4.921-.631l3.98 1.941zm6.128-12.564c-5.866-.612-9.46-1.503-14.534-3.978l.612-1.257c3.609 1.76 6.428 2.689 9.942 3.294l3.98 1.94zm35.302 17.218c4.029 4.272 7.019 6.534 12.986 9.444l.612-1.256c-4.298-2.097-6.986-3.83-9.687-6.281l-3.911-1.907zm-52.9-14.914c5.302 2.586 8.989 3.443 15.34 4.059l1.313.126c7.131.687 11.318 1.681 17.822 4.853 6.452 3.147 9.276 5.474 13.962 10.642 4.795 5.289 7.749 7.724 14.385 10.96l.612-1.256c-6.452-3.147-9.276-5.475-13.962-10.643-4.795-5.288-7.749-7.723-14.385-10.96-6.675-3.255-11.016-4.286-18.3-4.987l-1.312-.126c-6.2-.602-9.734-1.423-14.863-3.924l-.612 1.256z"
+              />
+              <path
+                d="M156.542 122.205l.806.081 1.313.126c7.131.686 11.318 1.68 17.822 4.853 6.452 3.147 9.276 5.474 13.962 10.642.483.533.948 1.037 1.399 1.516l3.911 1.907c-1.354-1.228-2.71-2.637-4.275-4.362-4.795-5.289-7.749-7.724-14.385-10.96-6.675-3.256-11.016-4.286-18.3-4.988l-1.312-.126c-1.837-.178-3.441-.375-4.921-.63l3.98 1.941zm6.128-12.565c-5.866-.612-9.46-1.503-14.534-3.978l.613-1.256c3.608 1.76 6.427 2.688 9.941 3.293l3.98 1.941zm35.302 17.219c4.029 4.271 7.019 6.533 12.986 9.444l.613-1.257c-4.299-2.096-6.987-3.829-9.688-6.28l-3.911-1.907zm-52.9-14.915c5.302 2.587 8.989 3.444 15.34 4.06l1.313.125c7.131.687 11.318 1.681 17.822 4.853 6.452 3.148 9.276 5.475 13.962 10.643 4.795 5.289 7.749 7.724 14.385 10.96l.612-1.257c-6.452-3.147-9.276-5.474-13.962-10.642-4.795-5.289-7.749-7.724-14.384-10.96-6.676-3.256-11.017-4.287-18.301-4.988l-1.312-.126c-6.2-.601-9.734-1.423-14.863-3.924l-.612 1.256zM150.413 134.772c.264.028.533.055.806.081l1.314.126c7.13.687 11.317 1.681 17.821 4.853 6.452 3.147 9.276 5.474 13.962 10.642a98.04 98.04 0 001.399 1.516l3.911 1.908c-1.353-1.229-2.71-2.637-4.275-4.362-4.795-5.289-7.749-7.724-14.384-10.96-6.676-3.256-11.017-4.287-18.3-4.988l-1.313-.126c-1.837-.178-3.441-.376-4.921-.631l3.98 1.941zm6.128-12.564c-5.866-.612-9.46-1.504-14.534-3.978l.613-1.257c3.608 1.76 6.427 2.689 9.941 3.294l3.98 1.941zm35.302 17.218c4.029 4.272 7.019 6.534 12.986 9.444l.613-1.256c-4.299-2.097-6.987-3.83-9.688-6.281l-3.911-1.907zm-52.9-14.914c5.302 2.586 8.989 3.443 15.34 4.059l1.314.126c7.13.687 11.317 1.681 17.821 4.853 6.452 3.147 9.276 5.474 13.962 10.642 4.795 5.289 7.749 7.724 14.385 10.96l.613-1.256c-6.453-3.147-9.277-5.475-13.963-10.643-4.795-5.288-7.749-7.723-14.384-10.96-6.676-3.255-11.017-4.286-18.3-4.988l-1.313-.125c-6.2-.602-9.734-1.423-14.862-3.925l-.613 1.257zM144.286 147.341c.264.028.533.055.806.082l1.314.125c7.13.687 11.317 1.681 17.821 4.853 6.452 3.147 9.276 5.475 13.962 10.643.483.533.948 1.037 1.399 1.516l3.911 1.907c-1.353-1.228-2.71-2.637-4.274-4.362-4.796-5.289-7.75-7.724-14.385-10.96-6.676-3.256-11.017-4.287-18.3-4.988l-1.313-.126c-1.837-.178-3.441-.376-4.921-.631l3.98 1.941zm6.128-12.564c-5.866-.612-9.46-1.503-14.534-3.978l.613-1.256c3.608 1.76 6.427 2.688 9.941 3.293l3.98 1.941zm35.302 17.218c4.029 4.272 7.019 6.534 12.986 9.444l.613-1.256c-4.299-2.097-6.987-3.829-9.688-6.28l-3.911-1.908zm-52.9-14.914c5.302 2.586 8.989 3.443 15.34 4.059l1.314.126c7.13.687 11.317 1.681 17.821 4.853 6.452 3.147 9.276 5.475 13.962 10.643 4.795 5.288 7.749 7.723 14.385 10.96l.613-1.257c-6.453-3.147-9.277-5.474-13.962-10.642-4.796-5.289-7.75-7.724-14.385-10.96-6.676-3.256-11.017-4.287-18.3-4.988l-1.313-.126c-6.2-.601-9.734-1.423-14.862-3.924l-.613 1.256z"
+              />
+              <path
+                d="M138.156 159.901c.264.028.533.055.807.081l1.313.126c7.13.687 11.317 1.681 17.821 4.853 6.452 3.147 9.276 5.474 13.962 10.642.483.533.948 1.037 1.399 1.516l3.911 1.908c-1.353-1.229-2.71-2.637-4.274-4.363-4.796-5.288-7.75-7.723-14.385-10.959-6.676-3.256-11.017-4.287-18.3-4.988l-1.312-.126c-1.838-.179-3.442-.376-4.922-.631l3.98 1.941zm6.128-12.564c-5.866-.612-9.46-1.504-14.534-3.978l.613-1.257c3.608 1.76 6.427 2.688 9.941 3.294l3.98 1.941zm35.302 17.218c4.029 4.272 7.019 6.534 12.986 9.444l.613-1.257c-4.299-2.096-6.987-3.829-9.688-6.28l-3.911-1.907zm-52.9-14.914c5.302 2.586 8.989 3.443 15.341 4.059l1.313.126c7.13.686 11.317 1.681 17.821 4.853 6.453 3.147 9.276 5.474 13.962 10.642 4.795 5.289 7.75 7.724 14.385 10.96l.613-1.256c-6.453-3.147-9.277-5.475-13.962-10.643-4.796-5.288-7.75-7.723-14.385-10.96-6.676-3.255-11.017-4.286-18.3-4.988l-1.312-.125c-6.2-.602-9.735-1.423-14.863-3.925l-.613 1.257z"
+              />
+              <path
+                d="M132.033 172.461l.807.081 1.312.126c7.13.686 11.318 1.68 17.822 4.852 6.452 3.148 9.276 5.475 13.962 10.643.483.533.948 1.037 1.399 1.516l3.91 1.907c-1.353-1.228-2.71-2.637-4.274-4.362-4.796-5.289-7.749-7.724-14.384-10.96-6.676-3.256-11.018-4.287-18.301-4.988l-1.312-.126c-1.837-.178-3.441-.376-4.921-.63l3.98 1.941zm6.128-12.565c-5.866-.612-9.46-1.503-14.534-3.978l.613-1.256c3.608 1.76 6.426 2.688 9.94 3.293l3.981 1.941zm35.302 17.218c4.029 4.272 7.019 6.534 12.986 9.444l.613-1.256c-4.299-2.096-6.987-3.829-9.688-6.28l-3.911-1.908zM120.562 162.2c5.303 2.587 8.99 3.443 15.342 4.059.269.027 1.187.114 1.313.126 7.13.687 11.317 1.681 17.821 4.853 6.452 3.147 9.275 5.475 13.961 10.643 4.795 5.288 7.751 7.723 14.386 10.96l.612-1.257c-6.453-3.147-9.276-5.474-13.961-10.642-4.796-5.289-7.751-7.724-14.386-10.96-6.676-3.256-11.016-4.287-18.299-4.988l-1.313-.126c-6.2-.601-9.734-1.423-14.862-3.924l-.614 1.256zM125.9 185.031a219.537 219.537 0 002.12.207c7.13.687 11.317 1.681 17.821 4.853 6.453 3.147 9.276 5.474 13.962 10.642.483.533.948 1.037 1.4 1.516l3.91 1.908c-1.353-1.229-2.71-2.637-4.274-4.363-4.795-5.288-7.75-7.723-14.385-10.96-6.675-3.255-11.017-4.286-18.3-4.988l-1.312-.125c-1.838-.179-3.441-.376-4.922-.631l3.98 1.941zm6.128-12.565c-5.866-.612-9.46-1.503-14.534-3.978l.613-1.256c3.608 1.76 6.428 2.688 9.941 3.293l3.98 1.941zm35.303 17.219c4.028 4.272 7.018 6.534 12.985 9.444l.613-1.257c-4.299-2.096-6.987-3.829-9.688-6.28l-3.91-1.907zm-52.901-14.914c5.303 2.586 8.989 3.443 15.341 4.059l1.313.126c7.13.686 11.317 1.68 17.821 4.853 6.453 3.147 9.276 5.474 13.962 10.642 4.795 5.289 7.75 7.724 14.385 10.96l.613-1.256c-6.453-3.148-9.276-5.475-13.962-10.643-4.795-5.289-7.75-7.724-14.385-10.96-6.675-3.256-11.017-4.286-18.3-4.988l-1.312-.126c-6.2-.601-9.735-1.422-14.863-3.924l-.613 1.257z"
+              />
+            </g>
+            <defs>
+              <clipPath id="decoration3clip0">
+                <path fill="#fff" d="M-71-71h246v321H-71z" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+
+        <!-- Content -->
+        <div class="container-lg">
+          <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8 text-center">
+              <!-- Divider -->
+              <hr class="hr-sm bg-warning mx-auto mb-10 mb-md-12" />
+
+              <!-- Preheading -->
+              <h6 class="text-uppercase text-primary mb-5">Start today</h6>
+
+              <!-- Heading -->
+              <h2 class="display-1 mb-4">Build your store.</h2>
+
+              <!-- Text -->
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor
+                dictum neque.
+              </p>
+
+              <!-- Button -->
+              <a class="btn btn-primary lift" href="#!"> Get Started </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer py-8 py-md-11 bg-dark border-multicolor">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-md-4">
+            <!-- Brand -->
+            <h2 class="font-serif text-white mb-1">Goodkit</h2>
+
+            <!-- Text -->
+            <p class="text-white-60">A better way to build.</p>
+          </div>
+          <div class="col-6 col-md">
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white mb-3 mb-md-5">Services</h6>
+
+            <!-- List -->
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <a class="text-white-60" href="#!">Help Center</a>
+              </li>
+              <li class="mb-3">
+                <a class="text-white-60" href="#!">Press</a>
+              </li>
+              <li>
+                <a class="text-white-60" href="#!">About us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white mb-3 mb-md-5">Products</h6>
+
+            <!-- List -->
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <a class="text-white-60" href="#!">Homepage</a>
+              </li>
+              <li class="mb-3">
+                <a class="text-white-60" href="#!">Pages</a>
+              </li>
+              <li class="mb-3">
+                <a class="text-white-60" href="#!">Legal</a>
+              </li>
+              <li>
+                <a class="text-white-60" href="#!">Terms</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white mb-3 mb-md-5">Services</h6>
+
+            <!-- List -->
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <a class="text-white-60" href="#!">Help Center</a>
+              </li>
+              <li class="mb-3">
+                <a class="text-white-60" href="#!">Press</a>
+              </li>
+              <li>
+                <a class="text-white-60" href="#!">About us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white mb-3 mb-md-5">Connect</h6>
+
+            <!-- List -->
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <a class="text-white-60" href="#!">Help Center</a>
+              </li>
+              <li class="mb-3">
+                <a class="text-white-60" href="#!">Press</a>
+              </li>
+              <li class="mb-3">
+                <a class="text-white-60" href="#!">About us</a>
+              </li>
+              <li>
+                <a class="text-white-60" href="#!">Pages</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <!-- Map JS -->
+    <!-- <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script> -->
+
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.bundle.js"></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+@font-face {
+	font-family: "Yekan Bakh FaNum";
+	font-style: normal;
+	font-weight: normal;
+	src: url("/assets/fonts/yekanbakh/woff/YekanBakhFaNum-Regular.woff") format("woff"),
+		url("/assets/fonts/yekanbakh/woff2/YekanBakhFaNum-Regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Yekan Bakh FaNum";
+	font-style: normal;
+	font-weight: bold;
+	src: url("/assets/fonts/yekanbakh/woff/YekanBakhFaNum-Bold.woff") format("woff"),
+		url("/assets/fonts/yekanbakh/woff2/YekanBakhFaNum-Bold.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Yekan Bakh FaNum";
+	font-style: normal;
+	font-weight: 900;
+	src: url("/assets/fonts/yekanbakh/woff/YekanBakhFaNum-ExtraBlack.woff") format("woff"),
+		url("/assets/fonts/yekanbakh/woff2/YekanBakhFaNum-ExtraBlack.woff2") format("woff2");
+}
+
+body {
+	font-family: "Yekan Bakh FaNum";
+	font-feature-settings: "kern" on, "liga" on, "dlig" on;
+	/* -moz-font-feature-settings: "kern" on, "liga" on, "dlig" on;
+	-webkit-font-feature-settings: "kern" on, "liga" on, "dlig" on;
+	-ms-font-feature-settings: "kern" on, "liga" on, "dlig" on;
+	-o-font-feature-settings: "kern" on, "liga" on, "dlig" on; */
+}
+
+/* utilities */
+.text-400 {
+	font-weight: 400 !important;
+}
+
+.text-700 {
+	font-weight: 700 !important;
+}
+
+.text-900 {
+	font-weight: 900 !important;
+}
