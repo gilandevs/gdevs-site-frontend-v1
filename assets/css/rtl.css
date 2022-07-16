@@ -23,12 +23,12 @@
 }
 
 :root {
-	--yellow-color: #ffbd00;
-	--bg-dark: #be941f;
+	/* --yellow-color: #ffbd00;
+	--bg-dark: #be941f; */
 }
 
 .bg-yellow-900 {
-	background-color: var(--yellow-color);
+	/* background-color: var(--yellow-color); */
 }
 body {
 	font-family: "Yekan Bakh FaNum";
@@ -132,43 +132,43 @@ body {
 	text-transform: initial;
 }
 .navbar-logo {
-	width: 200px;
-	height: 80px;
+	width: 142px;
+	/* height: 80px; */
 	object-fit: contain;
 }
 .dynamic-text {
-	font-size: 2rem;
+	/* font-size: 2rem; */
 }
 .btn-primary {
-	background-color: var(--yellow-color);
-	color: #fff !important;
+	/* background-color: var(--yellow-color);
+	color: #fff !important; */
 }
 .btn-primary:hover {
-	background-color: rgba(255, 189, 0, 0.7);
+	/* background-color: rgba(255, 189, 0, 0.7); */
 }
 .flickity-button {
-	background-color: var(--yellow-color);
-	border-color: var(--yellow-color);
+	/* background-color: var(--yellow-color);
+	border-color: var(--yellow-color); */
 }
 .flickity-button:hover {
-	background-color: rgba(255, 189, 0, 0.7);
+	/* background-color: rgba(255, 189, 0, 0.7); */
 }
 .svg-shapes {
-	color: #333;
+	/* color: #333; */
 }
 .text-primary,
 .text-primary-dark,
 a,
 .text-primary-light,
 .text-dark {
-	color: var(--yellow-color) !important;
+	/* color: var(--yellow-color) !important; */
 }
 .bg-dark {
-	background-color: #333 !important;
+	/* background-color: #333 !important; */
 }
 .nav-link {
-	color: #333 !important;
+	/* color: #333 !important; */
 }
 .table-clickable [data-href]:hover .table-clickable-hover {
-	color: var(--yellow-color);
+	/* color: var(--yellow-color); */
 }
