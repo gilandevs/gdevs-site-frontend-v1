@@ -23,7 +23,7 @@
 }
 
 html {
-	scroll-behavior: auto;
+	scroll-behavior: smooth;
 }
 body {
 	font-family: "Yekan Bakh FaNum";
