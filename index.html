@@ -1,2114 +1,2582 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
 
-    <!-- Libs CSS -->
-    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+		<!-- Libs CSS -->
+		<link rel="stylesheet" href="./assets/css/libs.bundle.css" />
 
-    <!--
+		<!--
       Demo JS
       Remove the code below on a production website.
     -->
-    <script src="./assets/js/demo.bundle.js"></script>
-
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
-    <!-- RTL STYLES -->
-    <link rel="stylesheet" href="./assets/css/rtl.css" />
-    <!-- Title -->
-    <title>Gilan Devs</title>
-  </head>
-  <body style="padding-top: 108px">
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light navbar-reveal fixed-top bg-white">
-      <div class="container-lg">
-        <!-- Collapse -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- Navigation -->
-          <ul class="navbar-nav justify-content-end w-100">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                id="landingsDropdown"
-                href="#"
-                role="button"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                کی هستیم
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                id="pagesDropdown"
-                href="#"
-                role="button"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                هدفمون
-              </a>
-            </li>
-          </ul>
-
-          <!-- Brand -->
-          <a class="navbar-brand d-none d-lg-block px-lg-6" href="/">
-            <img src="./assets/img/logo.png" alt="logo" class="navbar-logo" />
-          </a>
-
-          <!-- Navigation -->
-          <ul class="navbar-nav justify-content-start w-100">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                id="accountDropdown"
-                href="#"
-                role="button"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                برنامه ها
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                id="docsDropdown"
-                href="#"
-                role="button"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                گروهمون
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- WELCOME -->
-    <section class="pt-6 pt-md-11 pb-11 pb-md-13">
-      <div class="container-lg">
-        <div class="row justify-content-center">
-          <div class="col-md-12 text-center" data-aos="fade-up">
-            <!-- Heading -->
-            <h1 class="display-3 mb-4 text-900 mb-4">
-              جامعه توسعه‌دهندگان گیلان
-              <br />
-              <span class="text-underline-warning d-none d-xl-inline dynamic-text text-900"
-                ><span
-                  data-typed='{"strings":["کمک به تازه واردها", "پیدا کردن فرصت شغلی", "کمک به جامعه کارآفرین","فضایی برای شبکه‌سازی افراد", "برگزاری رویداد‌های کارآفرینی و آموزشی"]}'
-                ></span> </span
-              ><span class="text-underline-warning d-xl-none">رویاهاتو اینجا شروع کن!</span>
-            </h1>
-
-            <!-- Text -->
-            <p class="fs-lg text-muted">
-              ما کلی ایده خفن داریم <br />
-              که به کمک شما وپیاده سازیشون میکنیم تا باهم پیشرفت کنیم!
-            </p>
-
-            <!-- Button -->
-            <a class="btn btn-primary lift" href="#community"> ورود به کامیونیتی </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SHAPE -->
-    <div class="position-relative">
-      <div class="shape shape-fluid-x shape-bottom text-white pb-14">
-        <div class="shape-img pb-8 pb-md-11">
-          <svg viewBox="0 0 100 50" preserveAspectRatio="none">
-            <path d="M0 0h100v25H75L25 50H0z" fill="currentColor" />
-          </svg>
-        </div>
-      </div>
-    </div>
-
-    <!-- SLIDER -->
-    <section class="bg-light">
-      <!-- Slider -->
-      <div
-        class="flickity-buttons-responsive flickity-items-fade"
-        data-flickity='{"imagesLoaded": true, "wrapAround": true}'
-      >
-        <div style="width: calc(100% - 2rem); max-width: 920px">
-          <!-- Image -->
-          <a href="#">
-            <img class="img-fluid rounded" src="assets/img/screenshots/desktop/page-blog-article.jpg" alt="" />
-          </a>
-
-          <!-- Body -->
-          <div class="flickity-hidden py-6 text-center">
-            <!-- Heading -->
-            <h6 class="text-uppercase text-dark">Blog Article</h6>
-
-            <!-- Text -->
-            <p class="fs-sm text-center text-primary-dark mb-0">Featured image with beautiful type and galleries.</p>
-          </div>
-        </div>
-        <div style="width: calc(100% - 2rem); max-width: 920px">
-          <!-- Image -->
-          <a href="./contact.html">
-            <img class="img-fluid rounded" src="assets/img/screenshots/desktop/page-contact.jpg" alt="..." />
-          </a>
-
-          <!-- Body -->
-          <div class="flickity-hidden py-6 text-center">
-            <!-- Heading -->
-            <h6 class="text-uppercase text-dark">Contact Us</h6>
-
-            <!-- Text -->
-            <p class="fs-sm text-center text-primary-dark mb-0">Multiple communication options and contact form.</p>
-          </div>
-        </div>
-        <div style="width: calc(100% - 2rem); max-width: 920px">
-          <!-- Image -->
-          <a href="./pricing.html">
-            <img class="img-fluid rounded" src="assets/img/screenshots/desktop/page-pricing.jpg" alt="..." />
-          </a>
-
-          <!-- Body -->
-          <div class="flickity-hidden py-6 text-center">
-            <!-- Heading -->
-            <h6 class="text-uppercase text-dark">Pricing</h6>
-
-            <!-- Text -->
-            <p class="fs-sm text-center text-primary-dark mb-0">
-              3-tier options with grid of features, testimonial, and faq.
-            </p>
-          </div>
-        </div>
-        <div style="width: calc(100% - 2rem); max-width: 920px">
-          <!-- Image -->
-          <a href="./career-benefits.html">
-            <img class="img-fluid rounded" src="assets/img/screenshots/desktop/page-benefits.jpg" alt="..." />
-          </a>
-
-          <!-- Body -->
-          <div class="flickity-hidden py-6 text-center">
-            <!-- Heading -->
-            <h6 class="text-uppercase text-dark">Career Benefits</h6>
-
-            <!-- Text -->
-            <p class="fs-sm text-center text-primary-dark mb-0">
-              Image header, benefits and values, galleries, and team list
-            </p>
-          </div>
-        </div>
-        <div style="width: calc(100% - 2rem); max-width: 920px">
-          <!-- Image -->
-          <a href="./career-listing.html">
-            <img class="img-fluid rounded" src="assets/img/screenshots/desktop/page-careers.jpg" alt="..." />
-          </a>
-
-          <!-- Body -->
-          <div class="flickity-hidden py-6 text-center">
-            <!-- Heading -->
-            <h6 class="text-uppercase text-dark">Career Listing</h6>
-
-            <!-- Text -->
-            <p class="fs-sm text-center text-primary-dark mb-0">Simple listing of careers with search and filters.</p>
-          </div>
-        </div>
-        <div style="width: calc(100% - 2rem); max-width: 920px">
-          <!-- Image -->
-          <a href="./pricing-feature-list.html">
-            <img class="img-fluid rounded" src="assets/img/screenshots/desktop/page-pricing-table.jpg" alt="..." />
-          </a>
-
-          <!-- Body -->
-          <div class="flickity-hidden py-6 text-center">
-            <!-- Heading -->
-            <h6 class="text-uppercase text-dark">Pricing Table</h6>
-
-            <!-- Text -->
-            <p class="fs-sm text-center text-primary-dark mb-0">
-              Two-tiered pricing with a large feature comparison table.
-            </p>
-          </div>
-        </div>
-        <div style="width: calc(100% - 2rem); max-width: 920px">
-          <!-- Image -->
-          <a href="./faq.html">
-            <img class="img-fluid rounded" src="assets/img/screenshots/desktop/page-faq.jpg" alt="..." />
-          </a>
-
-          <!-- Body -->
-          <div class="flickity-hidden py-6 text-center">
-            <!-- Heading -->
-            <h6 class="text-uppercase text-dark">FAQ</h6>
-
-            <!-- Text -->
-            <p class="fs-sm text-center text-primary-dark mb-0">
-              Multi-section FAQ with sticky headers and collapsing questions.
-            </p>
-          </div>
-        </div>
-        <div style="width: calc(100% - 2rem); max-width: 920px">
-          <!-- Image -->
-          <a href="./blog-listing.html">
-            <img class="img-fluid rounded" src="assets/img/screenshots/desktop/page-blog.jpg" alt="..." />
-          </a>
-
-          <!-- Body -->
-          <div class="flickity-hidden py-6 text-center">
-            <!-- Heading -->
-            <h6 class="text-uppercase text-dark">Blog Listing</h6>
-
-            <!-- Text -->
-            <p class="fs-sm text-center text-primary-dark mb-0">
-              Flexible grid based cards for easy, beautiful blog layouts.
-            </p>
-          </div>
-        </div>
-        <div style="width: calc(100% - 2rem); max-width: 920px">
-          <!-- Image -->
-          <a href="./blog-post-cover.html">
-            <img class="img-fluid rounded" src="assets/img/screenshots/desktop/page-blog-article-cover.jpg" alt="..." />
-          </a>
-
-          <!-- Body -->
-          <div class="flickity-hidden py-6 text-center">
-            <!-- Heading -->
-            <h6 class="text-uppercase text-dark">Blog Article (Cover)</h6>
-
-            <!-- Text -->
-            <p class="fs-sm text-center text-primary-dark mb-0">
-              Minimal blog layout with organize typography and images.
-            </p>
-          </div>
-        </div>
-        <div style="width: calc(100% - 2rem); max-width: 920px">
-          <!-- Image -->
-          <a href="./terms.html">
-            <img class="img-fluid rounded" src="assets/img/screenshots/desktop/page-terms.jpg" alt="..." />
-          </a>
-
-          <!-- Body -->
-          <div class="flickity-hidden py-6 text-center">
-            <!-- Heading -->
-            <h6 class="text-uppercase text-dark">Terms of Service</h6>
-
-            <!-- Text -->
-            <p class="fs-sm text-center text-primary-dark mb-0">
-              A versatile simple text page for any legal mumbo jumbo.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section class="pt-8 pt-md-10 pb-7 pb-md-11 bg-light">
-      <div class="container-lg">
-        <div class="row justify-content-center mt-n8">
-          <div class="col-md-6 px-lg-9 border-end-md">
-            <!-- Blockquote -->
-            <blockquote class="mt-8">
-              <!-- Text -->
-              <p class="lead text-center mb-5 mb-md-8">
-                <q>
-                  امسال هم کافه رئیس در #فریلند کنار ما خواهد بود تا با قهوه‌‌ها‌ی خوش‌ عطر و نوشیدنی‌های جذابش، دو روز
-                  به یادمونی رو برامون رقم بزنه.
-                </q>
-              </p>
-
-              <!-- Footer -->
-              <div class="d-flex align-items-center justify-content-center">
-                <!-- Avatar -->
-                <div class="avatar avatar-sm">
-                  <img class="avatar-img rounded-circle" src="assets/img/avatars/sani.jpg" alt="..." />
-                </div>
-
-                <!-- Body -->
-                <div class="ms-4">
-                  <!-- Title -->
-                  <p class="fw-bold mb-0">ساناز عصمتجو</p>
-
-                  <!-- Position -->
-                  <p class="small text-muted mt-n1 mb-0">بنیانگذار ماگتو بیار</p>
-                </div>
-              </div>
-            </blockquote>
-          </div>
-          <div class="col-md-6 px-lg-9">
-            <!-- Blockquote -->
-            <blockquote class="mt-8">
-              <!-- Text -->
-              <p class="lead text-center mb-5 mb-md-8">
-                <q>
-                  امسال هم کافه رئیس در #فریلند کنار ما خواهد بود تا با قهوه‌‌ها‌ی خوش‌ عطر و نوشیدنی‌های جذابش، دو روز
-                  به یادمونی رو برامون رقم بزنه.
-                </q>
-              </p>
-
-              <!-- Footer -->
-              <div class="d-flex align-items-center justify-content-center">
-                <!-- Avatar -->
-                <div class="avatar avatar-sm">
-                  <img class="avatar-img rounded-circle" src="assets/img/avatars/amin.jpg" alt="..." />
-                </div>
-
-                <!-- Body -->
-                <div class="ms-4">
-                  <!-- Title -->
-                  <p class="fw-bold mb-0">امین فرهنگ</p>
-
-                  <!-- Position -->
-                  <p class="small text-muted mt-n1 mb-0">منابع انسانی در دیجی کالا</p>
-                </div>
-              </div>
-            </blockquote>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SHAPE -->
-    <div class="position-relative">
-      <div class="shape shape-fluid-x shape-bottom text-light">
-        <div class="shape-img pb-8 pb-md-11">
-          <svg viewBox="0 0 100 50" preserveAspectRatio="none">
-            <path d="M0 0h100v50H75L25 25H0z" fill="currentColor" />
-          </svg>
-        </div>
-      </div>
-    </div>
-
-    <!-- ABOUT -->
-    <section class="p-11 pt-md-13">
-      <div class="container-lg">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-md-6 col-lg-5">
-            <!-- Image -->
-            <img class="img-fluid mb-8 mb-md-0 rounded" src="assets/img/e-commerce/rasht.jpg" alt="..." />
-          </div>
-          <div class="col-md-6 col-lg-6">
-            <!-- Heading -->
-            <h2 class="display-4 text-700 mb-4">جامعه‌ توسعه‌دهندگان</h2>
-
-            <!-- Text -->
-            <p class="text-muted mb-3">
-              اینجا محفلی برای گفتگوی توسعه‌دهنده‌های گیلانی است. ما اینجا قصد داریم رویدادها، دوره‌های منتورشیپ و
-              آموزش‌های تخصصی را برای افراد گیلانی علاقه‌مند به برنامه نویسی فراهم کنیم.
-            </p>
-            <p class="text-muted mb-3">
-              به این ترتیب، علاوه بر ایجاد فضایی برای افراد مبتدی جهت ورود به بازار کار، آماده معرفی بسیاری از توسعه
-              دهندگان، به شرکت‌های نیازمند نیز هستیم.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="pb-10">
-      <div class="container-lg position-relative" style="z-index: 1">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-md-5 order-md-1 pt-10 py-md-8">
-            <!-- Image -->
-            <div class="position-relative">
-              <!-- Decoration -->
-              <div class="position-absolute bottom-end text-warning mb-n8 me-n8">
-                <svg width="185" height="186" viewBox="0 0 185 186" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="2" cy="2" r="2" fill="currentColor" />
-                  <circle cx="22" cy="2" r="2" fill="currentColor" />
-                  <circle cx="42" cy="2" r="2" fill="currentColor" />
-                  <circle cx="62" cy="2" r="2" fill="currentColor" />
-                  <circle cx="82" cy="2" r="2" fill="currentColor" />
-                  <circle cx="102" cy="2" r="2" fill="currentColor" />
-                  <circle cx="122" cy="2" r="2" fill="currentColor" />
-                  <circle cx="142" cy="2" r="2" fill="currentColor" />
-                  <circle cx="162" cy="2" r="2" fill="currentColor" />
-                  <circle cx="182" cy="2" r="2" fill="currentColor" />
-                  <circle cx="2" cy="22" r="2" fill="currentColor" />
-                  <circle cx="22" cy="22" r="2" fill="currentColor" />
-                  <circle cx="42" cy="22" r="2" fill="currentColor" />
-                  <circle cx="62" cy="22" r="2" fill="currentColor" />
-                  <circle cx="82" cy="22" r="2" fill="currentColor" />
-                  <circle cx="102" cy="22" r="2" fill="currentColor" />
-                  <circle cx="122" cy="22" r="2" fill="currentColor" />
-                  <circle cx="142" cy="22" r="2" fill="currentColor" />
-                  <circle cx="162" cy="22" r="2" fill="currentColor" />
-                  <circle cx="182" cy="22" r="2" fill="currentColor" />
-                  <circle cx="2" cy="42" r="2" fill="currentColor" />
-                  <circle cx="22" cy="42" r="2" fill="currentColor" />
-                  <circle cx="42" cy="42" r="2" fill="currentColor" />
-                  <circle cx="62" cy="42" r="2" fill="currentColor" />
-                  <circle cx="82" cy="42" r="2" fill="currentColor" />
-                  <circle cx="102" cy="42" r="2" fill="currentColor" />
-                  <circle cx="122" cy="42" r="2" fill="currentColor" />
-                  <circle cx="142" cy="42" r="2" fill="currentColor" />
-                  <circle cx="162" cy="42" r="2" fill="currentColor" />
-                  <circle cx="182" cy="42" r="2" fill="currentColor" />
-                  <circle cx="2" cy="62" r="2" fill="currentColor" />
-                  <circle cx="22" cy="62" r="2" fill="currentColor" />
-                  <circle cx="42" cy="62" r="2" fill="currentColor" />
-                  <circle cx="62" cy="62" r="2" fill="currentColor" />
-                  <circle cx="82" cy="62" r="2" fill="currentColor" />
-                  <circle cx="102" cy="62" r="2" fill="currentColor" />
-                  <circle cx="122" cy="62" r="2" fill="currentColor" />
-                  <circle cx="142" cy="62" r="2" fill="currentColor" />
-                  <circle cx="162" cy="62" r="2" fill="currentColor" />
-                  <circle cx="182" cy="62" r="2" fill="currentColor" />
-                  <circle cx="2" cy="82" r="2" fill="currentColor" />
-                  <circle cx="22" cy="82" r="2" fill="currentColor" />
-                  <circle cx="42" cy="82" r="2" fill="currentColor" />
-                  <circle cx="62" cy="82" r="2" fill="currentColor" />
-                  <circle cx="82" cy="82" r="2" fill="currentColor" />
-                  <circle cx="102" cy="82" r="2" fill="currentColor" />
-                  <circle cx="122" cy="82" r="2" fill="currentColor" />
-                  <circle cx="142" cy="82" r="2" fill="currentColor" />
-                  <circle cx="162" cy="82" r="2" fill="currentColor" />
-                  <circle cx="182" cy="82" r="2" fill="currentColor" />
-                  <circle cx="2" cy="102" r="2" fill="currentColor" />
-                  <circle cx="22" cy="102" r="2" fill="currentColor" />
-                  <circle cx="42" cy="102" r="2" fill="currentColor" />
-                  <circle cx="62" cy="102" r="2" fill="currentColor" />
-                  <circle cx="82" cy="102" r="2" fill="currentColor" />
-                  <circle cx="102" cy="102" r="2" fill="currentColor" />
-                  <circle cx="122" cy="102" r="2" fill="currentColor" />
-                  <circle cx="142" cy="102" r="2" fill="currentColor" />
-                  <circle cx="162" cy="102" r="2" fill="currentColor" />
-                  <circle cx="182" cy="102" r="2" fill="currentColor" />
-                  <circle cx="2" cy="122" r="2" fill="currentColor" />
-                  <circle cx="22" cy="122" r="2" fill="currentColor" />
-                  <circle cx="42" cy="122" r="2" fill="currentColor" />
-                  <circle cx="62" cy="122" r="2" fill="currentColor" />
-                  <circle cx="82" cy="122" r="2" fill="currentColor" />
-                  <circle cx="102" cy="122" r="2" fill="currentColor" />
-                  <circle cx="122" cy="122" r="2" fill="currentColor" />
-                  <circle cx="142" cy="122" r="2" fill="currentColor" />
-                  <circle cx="162" cy="122" r="2" fill="currentColor" />
-                  <circle cx="182" cy="122" r="2" fill="currentColor" />
-                  <circle cx="2" cy="142" r="2" fill="currentColor" />
-                  <circle cx="22" cy="142" r="2" fill="currentColor" />
-                  <circle cx="42" cy="142" r="2" fill="currentColor" />
-                  <circle cx="62" cy="142" r="2" fill="currentColor" />
-                  <circle cx="82" cy="142" r="2" fill="currentColor" />
-                  <circle cx="102" cy="142" r="2" fill="currentColor" />
-                  <circle cx="122" cy="142" r="2" fill="currentColor" />
-                  <circle cx="142" cy="142" r="2" fill="currentColor" />
-                  <circle cx="162" cy="142" r="2" fill="currentColor" />
-                  <circle cx="182" cy="142" r="2" fill="currentColor" />
-                  <circle cx="2" cy="162" r="2" fill="currentColor" />
-                  <circle cx="22" cy="162" r="2" fill="currentColor" />
-                  <circle cx="42" cy="162" r="2" fill="currentColor" />
-                  <circle cx="62" cy="162" r="2" fill="currentColor" />
-                  <circle cx="82" cy="162" r="2" fill="currentColor" />
-                  <circle cx="102" cy="162" r="2" fill="currentColor" />
-                  <circle cx="122" cy="162" r="2" fill="currentColor" />
-                  <circle cx="142" cy="162" r="2" fill="currentColor" />
-                  <circle cx="162" cy="162" r="2" fill="currentColor" />
-                  <circle cx="182" cy="162" r="2" fill="currentColor" />
-                  <circle cx="2" cy="182" r="2" fill="currentColor" />
-                  <circle cx="22" cy="182" r="2" fill="currentColor" />
-                  <circle cx="42" cy="182" r="2" fill="currentColor" />
-                  <circle cx="62" cy="182" r="2" fill="currentColor" />
-                  <circle cx="82" cy="182" r="2" fill="currentColor" />
-                  <circle cx="102" cy="182" r="2" fill="currentColor" />
-                  <circle cx="122" cy="182" r="2" fill="currentColor" />
-                  <circle cx="142" cy="182" r="2" fill="currentColor" />
-                  <circle cx="162" cy="182" r="2" fill="currentColor" />
-                  <circle cx="182" cy="182" r="2" fill="currentColor" />
-                </svg>
-              </div>
-
-              <!-- Image -->
-              <img
-                class="img-fluid position-relative border border-7 border-white shadow-lg rounded"
-                src="assets/img/e-commerce/Mammadk9.jpg"
-                alt="..."
-              />
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-5 order-md-0 py-10 py-md-12">
-            <!-- Heading -->
-            <h2 class="display-4 text-700 mb-4">منتورینگ و پشتیبانی</h2>
-
-            <!-- Text -->
-            <p class="text-muted">
-              از این رو، با هدف گردآوری افراد متخصص و توسعه‌دهنده در گیلان، از علاقه‌مندان به این حوزه دعوت می‌کنیم تا
-              به جمع ما اضافه شوند و ما را در راستای این اهداف بلند مدت همراهی کنند.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SHAPE -->
-    <div class="position-relative">
-      <div class="shape shape-fluid-x shape-bottom text-white pb-18">
-        <div class="shape-img pb-9 pb-md-15">
-          <svg viewBox="0 0 100 50" preserveAspectRatio="none">
-            <path d="M0 0h100v25H75L25 50H0z" fill="currentColor"></path>
-          </svg>
-        </div>
-      </div>
-    </div>
-
-    <section class="pt-10 pb-14 pt-md-12 bg-gray-900" style="background-image: url(assets/img/patterns/pattern-1.svg)">
-      <div class="container-lg">
-        <div class="row">
-          <div class="col-12">
-            <!-- Decoration -->
-            <div class="position-absolute top-center top-md-start text-warning mt-n8 ms-md-n8">
-              <svg width="185" height="186" viewBox="0 0 185 186" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="2" cy="2" r="2" fill="currentColor" />
-                <circle cx="22" cy="2" r="2" fill="currentColor" />
-                <circle cx="42" cy="2" r="2" fill="currentColor" />
-                <circle cx="62" cy="2" r="2" fill="currentColor" />
-                <circle cx="82" cy="2" r="2" fill="currentColor" />
-                <circle cx="102" cy="2" r="2" fill="currentColor" />
-                <circle cx="122" cy="2" r="2" fill="currentColor" />
-                <circle cx="142" cy="2" r="2" fill="currentColor" />
-                <circle cx="162" cy="2" r="2" fill="currentColor" />
-                <circle cx="182" cy="2" r="2" fill="currentColor" />
-                <circle cx="2" cy="22" r="2" fill="currentColor" />
-                <circle cx="22" cy="22" r="2" fill="currentColor" />
-                <circle cx="42" cy="22" r="2" fill="currentColor" />
-                <circle cx="62" cy="22" r="2" fill="currentColor" />
-                <circle cx="82" cy="22" r="2" fill="currentColor" />
-                <circle cx="102" cy="22" r="2" fill="currentColor" />
-                <circle cx="122" cy="22" r="2" fill="currentColor" />
-                <circle cx="142" cy="22" r="2" fill="currentColor" />
-                <circle cx="162" cy="22" r="2" fill="currentColor" />
-                <circle cx="182" cy="22" r="2" fill="currentColor" />
-                <circle cx="2" cy="42" r="2" fill="currentColor" />
-                <circle cx="22" cy="42" r="2" fill="currentColor" />
-                <circle cx="42" cy="42" r="2" fill="currentColor" />
-                <circle cx="62" cy="42" r="2" fill="currentColor" />
-                <circle cx="82" cy="42" r="2" fill="currentColor" />
-                <circle cx="102" cy="42" r="2" fill="currentColor" />
-                <circle cx="122" cy="42" r="2" fill="currentColor" />
-                <circle cx="142" cy="42" r="2" fill="currentColor" />
-                <circle cx="162" cy="42" r="2" fill="currentColor" />
-                <circle cx="182" cy="42" r="2" fill="currentColor" />
-                <circle cx="2" cy="62" r="2" fill="currentColor" />
-                <circle cx="22" cy="62" r="2" fill="currentColor" />
-                <circle cx="42" cy="62" r="2" fill="currentColor" />
-                <circle cx="62" cy="62" r="2" fill="currentColor" />
-                <circle cx="82" cy="62" r="2" fill="currentColor" />
-                <circle cx="102" cy="62" r="2" fill="currentColor" />
-                <circle cx="122" cy="62" r="2" fill="currentColor" />
-                <circle cx="142" cy="62" r="2" fill="currentColor" />
-                <circle cx="162" cy="62" r="2" fill="currentColor" />
-                <circle cx="182" cy="62" r="2" fill="currentColor" />
-                <circle cx="2" cy="82" r="2" fill="currentColor" />
-                <circle cx="22" cy="82" r="2" fill="currentColor" />
-                <circle cx="42" cy="82" r="2" fill="currentColor" />
-                <circle cx="62" cy="82" r="2" fill="currentColor" />
-                <circle cx="82" cy="82" r="2" fill="currentColor" />
-                <circle cx="102" cy="82" r="2" fill="currentColor" />
-                <circle cx="122" cy="82" r="2" fill="currentColor" />
-                <circle cx="142" cy="82" r="2" fill="currentColor" />
-                <circle cx="162" cy="82" r="2" fill="currentColor" />
-                <circle cx="182" cy="82" r="2" fill="currentColor" />
-                <circle cx="2" cy="102" r="2" fill="currentColor" />
-                <circle cx="22" cy="102" r="2" fill="currentColor" />
-                <circle cx="42" cy="102" r="2" fill="currentColor" />
-                <circle cx="62" cy="102" r="2" fill="currentColor" />
-                <circle cx="82" cy="102" r="2" fill="currentColor" />
-                <circle cx="102" cy="102" r="2" fill="currentColor" />
-                <circle cx="122" cy="102" r="2" fill="currentColor" />
-                <circle cx="142" cy="102" r="2" fill="currentColor" />
-                <circle cx="162" cy="102" r="2" fill="currentColor" />
-                <circle cx="182" cy="102" r="2" fill="currentColor" />
-                <circle cx="2" cy="122" r="2" fill="currentColor" />
-                <circle cx="22" cy="122" r="2" fill="currentColor" />
-                <circle cx="42" cy="122" r="2" fill="currentColor" />
-                <circle cx="62" cy="122" r="2" fill="currentColor" />
-                <circle cx="82" cy="122" r="2" fill="currentColor" />
-                <circle cx="102" cy="122" r="2" fill="currentColor" />
-                <circle cx="122" cy="122" r="2" fill="currentColor" />
-                <circle cx="142" cy="122" r="2" fill="currentColor" />
-                <circle cx="162" cy="122" r="2" fill="currentColor" />
-                <circle cx="182" cy="122" r="2" fill="currentColor" />
-                <circle cx="2" cy="142" r="2" fill="currentColor" />
-                <circle cx="22" cy="142" r="2" fill="currentColor" />
-                <circle cx="42" cy="142" r="2" fill="currentColor" />
-                <circle cx="62" cy="142" r="2" fill="currentColor" />
-                <circle cx="82" cy="142" r="2" fill="currentColor" />
-                <circle cx="102" cy="142" r="2" fill="currentColor" />
-                <circle cx="122" cy="142" r="2" fill="currentColor" />
-                <circle cx="142" cy="142" r="2" fill="currentColor" />
-                <circle cx="162" cy="142" r="2" fill="currentColor" />
-                <circle cx="182" cy="142" r="2" fill="currentColor" />
-                <circle cx="2" cy="162" r="2" fill="currentColor" />
-                <circle cx="22" cy="162" r="2" fill="currentColor" />
-                <circle cx="42" cy="162" r="2" fill="currentColor" />
-                <circle cx="62" cy="162" r="2" fill="currentColor" />
-                <circle cx="82" cy="162" r="2" fill="currentColor" />
-                <circle cx="102" cy="162" r="2" fill="currentColor" />
-                <circle cx="122" cy="162" r="2" fill="currentColor" />
-                <circle cx="142" cy="162" r="2" fill="currentColor" />
-                <circle cx="162" cy="162" r="2" fill="currentColor" />
-                <circle cx="182" cy="162" r="2" fill="currentColor" />
-                <circle cx="2" cy="182" r="2" fill="currentColor" />
-                <circle cx="22" cy="182" r="2" fill="currentColor" />
-                <circle cx="42" cy="182" r="2" fill="currentColor" />
-                <circle cx="62" cy="182" r="2" fill="currentColor" />
-                <circle cx="82" cy="182" r="2" fill="currentColor" />
-                <circle cx="102" cy="182" r="2" fill="currentColor" />
-                <circle cx="122" cy="182" r="2" fill="currentColor" />
-                <circle cx="142" cy="182" r="2" fill="currentColor" />
-                <circle cx="162" cy="182" r="2" fill="currentColor" />
-                <circle cx="182" cy="182" r="2" fill="currentColor" />
-              </svg>
-            </div>
-
-            <!-- Stack -->
-            <div class="card-stack">
-              <!-- Card -->
-              <div class="card-stack-item mb-9">
-                <div class="card card-lg rounded overflow-hidden">
-                  <div class="row gx-0">
-                    <div class="col-md order-md-1 d-flex align-items-end bg-primary">
-                      <!-- Image -->
-                      <a href="./robo-advisor.html">
-                        <img
-                          class="card-img-top"
-                          src="assets/img/screenshots/ui-elements/landing-robo-investor.jpg"
-                          alt="..."
-                        />
-                      </a>
-                    </div>
-                    <div class="col-md-5 order-md-0 d-flex align-items-center bg-white">
-                      <div class="card-body text-center">
-                        <!-- Icon -->
-                        <div class="icon text-primary-light mx-auto mb-4">
-                          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <g fill="none" fill-rule="evenodd">
-                              <path d="M0 0h24v24H0z" />
-                              <path
-                                d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2z"
-                                fill="#335EEA"
-                                opacity=".3"
-                              />
-                              <path
-                                d="M18.5 11h-13A1.5 1.5 0 004 12.5v.5h4.586a1 1 0 01.707.293l1 1a2.414 2.414 0 003.414 0l1-1a1 1 0 01.707-.293H20v-.5a1.5 1.5 0 00-1.5-1.5zM5.5 6A1.5 1.5 0 004 7.5V8h16v-.5A1.5 1.5 0 0018.5 6h-13z"
-                                fill="#335EEA"
-                              />
-                            </g>
-                          </svg>
-                        </div>
-
-                        <!-- Heading -->
-                        <h1 class="font-sans-serif mb-4 mt-auto">Robo Advisor</h1>
-
-                        <!-- Text -->
-                        <p>
-                          Illustrated header, stat cards, testimonial slider, app downloads, case studies, pricing, and
-                          jumbo call to action.
-                        </p>
-
-                        <!-- Link -->
-                        <a class="h6 text-uppercase text-decoration-none mt-auto" href="./robo-advisor.html">
-                          View Landing <i class="fe fe-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card -->
-              <div class="card-stack-item mb-9">
-                <div class="card card-lg rounded overflow-hidden">
-                  <div class="row gx-0">
-                    <div class="col-md order-md-1 d-flex align-items-end bg-primary">
-                      <!-- Image -->
-                      <a href="./analytics-saas.html">
-                        <img
-                          class="card-img-top"
-                          src="assets/img/screenshots/ui-elements/landing-analytics.jpg"
-                          alt="..."
-                        />
-                      </a>
-                    </div>
-                    <div class="col-md-5 order-md-0 d-flex align-items-center bg-white">
-                      <div class="card-body text-center">
-                        <!-- Icon -->
-                        <div class="icon text-primary-light mx-auto mb-4">
-                          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <g fill="none" fill-rule="evenodd">
-                              <path d="M0 0h24v24H0z" />
-                              <path
-                                d="M4.002 12.2L13 14V4.062A8.001 8.001 0 0112 20a8 8 0 01-7.998-7.8z"
-                                fill="#335EEA"
-                                opacity=".3"
-                              />
-                              <path d="M3.06 10.012A8.001 8.001 0 0111 3v8.6l-7.94-1.588z" fill="#335EEA" />
-                            </g>
-                          </svg>
-                        </div>
-
-                        <!-- Heading -->
-                        <h1 class="font-sans-serif mb-4 mt-auto">Analytics SaaS</h1>
-
-                        <!-- Text -->
-                        <p>
-                          Animated UI elements and product screenshots, stepped processes, a rich testimonial slider and
-                          beautiful pricing.
-                        </p>
-
-                        <!-- Link -->
-                        <a class="h6 text-uppercase text-decoration-none mt-auto" href="./analytics-saas.html">
-                          View Landing <i class="fe fe-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card -->
-              <div class="card-stack-item mb-9">
-                <div class="card card-lg rounded overflow-hidden">
-                  <div class="row gx-0">
-                    <div class="col-md order-md-1 d-flex align-items-end bg-primary">
-                      <!-- Image -->
-                      <a href="./e-commerce-platform.html">
-                        <img
-                          class="card-img-top"
-                          src="assets/img/screenshots/ui-elements/landing-e-commerce.jpg"
-                          alt="..."
-                        />
-                      </a>
-                    </div>
-                    <div class="col-md-5 order-md-0 d-flex align-items-center bg-white">
-                      <div class="card-body text-center">
-                        <!-- Icon -->
-                        <div class="icon text-primary-light mx-auto mb-4">
-                          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <g fill="none" fill-rule="evenodd">
-                              <path d="M0 0h24v24H0z" />
-                              <path
-                                d="M18.145 11.844l-.698 4.185a1 1 0 01-1.165.82L4.913 14.78a1 1 0 01-.783-.709L2.306 7.685a1 1 0 01.961-1.275h13.726l.613-2.627a1.18 1.18 0 011.15-.912h2.064a1.18 1.18 0 110 2.36h-1.128l-1.547 6.613z"
-                                fill="#335EEA"
-                                opacity=".3"
-                              />
-                              <path
-                                d="M6.5 21a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm9 0a1.5 1.5 0 110-3 1.5 1.5 0 010 3z"
-                                fill="#335EEA"
-                              />
-                            </g>
-                          </svg>
-                        </div>
-
-                        <!-- Heading -->
-                        <h1 class="font-sans-serif mb-4 mt-auto">Store Platform</h1>
-
-                        <!-- Text -->
-                        <p>
-                          Unique hero slider, simple testimonials, physical product shots, mobile screenshot slider, and
-                          parallax image gallery.
-                        </p>
-
-                        <!-- Link -->
-                        <a class="h6 text-uppercase text-decoration-none mt-auto" href="./e-commerce-platform.html">
-                          View Landing <i class="fe fe-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card -->
-              <div class="card-stack-item mb-9">
-                <div class="card card-lg rounded overflow-hidden">
-                  <div class="row gx-0">
-                    <div class="col-md order-md-1 d-flex align-items-end bg-primary">
-                      <!-- Image -->
-                      <a href="./coworking.html">
-                        <img
-                          class="card-img-top"
-                          src="assets/img/screenshots/ui-elements/landing-coworking.jpg"
-                          alt="..."
-                        />
-                      </a>
-                    </div>
-                    <div class="col-md-5 order-md-0 d-flex align-items-center bg-white">
-                      <div class="card-body text-center">
-                        <!-- Icon -->
-                        <div class="icon text-primary-light mx-auto mb-4">
-                          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <g fill="none" fill-rule="evenodd">
-                              <path d="M0 0h24v24H0z" />
-                              <path
-                                d="M5.133 2.036c6.945 3.876 9.445 8.206 7.5 12.99-4.97-.79-7.47-5.12-7.5-12.99z"
-                                fill="#335EEA"
-                                opacity=".3"
-                              />
-                              <path
-                                d="M18.742 2.036c-6.945 3.876-9.445 8.206-7.5 12.99 4.97-.79 7.47-5.12 7.5-12.99z"
-                                fill="#335EEA"
-                                opacity=".3"
-                              />
-                              <path
-                                d="M12 1c-4.076 6.83-4.076 11.83 0 15 3.91-3.17 3.91-8.17 0-15z"
-                                fill="#335EEA"
-                                opacity=".3"
-                              />
-                              <path
-                                d="M6.344 13h11.312a1 1 0 01.958 1.287l-2.186 7.288A2 2 0 0114.512 23H9.488a2 2 0 01-1.916-1.425l-2.186-7.288A1 1 0 016.344 13z"
-                                fill="#335EEA"
-                              />
-                            </g>
-                          </svg>
-                        </div>
-
-                        <!-- Heading -->
-                        <h1 class="font-sans-serif mb-4 mt-auto">Coworking</h1>
-
-                        <!-- Text -->
-                        <p>
-                          Hero slider, pricing tabs, animated company stats, parallaxing galleries, FAQ, rich
-                          testimonials, and a contact form.
-                        </p>
-
-                        <!-- Link -->
-                        <a class="h6 text-uppercase text-decoration-none mt-auto" href="./coworking.html">
-                          View Landing <i class="fe fe-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card -->
-              <div class="card-stack-item mb-9">
-                <div class="card card-lg rounded overflow-hidden">
-                  <div class="row gx-0">
-                    <div class="col-md order-md-1 d-flex align-items-end bg-primary">
-                      <!-- Image -->
-                      <a href="./course.html">
-                        <img
-                          class="card-img-top"
-                          src="assets/img/screenshots/ui-elements/landing-course.jpg"
-                          alt="..."
-                        />
-                      </a>
-                    </div>
-                    <div class="col-md-5 order-md-0 d-flex align-items-center bg-white">
-                      <div class="card-body text-center">
-                        <!-- Icon -->
-                        <div class="icon text-primary-light mx-auto mb-4">
-                          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <g fill="none" fill-rule="evenodd">
-                              <path d="M0 0h24v24H0z" />
-                              <path
-                                d="M6 3h12a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2zm-.5 2a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5h-1zm12 0a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5h-1zm-12 4a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5h-1zm12 0a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5h-1zm-12 4a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5h-1zm12 0a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5h-1zm0 4a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5h-1zm-12 0a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5h-1z"
-                                fill="#335EEA"
-                                opacity=".3"
-                              />
-                              <path
-                                d="M11.352 14.572l2.605-1.78a.5.5 0 00.001-.825l-2.605-1.792a.5.5 0 00-.783.412v3.572a.5.5 0 00.782.413z"
-                                fill="#335EEA"
-                              />
-                            </g>
-                          </svg>
-                        </div>
-
-                        <!-- Heading -->
-                        <h1 class="font-sans-serif mb-4 mt-auto">Course</h1>
-
-                        <!-- Text -->
-                        <p>
-                          Takeover video modal, checklist value propositions and illustrations, course outline
-                          accordion, and testimonial gallery.
-                        </p>
-
-                        <!-- Link -->
-                        <a class="h6 text-uppercase text-decoration-none mt-auto" href="./course.html">
-                          View Landing <i class="fe fe-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card -->
-              <div class="card-stack-item mb-9">
-                <div class="card card-lg rounded overflow-hidden">
-                  <div class="row gx-0">
-                    <div class="col-md order-md-1 d-flex align-items-end bg-primary">
-                      <!-- Image -->
-                      <a href="./hiring-agency.html">
-                        <img
-                          class="card-img-top"
-                          src="assets/img/screenshots/ui-elements/landing-hiring.jpg"
-                          alt="..."
-                        />
-                      </a>
-                    </div>
-                    <div class="col-md-5 order-md-0 d-flex align-items-center bg-white">
-                      <div class="card-body text-center">
-                        <!-- Icon -->
-                        <div class="icon text-primary-light mx-auto mb-4">
-                          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <g fill="none" fill-rule="evenodd">
-                              <path d="M0 0h24v24H0z" />
-                              <path d="M12 11a4 4 0 110-8 4 4 0 010 8z" fill="#335EEA" opacity=".3" />
-                              <path
-                                d="M3 20.2c.388-4.773 4.262-7.2 8.983-7.2 4.788 0 8.722 2.293 9.015 7.2.012.195 0 .8-.751.8H3.727c-.25 0-.747-.54-.726-.8z"
-                                fill="#335EEA"
-                              />
-                            </g>
-                          </svg>
-                        </div>
-
-                        <!-- Heading -->
-                        <h1 class="font-sans-serif mb-4 mt-auto">Hiring Platform</h1>
-
-                        <!-- Text -->
-                        <p>
-                          Minimal header, illustrated values, jumbo parallax call-to-action form, profile card masonry,
-                          and a pricing range slider.
-                        </p>
-
-                        <!-- Link -->
-                        <a class="h6 text-uppercase text-decoration-none mt-auto" href="./hiring-agency.html">
-                          View Landing <i class="fe fe-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card -->
-              <div class="card-stack-item mb-9">
-                <div class="card card-lg rounded overflow-hidden">
-                  <div class="row gx-0">
-                    <div class="col-md order-md-1 d-flex align-items-end bg-primary">
-                      <!-- Image -->
-                      <a href="./mobile-chat-app.html">
-                        <img
-                          class="card-img-top"
-                          src="assets/img/screenshots/ui-elements/landing-mobile-chat.jpg"
-                          alt="..."
-                        />
-                      </a>
-                    </div>
-                    <div class="col-md-5 order-md-0 d-flex align-items-center bg-white">
-                      <div class="card-body text-center">
-                        <!-- Icon -->
-                        <div class="icon text-primary-light mx-auto mb-4">
-                          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <g fill="none" fill-rule="evenodd">
-                              <path d="M0 0h24v24H0z" />
-                              <path
-                                d="M7.139 4v15h9.722V4H7.14zm.694-3h8.334c1.406 0 2.083.981 2.083 2.5v17c0 1.519-.677 2.5-2.083 2.5H7.833c-1.406 0-2.083-.981-2.083-2.5v-17c0-1.519.677-2.5 2.083-2.5z"
-                                fill="#335EEA"
-                              />
-                              <path fill="#335EEA" opacity=".3" d="M7 4v15h10V4z" />
-                              <circle fill="#335EEA" cx="12" cy="21" r="1" />
-                            </g>
-                          </svg>
-                        </div>
-
-                        <!-- Heading -->
-                        <h1 class="font-sans-serif mb-4 mt-auto">Enterprise Chat</h1>
-
-                        <!-- Text -->
-                        <p>
-                          Simple and visually lightweight. App screenshot header, simple value sections, features grid,
-                          and simple 2-tier pricing.
-                        </p>
-
-                        <!-- Link -->
-                        <a class="h6 text-uppercase text-decoration-none mt-auto" href="./mobile-chat-app.html">
-                          View Landing <i class="fe fe-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card -->
-              <div class="card-stack-item mb-9">
-                <div class="card card-lg rounded overflow-hidden">
-                  <div class="row gx-0">
-                    <div class="col-md order-md-1 d-flex align-items-end bg-primary">
-                      <!-- Image -->
-                      <a href="./software-automation.html">
-                        <img
-                          class="card-img-top"
-                          src="assets/img/screenshots/ui-elements/landing-automation.jpg"
-                          alt="..."
-                        />
-                      </a>
-                    </div>
-                    <div class="col-md-5 order-md-0 d-flex align-items-center bg-white">
-                      <div class="card-body text-center">
-                        <!-- Icon -->
-                        <div class="icon text-primary-light mx-auto mb-4">
-                          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <g fill="none" fill-rule="evenodd">
-                              <path d="M0 0h24v24H0z" />
-                              <path
-                                d="M8 7a1 1 0 110-2h8a4 4 0 110 8H8a2 2 0 100 4h9a1 1 0 010 2H8a4 4 0 110-8h8a2 2 0 100-4H8z"
-                                fill="#335EEA"
-                                opacity=".3"
-                              />
-                              <path
-                                d="M9.707 8.293a1 1 0 01-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 1.414L7.414 6l2.293 2.293zM14.293 20.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 00-1.414 1.414L16.586 18l-2.293 2.293z"
-                                fill="#335EEA"
-                              />
-                            </g>
-                          </svg>
-                        </div>
-
-                        <!-- Heading -->
-                        <h1 class="font-sans-serif mb-4 mt-auto">Productivity SaaS</h1>
-
-                        <!-- Text -->
-                        <p>
-                          Minimal header, stacking feature cards, customer companies slider, blog preview, 3-tier
-                          pricing and jumbo call to action.
-                        </p>
-
-                        <!-- Link -->
-                        <a class="h6 text-uppercase text-decoration-none mt-auto" href="./software-automation.html">
-                          View Landing <i class="fe fe-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- SHAPE -->
-    <div class="position-relative">
-      <!-- Shape -->
-      <div class="shape shape-fluid-x shape-top text-white">
-        <div class="shape-img pb-9 pb-md-15">
-          <svg viewBox="0 0 100 50" preserveAspectRatio="none">
-            <path d="M0 0h25l50 25h25v75H0z" fill="currentColor" />
-          </svg>
-        </div>
-      </div>
-
-      <!-- Decoration -->
-      <div class="position-absolute top-end text-primary-dark mt-n12">
-        <svg
-          width="129"
-          height="208"
-          viewBox="0 0 129 208"
-          class="svg-shapes"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g clip-path="url(#decoration5clip0)">
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M142.812 201.281a6.47 6.47 0 1112.94.002 6.47 6.47 0 01-12.94-.002zm1.618 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.811-4.811-4.811 4.811-1.143-1.144 4.811-4.811-4.811-4.811 1.143-1.143 4.811 4.811zm-32.343 1.143a6.468 6.468 0 1112.936 0 6.468 6.468 0 01-12.936 0zm1.617 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.811-4.811-4.811 4.811-1.143-1.144 4.811-4.811-4.811-4.811 1.143-1.143 4.811 4.811z"
-              fill="currentColor"
-            />
-          </g>
-          <g clip-path="url(#decoration5clip1)">
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M142.812 149.281a6.47 6.47 0 1112.94.002 6.47 6.47 0 01-12.94-.002zm1.618 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.811-4.811-4.811 4.811-1.143-1.144 4.811-4.811-4.811-4.811 1.143-1.143 4.811 4.811zm-32.343 1.143a6.468 6.468 0 1112.936 0 6.468 6.468 0 01-12.936 0zm1.617 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.811-4.811-4.811 4.811-1.143-1.144 4.811-4.811-4.811-4.811 1.143-1.143 4.811 4.811z"
-              fill="currentColor"
-            />
-          </g>
-          <g clip-path="url(#decoration5clip2)">
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M142.812 97.281a6.47 6.47 0 1112.939.002 6.47 6.47 0 01-12.939-.002zm1.618 0a4.851 4.851 0 119.703 0 4.851 4.851 0 01-9.703 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.811-4.811-4.811 4.81-1.143-1.143 4.811-4.81-4.811-4.812 1.143-1.143 4.811 4.81zm-32.343 1.143a6.469 6.469 0 1112.937 0 6.469 6.469 0 01-12.937 0zm1.617 0a4.851 4.851 0 119.703 0 4.851 4.851 0 01-9.703 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.811-4.811-4.811 4.811-1.143-1.144 4.811-4.81-4.811-4.812 1.143-1.143 4.811 4.81z"
-              fill="currentColor"
-            />
-          </g>
-          <g clip-path="url(#decoration5clip3)">
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M38.813 149.281a6.47 6.47 0 1112.938 0 6.47 6.47 0 01-12.938 0zm1.617 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.811-1.143-1.144 4.81-4.811-4.81-4.811 1.143-1.143 4.811 4.811zm-32.343 1.143a6.469 6.469 0 1112.937.001 6.469 6.469 0 01-12.938-.001zm1.617 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.811-1.143-1.144 4.81-4.811-4.81-4.811 1.143-1.143 4.811 4.811z"
-              fill="currentColor"
-            />
-          </g>
-          <g clip-path="url(#decoration5clip4)">
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M38.813 97.281a6.469 6.469 0 1112.937 0 6.469 6.469 0 01-12.938 0zm1.617 0a4.852 4.852 0 119.703 0 4.852 4.852 0 01-9.703 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.81-1.143-1.143 4.81-4.81-4.81-4.812 1.143-1.143 4.811 4.81zm-32.343 1.143a6.469 6.469 0 1112.937 0 6.469 6.469 0 01-12.938 0zm1.617 0a4.852 4.852 0 119.703 0 4.852 4.852 0 01-9.703 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.811-1.143-1.144 4.81-4.81-4.81-4.812 1.143-1.143 4.811 4.81z"
-              fill="currentColor"
-            />
-          </g>
-          <g clip-path="url(#decoration5clip5)">
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M38.813 45.281a6.469 6.469 0 1112.937 0 6.469 6.469 0 01-12.938 0zm1.617 0a4.852 4.852 0 119.703 0 4.852 4.852 0 01-9.703 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.81-1.143-1.143 4.81-4.81-4.81-4.812 1.143-1.143 4.811 4.81zm-32.343 1.143a6.469 6.469 0 1112.937 0 6.469 6.469 0 01-12.938 0zm1.617 0a4.852 4.852 0 119.703 0 4.852 4.852 0 01-9.703 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.81-1.143-1.143 4.81-4.81-4.81-4.812 1.143-1.143 4.811 4.81z"
-              fill="currentColor"
-            />
-          </g>
-          <g clip-path="url(#decoration5clip6)">
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M90.813 175.281a6.47 6.47 0 1112.938 0 6.47 6.47 0 01-12.939 0zm1.617 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.81-4.811-4.812 4.811-1.143-1.144 4.81-4.811-4.81-4.811 1.143-1.143 4.811 4.811zm-32.344 1.143a6.469 6.469 0 1112.938.001 6.469 6.469 0 01-12.938-.001zm1.618 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.811-1.143-1.144 4.81-4.811-4.81-4.811 1.143-1.143 4.811 4.811z"
-              fill="currentColor"
-            />
-          </g>
-          <g clip-path="url(#decoration5clip7)">
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M90.813 123.281a6.47 6.47 0 1112.938 0 6.47 6.47 0 01-12.939 0zm1.617 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.81-4.811-4.812 4.811-1.143-1.144 4.81-4.81-4.81-4.812 1.143-1.143 4.811 4.81zm-32.344 1.143a6.469 6.469 0 1112.938 0 6.469 6.469 0 01-12.938 0zm1.618 0a4.852 4.852 0 119.703 0 4.852 4.852 0 01-9.703 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.811-1.143-1.144 4.81-4.811-4.81-4.811 1.143-1.143 4.811 4.811z"
-              fill="currentColor"
-            />
-          </g>
-          <g clip-path="url(#decoration5clip8)">
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M90.813 71.281a6.469 6.469 0 1112.937 0 6.469 6.469 0 01-12.938 0zm1.617 0a4.852 4.852 0 119.703 0 4.852 4.852 0 01-9.703 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.81-4.811-4.812 4.81-1.143-1.143 4.81-4.81-4.81-4.812 1.143-1.143 4.811 4.81zm-32.344 1.143a6.469 6.469 0 1112.938 0 6.469 6.469 0 01-12.938 0zm1.618 0a4.852 4.852 0 119.703 0 4.852 4.852 0 01-9.703 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.81-1.143-1.143 4.81-4.81-4.81-4.812 1.143-1.143 4.811 4.81z"
-              fill="currentColor"
-            />
-          </g>
-          <defs>
-            <clipPath id="decoration4clip0">
-              <path transform="matrix(0 -1 -1 0 155.75 207.75)" fill="#fff" d="M0 0h51.75v51.75H0z" />
-            </clipPath>
-            <clipPath id="decoration4clip1">
-              <path transform="rotate(-90 155.75 0)" fill="#fff" d="M0 0h51.75v51.75H0z" />
-            </clipPath>
-            <clipPath id="decoration4clip2">
-              <path transform="matrix(0 -1 -1 0 155.75 103.75)" fill="#fff" d="M0 0h51.75v51.75H0z" />
-            </clipPath>
-            <clipPath id="decoration4clip3">
-              <path transform="matrix(0 -1 -1 0 51.75 155.75)" fill="#fff" d="M0 0h51.75v51.75H0z" />
-            </clipPath>
-            <clipPath id="decoration4clip4">
-              <path transform="matrix(0 -1 -1 0 51.75 103.75)" fill="#fff" d="M0 0h51.75v51.75H0z" />
-            </clipPath>
-            <clipPath id="decoration4clip5">
-              <path transform="matrix(0 -1 -1 0 51.75 51.75)" fill="#fff" d="M0 0h51.75v51.75H0z" />
-            </clipPath>
-            <clipPath id="decoration4clip6">
-              <path transform="matrix(0 -1 -1 0 103.75 181.75)" fill="#fff" d="M0 0h51.75v51.75H0z" />
-            </clipPath>
-            <clipPath id="decoration4clip7">
-              <path transform="matrix(0 -1 -1 0 103.75 129.75)" fill="#fff" d="M0 0h51.75v51.75H0z" />
-            </clipPath>
-            <clipPath id="decoration4clip8">
-              <path transform="matrix(0 -1 -1 0 103.75 77.75)" fill="#fff" d="M0 0h51.75v51.75H0z" />
-            </clipPath>
-          </defs>
-        </svg>
-      </div>
-    </div>
-
-    <!-- ABOUT -->
-    <section class="py-10 py-md-12">
-      <div class="container-lg mb-12">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-md-6 order-md-1">
-            <!-- Image grid -->
-            <div class="img-grid img-grid-1 mb-8 mb-md-0 bg-checkered"></div>
-          </div>
-          <div class="col-md-6 col-lg-5 order-md-0 text-center text-md-end">
-            <!-- Heading -->
-            <h2 class="display-4 text-700 mb-6">داستان تیم‌ما</h2>
-
-            <!-- Subheading -->
-            <p class="fs-lg fw-bold mb-2">هدف</p>
-
-            <!-- Text -->
-            <p class="text-muted">
-              اینجا محفلی برای گفتگوی توسعه‌دهنده‌های گیلانی است. ما اینجا قصد داریم رویدادها، دوره‌های منتورشیپ و
-              آموزش‌های تخصصی را برای افراد گیلانی علاقه‌مند به برنامه نویسی فراهم کنیم.
-            </p>
-
-            <!-- Subheading -->
-            <p class="fs-lg fw-bold mb-2">چشم انداز</p>
-
-            <!-- Text -->
-            <p class="text-muted mb-0">
-              به این ترتیب، علاوه بر ایجاد فضایی برای افراد مبتدی جهت ورود به بازار کار، آماده معرفی بسیاری از توسعه
-              دهندگان، به شرکت‌های نیازمند نیز هستیم.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="container-lg">
-        <div class="row align-items-center">
-          <div class="col-lg-4">
-            <!-- Heading -->
-            <h2 class="display-4 text-700 mb-6">اعضای عزیزمون</h2>
-          </div>
-          <div class="col-lg-8">
-            <div class="members-grid">
-              <div class="members-grid">
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(1).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(2).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(3).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(4).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(5).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(6).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(7).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(8).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(9).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(10).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(11).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(12).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(13).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(14).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(15).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(1).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(2).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(3).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(4).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(5).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(6).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(7).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(8).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(9).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(10).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(11).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(12).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(13).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(14).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(15).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(1).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(2).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(3).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(4).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(5).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(6).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(7).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(8).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(9).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="members-item">
-                  <div class="member">
-                    <div class="member-avatar">
-                      <img src="/assets/img/member/(10).jpg" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ROLES -->
-    <section class="pb-16 pt-md-11" id="community">
-      <div class="container-lg">
-        <div class="row justify-content-center">
-          <div class="col-md-10 col-lg-8 text-center">
-            <!-- Preheading -->
-            <h6 class="text-primary mb-5">همه جا در کنار شما هستیم</h6>
-
-            <!-- Heading -->
-            <h2 class="display-4 text-700 mb-4">جامعه‌ توسعه‌دهنگان گیلان</h2>
-
-            <!-- Text -->
-            <p class="fs-lg text-muted mb-9">
-              به این ترتیب، علاوه بر ایجاد فضایی برای افراد مبتدی جهت ورود به بازار کار، آماده معرفی بسیاری از توسعه
-              دهندگان، به شرکت‌های نیازمند نیز هستیم.
-            </p>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
-            <!-- Table -->
-            <div class="table-responsive">
-              <table class="table table-flush table-clickable mb-0">
-                <thead>
-                  <tr>
-                    <th>نام</th>
-                    <th>اعضا یا دنبال کننده</th>
-                    <th class="text-end">لینک ورود</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr data-href="pricing.html">
-                    <td class="table-clickable-hover d-flex align-items-center">
-                      <div style="width: 28px;height : 28px" class="ms-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
-                          <path
-                            fill="currentColor"
-                            d="M240 120c0 66.3-53.7 120-120 120S0 186.3 0 120 53.7 0 120 0s120 53.7 120 120z"
-                          />
-                          <path
-                            fill="currentColor"
-                            class="st1"
-                            d="M98 175c-3.9 0-3.2-1.5-4.6-5.2L82 132.2 152.8 88l8.3 2.2-6.9 18.8L98 175z"
-                          />
-                          <path
-                            fill="#FFFFFF"
-                            class="st2"
-                            d="M98 175c3 0 4.3-1.4 6-3 2.6-2.5 36-35 36-35l-20.5-5-19 12-2.5 30v1z"
-                          />
-
-                          <path
-                            fill="#FFFFFF"
-                            d="M100 144.4l48.4 35.7c5.5 3 9.5 1.5 10.9-5.1L179 82.2c2-8.1-3.1-11.7-8.4-9.3L55 117.5c-7.9 3.2-7.8 7.6-1.4 9.5l29.7 9.3L152 93c3.2-2 6.2-.9 3.8 1.3L100 144.4z"
-                          />
-                        </svg>
-                      </div>
-                      <span class="fs-5"> کانال اطلاع رسانی</span>
-                    </td>
-                    <td>
-                      <div class="fs-5 fw-bolder" style="line-height: 1.4; position: relative; top: 3px">
-                        <span data-countup='{"startVal": 1}' data-to="200" data-aos data-aos-id="countup:in">1</span> نفر
-                      </div>
-                    </td>
-                    <td class="text-end text-nowrap">
-                      <a class="h6 text-decoration-none" href="./mobile-chat-app.html">
-                        ورود به کانال<i class="fe fe-arrow-left me-1 d-inline-block"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr data-href="pricing.html">
-                    <td class="table-clickable-hover d-flex align-items-center">
-                      <div style="width: 28px;height : 28px" class="ms-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
-                          <path
-                            fill="currentColor"
-                            d="M240 120c0 66.3-53.7 120-120 120S0 186.3 0 120 53.7 0 120 0s120 53.7 120 120z"
-                          />
-                          <path
-                            fill="currentColor"
-                            class="st1"
-                            d="M98 175c-3.9 0-3.2-1.5-4.6-5.2L82 132.2 152.8 88l8.3 2.2-6.9 18.8L98 175z"
-                          />
-                          <path
-                            fill="#FFFFFF"
-                            class="st2"
-                            d="M98 175c3 0 4.3-1.4 6-3 2.6-2.5 36-35 36-35l-20.5-5-19 12-2.5 30v1z"
-                          />
-
-                          <path
-                            fill="#FFFFFF"
-                            d="M100 144.4l48.4 35.7c5.5 3 9.5 1.5 10.9-5.1L179 82.2c2-8.1-3.1-11.7-8.4-9.3L55 117.5c-7.9 3.2-7.8 7.6-1.4 9.5l29.7 9.3L152 93c3.2-2 6.2-.9 3.8 1.3L100 144.4z"
-                          />
-                        </svg>
-                      </div>
-                      <span class="fs-5">کامیونیتی</span>
-                    </td>
-                    <td>
-                      <div class="fs-5 fw-bolder" style="line-height: 1.4; position: relative; top: 3px">
-                        <span data-countup='{"startVal": 1}' data-to="350" data-aos data-aos-id="countup:in">1</span> نفر
-                      </div>
-                    </td>
-                    <td class="text-end text-nowrap">
-						<a class="h6 text-decoration-none" href="./mobile-chat-app.html">
-							ورود به کامیونیتی<i class="fe fe-arrow-left me-1 d-inline-block"></i>
-						  </a>
-                    </td>
-                  </tr>
-                  <tr class="block-row">
-                    <td class="table-clickable-hover d-flex align-items-center">
-                      <div style="width: 28px;height : 28px" class="ms-2">
-                        <svg
-                          viewBox="0 0 256 180"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink"
-                          preserveAspectRatio="xMidYMid"
-                        >
-                          <path
-                            d="M101.6,123.2 L170.8,87.4 L101.6,51.3 L101.6,123.2 L101.6,123.2 Z"
-                            fill="#FFFFFF"
-                          ></path>
-                          <path
-                            d="M101.6,51.3 L162.3,91.8 L170.8,87.4 L101.6,51.3 L101.6,51.3 Z"
-                            opacity="0.12"
-                            fill="currentColor"
-                          ></path>
-                          <path
-                            d="M253.301054,38.8 C253.301054,38.8 250.80203,21.2 243.105037,13.4 C233.408825,3.2 222.513081,3.2 217.415072,2.6 C181.729012,0 128.04998,0 128.04998,0 L127.95002,0 C127.95002,0 74.2709879,0 38.3850059,2.6 C33.3869582,3.2 22.4912144,3.2 12.695041,13.4 C5.09800859,21.2 2.59898477,38.8 2.59898477,38.8 C2.59898477,38.8 0,59.6 0,80.3 L0,99.7 C0,120.4 2.59898477,141.1 2.59898477,141.1 C2.59898477,141.1 5.09800859,158.7 12.795002,166.5 C22.4912144,176.7 35.2862163,176.4 40.9839906,177.4 C61.4759859,179.4 127.95002,180 127.95002,180 C127.95002,180 181.729012,179.9 217.515033,177.3 C222.513081,176.7 233.408825,176.7 243.204998,166.5 C250.901991,158.7 253.401015,141.1 253.401015,141.1 C253.401015,141.1 256,120.4 256,99.7 L256,80.3 C255.900039,59.6 253.301054,38.8 253.301054,38.8 L253.301054,38.8 Z M101.560328,123.2 L101.560328,51.3 L170.733307,87.4 L101.560328,123.2 L101.560328,123.2 Z"
-                            fill="currentColor"
-                          ></path>
-                        </svg>
-                      </div>
-                      <span class="fs-5"> کانال یوتوب</span>
-                    </td>
-                    <td>
-                
-                    </td>
-                    <td class="text-end text-nowrap">
-						<div class="block-item " ></div>
-                    </td>
-                  </tr>
-				  <tr class="block-row">
-                    <td class="table-clickable-hover d-flex align-items-center">
-                      <div style="width: 28px;height : 28px" class="ms-2">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M12 2.163C15.204 2.163 15.584 2.175 16.85 2.233C20.102 2.381 21.621 3.924 21.769 7.152C21.827 8.417 21.838 8.797 21.838 12.001C21.838 15.206 21.826 15.585 21.769 16.85C21.62 20.075 20.105 21.621 16.85 21.769C15.584 21.827 15.206 21.839 12 21.839C8.796 21.839 8.416 21.827 7.151 21.769C3.891 21.62 2.38 20.07 2.232 16.849C2.174 15.584 2.162 15.205 2.162 12C2.162 8.796 2.175 8.417 2.232 7.151C2.381 3.924 3.896 2.38 7.151 2.232C8.417 2.175 8.796 2.163 12 2.163ZM12 0C8.741 0 8.333 0.014 7.053 0.072C2.695 0.272 0.273 2.69 0.073 7.052C0.014 8.333 0 8.741 0 12C0 15.259 0.014 15.668 0.072 16.948C0.272 21.306 2.69 23.728 7.052 23.928C8.333 23.986 8.741 24 12 24C15.259 24 15.668 23.986 16.948 23.928C21.302 23.728 23.73 21.31 23.927 16.948C23.986 15.668 24 15.259 24 12C24 8.741 23.986 8.333 23.928 7.053C23.732 2.699 21.311 0.273 16.949 0.073C15.668 0.014 15.259 0 12 0V0ZM12 5.838C8.597 5.838 5.838 8.597 5.838 12C5.838 15.403 8.597 18.163 12 18.163C15.403 18.163 18.162 15.404 18.162 12C18.162 8.597 15.403 5.838 12 5.838ZM12 16C9.791 16 8 14.21 8 12C8 9.791 9.791 8 12 8C14.209 8 16 9.791 16 12C16 14.21 14.209 16 12 16ZM18.406 4.155C17.61 4.155 16.965 4.8 16.965 5.595C16.965 6.39 17.61 7.035 18.406 7.035C19.201 7.035 19.845 6.39 19.845 5.595C19.845 4.8 19.201 4.155 18.406 4.155Z"
-                            fill="currentColor"
-                          ></path>
-                        </svg>
-                      </div>
-                      <span class="fs-5">اینستاگرام</span>
-                    </td>
-                    <td>
-                
-                    </td>
-                    <td class="text-end text-nowrap">
-						<div class="block-item " ></div>
-                    </td>
-                  </tr>
-				  <tr class="block-row">
-                    <td class="table-clickable-hover d-flex align-items-center">
-                      <div style="width: 28px;height : 28px" class="ms-2">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M24 4.55705C23.117 4.94905 22.168 5.21305 21.172 5.33205C22.189 4.72305 22.97 3.75805 23.337 2.60805C22.386 3.17205 21.332 3.58205 20.21 3.80305C19.313 2.84605 18.032 2.24805 16.616 2.24805C13.437 2.24805 11.101 5.21405 11.819 8.29305C7.728 8.08805 4.1 6.12805 1.671 3.14905C0.381 5.36205 1.002 8.25705 3.194 9.72305C2.388 9.69705 1.628 9.47605 0.965 9.10705C0.911 11.388 2.546 13.522 4.914 13.997C4.221 14.185 3.462 14.229 2.69 14.081C3.316 16.037 5.134 17.46 7.29 17.5C5.22 19.123 2.612 19.848 0 19.54C2.179 20.937 4.768 21.752 7.548 21.752C16.69 21.752 21.855 14.031 21.543 7.10605C22.505 6.41105 23.34 5.54405 24 4.55705Z"
-                            fill="currentColor"
-                          ></path>
-                        </svg>
-                      </div>
-                      <span class="fs-5">توییتر</span>
-                    </td>
-                    <td>
-                    
-                    </td>
-                    <td class="text-end text-nowrap">
-                      <div class="block-item " ></div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SHAPE -->
-    <div class="position-relative mt-md-n12">
-      <div class="shape shape-fluid-x shape-bottom text-white">
-        <div class="shape-img pb-9 mb-md-14">
-          <svg viewBox="0 0 100 50" preserveAspectRatio="none">
-            <path d="M0 0h100v50H75L25 25H0z" fill="currentColor" />
-          </svg>
-        </div>
-      </div>
-    </div>
-    <!-- SHARED BACKGROUND -->
-    <!-- <div class="bg-dark" style="background-image: url(assets/img/patterns/pattern-1.svg)"> -->
-    <div class="bg-dark">
-      <!-- STORIES -->
-      <section class="pt-8 pt-md-14 pb-10 pb-md-12">
-        <div class="container-lg">
-          <div class="row align-items-center justify-content-betwen mb-9">
-            <div class="col-md-5 text-center text-md-end">
-              <!-- Heading -->
-              <h2 class="display-4 text-700 text-white mb-4 mb-md-0">ما تنها نیستیم</h2>
-            </div>
-            <div class="col-md-6 text-center text-md-end">
-              <!-- Text -->
-              <p class="text-white mb-0">
-                قطعا رسیدن به این هدف که کشوری از متخصان بزرگ و کشوری پیشرو در علم و صنعت داشته باشیم به تنهایی محقق
-                نمیشود و نیاز به همیاری و حمایت یک دیگر داریم
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <!-- Slider -->
-              <div
-                class="flickity-viewport-visible mx-n4"
-                data-flickity='{"cellAlign": "right", "imagesLoaded": true, "pageDots": false, "prevNextButtons": false,"rightToLeft": true, "contain": true}'
-              >
-                <div class="col-12 px-4" style="max-width: 300px">
-                  <!-- Card -->
-                  <div class="card card-sm rounded-top-start rounded-bottom-end lift">
-                    <!-- Image  -->
-                    <img class="card-img rounded-top-start" src="assets/img/robo-advisor/innovation.jfif" alt="..." />
-
-                    <!-- SHAPE -->
-                    <div class="position-relative">
-                      <div class="shape shape-fluid-x shape-top text-white">
-                        <div class="shape-img pb-4">
-                          <svg viewBox="0 0 100 50" preserveAspectRatio="none">
-                            <path d="M0 25h25L75 0h25v50H0z" fill="currentColor" />
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Body -->
-                    <div class="card-body p-5">
-                      <!-- Heading -->
-                      <div class="d-flex align-items-center mb-3">
-                        <!-- Logo -->
-                        <div class="img-fluid svg-shim mb-0" style="max-width: 64px">
-                          <img src="assets/img/illustrations/innovation-1.jpg" alt="" height="35" />
-                        </div>
-
-                        <!-- Icon -->
-                        <a class="me-auto text-decoration-none text-innovation stretched-link" href="#!">
-                          <i class="fe fe-arrow-left"></i>
-                        </a>
-                      </div>
-
-                      <!-- Text -->
-                      <small style="font-size: 0.7rem">
-                        کارخانه نوآوری گیلان بزرگترین ارائه دهنده خدمات فضای کار اشتراکی ، ارائه دهنده خدمات شتابدهی،
-                        استودیو خلاق آشپزی، استودیو پادکست، برگزاری رویداد، اتاق جلسات در شمال کشور میباشد.
-                      </small>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 px-4" style="max-width: 300px">
-                  <!-- Card -->
-                  <div class="card card-sm rounded-top-start rounded-bottom-end lift">
-                    <!-- Image  -->
-                    <img class="card-img rounded-top-start" src="assets/img/robo-advisor/bani.jpg" alt="..." />
-
-                    <!-- SHAPE -->
-                    <div class="position-relative">
-                      <div class="shape shape-fluid-x shape-top text-white">
-                        <div class="shape-img pb-4">
-                          <svg viewBox="0 0 100 50" preserveAspectRatio="none">
-                            <path d="M0 25h25L75 0h25v50H0z" fill="currentColor" />
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Body -->
-                    <div class="card-body p-5">
-                      <!-- Heading -->
-                      <div class="d-flex align-items-center mb-3">
-                        <!-- Logo -->
-                        <div class="img-fluid svg-shim mb-0" style="max-width: 140px">
-                          <img src="assets/img/illustrations/banilogo.jpg" alt="" height="35" />
-                        </div>
-
-                        <!-- Icon -->
-                        <a class="me-auto text-decoration-none text-bani stretched-link" href="#!">
-                          <i class="fe fe-arrow-left"></i>
-                        </a>
-                      </div>
-
-                      <!-- Text -->
-                      <small style="font-size: 0.7rem">
-                        بـانـی، تلاشی است برای مشاهده سبک زندگی و طرز فکر بانـیان کشور و ترویج روحیه کارآفرینی. رويداد
-                        بانى با تولید محتوای ناب آموزشی و فضاى شبكه سازى به راه اندازی کسب و کار ها و استارتاپ كمك مى
-                        كند.
-                      </small>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 px-4" style="max-width: 300px">
-                  <!-- Card -->
-                  <div class="card card-sm rounded-top-start rounded-bottom-end lift">
-                    <!-- Image  -->
-                    <img class="card-img rounded-top-start" src="assets/img/robo-advisor/office-airbnb.jpg" alt="..." />
-
-                    <!-- SHAPE -->
-                    <div class="position-relative">
-                      <div class="shape shape-fluid-x shape-top text-white">
-                        <div class="shape-img pb-4">
-                          <svg viewBox="0 0 100 50" preserveAspectRatio="none">
-                            <path d="M0 25h25L75 0h25v50H0z" fill="currentColor" />
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Body -->
-                    <div class="card-body p-5">
-                      <!-- Heading -->
-                      <div class="d-flex align-items-center mb-3">
-                        <!-- Logo -->
-                        <div class="img-fluid svg-shim mb-0" style="max-width: 96px">
-                          <img src="assets/img/illustrations/station_logo.png" alt="" height="35" />
-                        </div>
-
-                        <!-- Icon -->
-                        <a class="me-auto text-decoration-none text-station stretched-link" href="#!">
-                          <i class="fe fe-arrow-left"></i>
-                        </a>
-                      </div>
-
-                      <!-- Text -->
-                      <small style="font-size: 0.7rem">
-                        ایستگاه نوآوری با ارائه خدمات کامل مشابه یک دفتر کار اختصاصی، در تلاش برای کاهش مشکلات و
-                        هزینه‌های راه اندازی کسب و کار بوده تا بتوانند زمانی را به شبکه‌سازی با افراد و استارتاپ‌های
-                        ارزشمند حاضر اختصاص دهند
-                      </small>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 px-4" style="max-width: 300px">
-                  <!-- Card -->
-                  <div class="card card-sm rounded-top-start rounded-bottom-end lift">
-                    <!-- Image  -->
-                    <img
-                      class="card-img rounded-top-start"
-                      src="assets/img/robo-advisor/office-coinbase.jpg"
-                      alt="..."
-                    />
-
-                    <!-- SHAPE -->
-                    <div class="position-relative">
-                      <div class="shape shape-fluid-x shape-top text-white">
-                        <div class="shape-img pb-4">
-                          <svg viewBox="0 0 100 50" preserveAspectRatio="none">
-                            <path d="M0 25h25L75 0h25v50H0z" fill="currentColor" />
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Body -->
-                    <div class="card-body p-5">
-                      <!-- Heading -->
-                      <div class="d-flex align-items-center mb-3">
-                        <!-- Logo -->
-                        <div class="img-fluid svg-shim mb-0" style="max-width: 96px">
-                          <img src="assets/img/illustrations/hamfkr.png" alt="" height="35" />
-                        </div>
-
-                        <!-- Icon -->
-                        <a class="me-auto text-decoration-none text-hamfker stretched-link" href="#!">
-                          <i class="fe fe-arrow-left"></i>
-                        </a>
-                      </div>
-
-                      <!-- Text -->
-                      <small style="font-size: 0.7rem">
-                        همفکر رشت شش سال پیش در استان گیلان شروع به فعالیت نمود و در طول این مدت اتفاق‌های بسیار خوبی از
-                        شبکه‌سازی و راه‌اندازی کسب و کار‌های استارت‌اپی و همکاری‌های دوستان شرکت‌کننده در این دورهمی را
-                        رقم زد.
-                      </small>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 px-4" style="max-width: 300px">
-                  <!-- Card -->
-                  <div class="card card-sm rounded-top-start rounded-bottom-end lift">
-                    <!-- Image  -->
-                    <img class="card-img rounded-top-start" src="assets/img/robo-advisor/freeland.jpg" alt="..." />
-
-                    <!-- SHAPE -->
-                    <div class="position-relative">
-                      <div class="shape shape-fluid-x shape-top text-white">
-                        <div class="shape-img pb-4">
-                          <svg viewBox="0 0 100 50" preserveAspectRatio="none">
-                            <path d="M0 25h25L75 0h25v50H0z" fill="currentColor" />
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Body -->
-                    <div class="card-body p-5">
-                      <!-- Heading -->
-                      <div class="d-flex align-items-center mb-3">
-                        <!-- Logo -->
-                        <div class="img-fluid svg-shim mb-0" style="max-width: 86px">
-                          <img src="assets/img/illustrations/logo.svg" alt="" height="35" />
-                        </div>
-
-                        <!-- Icon -->
-                        <a class="me-auto text-decoration-none text-freeland stretched-link" href="#!">
-                          <i class="fe fe-arrow-left"></i>
-                        </a>
-                      </div>
-
-                      <!-- Text -->
-                      <small style="font-size: 0.7rem">
-                        زرگترین هدف فریلند این است که راه و روش درآمدزایی بصورت فریلنسینگ را به شما بیاموزد. برای کسب
-                        درآمد بصورت فریلنسینگ، شما نیاز به سرمایه ندارید. سرمایه شما زمانی است که برای کسب مهارت صرف
-                        می‌کنید.
-                      </small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="container-lg">
-        <div class="row align-items-center">
-          <div class="col-12">
-            <!-- Divider -->
-            <hr class="bg-gray-900 mt-0 mb-8" />
-          </div>
-          <div class="col-md">
-            <!-- Heading -->
-            <h1 class="text-white mb-0">
-              شما هم میتوانید یکی از
-              <span class="text-primary-light">حامیان‌ما</span> باشد.
-            </h1>
-
-            <!-- Text -->
-            <p class="text-white-60 mb-4 mb-md-0">با همیاری هم میتوانیم در این مسیر کنار هم باشیم</p>
-          </div>
-          <div class="col-md-auto">
-            <!-- Button -->
-            <a class="btn btn-primary lift" href="#!">اطلاعات بیشتر</a>
-          </div>
-          <div class="col-12">
-            <!-- Divider -->
-            <hr class="bg-gray-900 mb-0 mt-8" />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- FOOTER -->
-    <footer class="footer py-8 py-md-11 bg-dark">
-      <div class="container-lg">
-        <div class="row">
-          <div class="col-md-4">
-            <!-- Brand -->
-            <!-- <h2 class="font-serif text-white mb-1">G-devs</h2> -->
-            <img src="./assets/img/logo.png" alt="logo" class="navbar-logo" />
-            <!-- Text -->
-            <p class="text-white-60">راه راحت تر برای شبکه سازی!</p>
-          </div>
-          <div class="col-6 col-md">
-            <!-- Heading -->
-            <h6 class="text-uppercase text-dark mb-3 mb-md-5">Services</h6>
-
-            <!-- List -->
-            <ul class="list-unstyled">
-              <li class="mb-3">
-                <a class="text-white-60" href="#!">Help Center</a>
-              </li>
-              <li class="mb-3">
-                <a class="text-white-60" href="#!">Press</a>
-              </li>
-              <li>
-                <a class="text-white-60" href="#!">About us</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <!-- Heading -->
-            <h6 class="text-uppercase text-dark mb-3 mb-md-5">Products</h6>
-
-            <!-- List -->
-            <ul class="list-unstyled">
-              <li class="mb-3">
-                <a class="text-white-60" href="#!">Homepage</a>
-              </li>
-              <li class="mb-3">
-                <a class="text-white-60" href="#!">Pages</a>
-              </li>
-              <li class="mb-3">
-                <a class="text-white-60" href="#!">Legal</a>
-              </li>
-              <li>
-                <a class="text-white-60" href="#!">Terms</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <!-- Heading -->
-            <h6 class="text-uppercase text-dark mb-3 mb-md-5">Services</h6>
-
-            <!-- List -->
-            <ul class="list-unstyled">
-              <li class="mb-3">
-                <a class="text-white-60" href="#!">Help Center</a>
-              </li>
-              <li class="mb-3">
-                <a class="text-white-60" href="#!">Press</a>
-              </li>
-              <li>
-                <a class="text-white-60" href="#!">About us</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <!-- Heading -->
-            <h6 class="text-uppercase text-dark mb-3 mb-md-5">Connect</h6>
-
-            <!-- List -->
-            <ul class="list-unstyled">
-              <li class="mb-3">
-                <a class="text-white-60" href="#!">Help Center</a>
-              </li>
-              <li class="mb-3">
-                <a class="text-white-60" href="#!">Press</a>
-              </li>
-              <li class="mb-3">
-                <a class="text-white-60" href="#!">About us</a>
-              </li>
-              <li>
-                <a class="text-white-60" href="#!">Pages</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- JAVASCRIPT -->
-
-    <!-- Vendor JS -->
-    <script src="./assets/js/vendor.bundle.js"></script>
-
-    <!-- Theme JS -->
-    <script src="./assets/js/theme.bundle.js"></script>
-  </body>
+		<script src="./assets/js/demo.bundle.js"></script>
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+		<!-- RTL STYLES -->
+		<link rel="stylesheet" href="./assets/css/rtl.css" />
+		<!-- Title -->
+		<title>Gilan Devs</title>
+	</head>
+	<body style="padding-top: 108px">
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-expand-lg navbar-light navbar-reveal fixed-top bg-white">
+			<div class="container-lg">
+				<!-- Collapse -->
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<!-- Navigation -->
+					<ul class="navbar-nav justify-content-end w-100">
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								id="landingsDropdown"
+								href="#"
+								role="button"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								کی هستیم
+							</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								id="pagesDropdown"
+								href="#"
+								role="button"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								هدفمون
+							</a>
+						</li>
+					</ul>
+
+					<!-- Brand -->
+					<a class="navbar-brand d-none d-lg-block px-lg-6" href="/">
+						<img src="./assets/img/logo.png" alt="logo" class="navbar-logo" />
+					</a>
+
+					<!-- Navigation -->
+					<ul class="navbar-nav justify-content-start w-100">
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								id="accountDropdown"
+								href="#"
+								role="button"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								برنامه ها
+							</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								id="docsDropdown"
+								href="#"
+								role="button"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								گروهمون
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- WELCOME -->
+		<section class="pt-6 pt-md-11 pb-11 pb-md-13">
+			<div class="container-lg">
+				<div class="row justify-content-center">
+					<div class="col-md-12 text-center" data-aos="fade-up">
+						<!-- Heading -->
+						<h1 class="display-3 mb-4 text-900 mb-4">
+							جامعه توسعه‌دهندگان گیلان
+							<br />
+							<span
+								class="text-underline-warning d-none d-xl-inline dynamic-text text-900"
+								><span
+									data-typed='{"strings":["کمک به تازه واردها", "پیدا کردن فرصت شغلی", "کمک به جامعه کارآفرین","فضایی برای شبکه‌سازی افراد", "برگزاری رویداد‌های کارآفرینی و آموزشی"]}'
+								></span> </span
+							><span class="text-underline-warning d-xl-none"
+								>رویاهاتو اینجا شروع کن!</span
+							>
+						</h1>
+
+						<!-- Text -->
+						<p class="fs-lg text-muted">
+							ما کلی ایده خفن داریم <br />
+							که به کمک شما وپیاده سازیشون میکنیم تا باهم پیشرفت کنیم!
+						</p>
+
+						<!-- Button -->
+						<a class="btn btn-primary lift" href="#community"> ورود به کامیونیتی </a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- SHAPE -->
+		<div class="position-relative">
+			<div class="shape shape-fluid-x shape-bottom text-white pb-14">
+				<div class="shape-img pb-8 pb-md-11">
+					<svg viewBox="0 0 100 50" preserveAspectRatio="none">
+						<path d="M0 0h100v25H75L25 50H0z" fill="currentColor" />
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<!-- SLIDER -->
+		<section class="bg-light">
+			<!-- Slider -->
+			<div
+				class="flickity-buttons-responsive flickity-items-fade"
+				data-flickity='{"imagesLoaded": true, "wrapAround": true}'
+			>
+				<div style="width: calc(100% - 2rem); max-width: 920px">
+					<!-- Image -->
+					<a href="#">
+						<img
+							class="img-fluid rounded"
+							src="assets/img/screenshots/desktop/page-blog-article.jpg"
+							alt=""
+						/>
+					</a>
+
+					<!-- Body -->
+					<div class="flickity-hidden py-6 text-center">
+						<!-- Heading -->
+						<h6 class="text-uppercase text-dark">Blog Article</h6>
+
+						<!-- Text -->
+						<p class="fs-sm text-center text-primary-dark mb-0">
+							Featured image with beautiful type and galleries.
+						</p>
+					</div>
+				</div>
+				<div style="width: calc(100% - 2rem); max-width: 920px">
+					<!-- Image -->
+					<a href="./contact.html">
+						<img
+							class="img-fluid rounded"
+							src="assets/img/screenshots/desktop/page-contact.jpg"
+							alt="..."
+						/>
+					</a>
+
+					<!-- Body -->
+					<div class="flickity-hidden py-6 text-center">
+						<!-- Heading -->
+						<h6 class="text-uppercase text-dark">Contact Us</h6>
+
+						<!-- Text -->
+						<p class="fs-sm text-center text-primary-dark mb-0">
+							Multiple communication options and contact form.
+						</p>
+					</div>
+				</div>
+				<div style="width: calc(100% - 2rem); max-width: 920px">
+					<!-- Image -->
+					<a href="./pricing.html">
+						<img
+							class="img-fluid rounded"
+							src="assets/img/screenshots/desktop/page-pricing.jpg"
+							alt="..."
+						/>
+					</a>
+
+					<!-- Body -->
+					<div class="flickity-hidden py-6 text-center">
+						<!-- Heading -->
+						<h6 class="text-uppercase text-dark">Pricing</h6>
+
+						<!-- Text -->
+						<p class="fs-sm text-center text-primary-dark mb-0">
+							3-tier options with grid of features, testimonial, and faq.
+						</p>
+					</div>
+				</div>
+				<div style="width: calc(100% - 2rem); max-width: 920px">
+					<!-- Image -->
+					<a href="./career-benefits.html">
+						<img
+							class="img-fluid rounded"
+							src="assets/img/screenshots/desktop/page-benefits.jpg"
+							alt="..."
+						/>
+					</a>
+
+					<!-- Body -->
+					<div class="flickity-hidden py-6 text-center">
+						<!-- Heading -->
+						<h6 class="text-uppercase text-dark">Career Benefits</h6>
+
+						<!-- Text -->
+						<p class="fs-sm text-center text-primary-dark mb-0">
+							Image header, benefits and values, galleries, and team list
+						</p>
+					</div>
+				</div>
+				<div style="width: calc(100% - 2rem); max-width: 920px">
+					<!-- Image -->
+					<a href="./career-listing.html">
+						<img
+							class="img-fluid rounded"
+							src="assets/img/screenshots/desktop/page-careers.jpg"
+							alt="..."
+						/>
+					</a>
+
+					<!-- Body -->
+					<div class="flickity-hidden py-6 text-center">
+						<!-- Heading -->
+						<h6 class="text-uppercase text-dark">Career Listing</h6>
+
+						<!-- Text -->
+						<p class="fs-sm text-center text-primary-dark mb-0">
+							Simple listing of careers with search and filters.
+						</p>
+					</div>
+				</div>
+				<div style="width: calc(100% - 2rem); max-width: 920px">
+					<!-- Image -->
+					<a href="./pricing-feature-list.html">
+						<img
+							class="img-fluid rounded"
+							src="assets/img/screenshots/desktop/page-pricing-table.jpg"
+							alt="..."
+						/>
+					</a>
+
+					<!-- Body -->
+					<div class="flickity-hidden py-6 text-center">
+						<!-- Heading -->
+						<h6 class="text-uppercase text-dark">Pricing Table</h6>
+
+						<!-- Text -->
+						<p class="fs-sm text-center text-primary-dark mb-0">
+							Two-tiered pricing with a large feature comparison table.
+						</p>
+					</div>
+				</div>
+				<div style="width: calc(100% - 2rem); max-width: 920px">
+					<!-- Image -->
+					<a href="./faq.html">
+						<img
+							class="img-fluid rounded"
+							src="assets/img/screenshots/desktop/page-faq.jpg"
+							alt="..."
+						/>
+					</a>
+
+					<!-- Body -->
+					<div class="flickity-hidden py-6 text-center">
+						<!-- Heading -->
+						<h6 class="text-uppercase text-dark">FAQ</h6>
+
+						<!-- Text -->
+						<p class="fs-sm text-center text-primary-dark mb-0">
+							Multi-section FAQ with sticky headers and collapsing questions.
+						</p>
+					</div>
+				</div>
+				<div style="width: calc(100% - 2rem); max-width: 920px">
+					<!-- Image -->
+					<a href="./blog-listing.html">
+						<img
+							class="img-fluid rounded"
+							src="assets/img/screenshots/desktop/page-blog.jpg"
+							alt="..."
+						/>
+					</a>
+
+					<!-- Body -->
+					<div class="flickity-hidden py-6 text-center">
+						<!-- Heading -->
+						<h6 class="text-uppercase text-dark">Blog Listing</h6>
+
+						<!-- Text -->
+						<p class="fs-sm text-center text-primary-dark mb-0">
+							Flexible grid based cards for easy, beautiful blog layouts.
+						</p>
+					</div>
+				</div>
+				<div style="width: calc(100% - 2rem); max-width: 920px">
+					<!-- Image -->
+					<a href="./blog-post-cover.html">
+						<img
+							class="img-fluid rounded"
+							src="assets/img/screenshots/desktop/page-blog-article-cover.jpg"
+							alt="..."
+						/>
+					</a>
+
+					<!-- Body -->
+					<div class="flickity-hidden py-6 text-center">
+						<!-- Heading -->
+						<h6 class="text-uppercase text-dark">Blog Article (Cover)</h6>
+
+						<!-- Text -->
+						<p class="fs-sm text-center text-primary-dark mb-0">
+							Minimal blog layout with organize typography and images.
+						</p>
+					</div>
+				</div>
+				<div style="width: calc(100% - 2rem); max-width: 920px">
+					<!-- Image -->
+					<a href="./terms.html">
+						<img
+							class="img-fluid rounded"
+							src="assets/img/screenshots/desktop/page-terms.jpg"
+							alt="..."
+						/>
+					</a>
+
+					<!-- Body -->
+					<div class="flickity-hidden py-6 text-center">
+						<!-- Heading -->
+						<h6 class="text-uppercase text-dark">Terms of Service</h6>
+
+						<!-- Text -->
+						<p class="fs-sm text-center text-primary-dark mb-0">
+							A versatile simple text page for any legal mumbo jumbo.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- TESTIMONIALS -->
+		<section class="pt-8 pt-md-10 pb-7 pb-md-11 bg-light">
+			<div class="container-lg">
+				<div class="row justify-content-center mt-n8">
+					<div class="col-md-6 px-lg-9 border-end-md">
+						<!-- Blockquote -->
+						<blockquote class="mt-8">
+							<!-- Text -->
+							<p class="lead text-center mb-5 mb-md-8">
+								<q>
+									امسال هم کافه رئیس در #فریلند کنار ما خواهد بود تا با قهوه‌‌ها‌ی
+									خوش‌ عطر و نوشیدنی‌های جذابش، دو روز به یادمونی رو برامون رقم
+									بزنه.
+								</q>
+							</p>
+
+							<!-- Footer -->
+							<div class="d-flex align-items-center justify-content-center">
+								<!-- Avatar -->
+								<div class="avatar avatar-sm">
+									<img
+										class="avatar-img rounded-circle"
+										src="assets/img/avatars/sani.jpg"
+										alt="..."
+									/>
+								</div>
+
+								<!-- Body -->
+								<div class="ms-4">
+									<!-- Title -->
+									<p class="fw-bold mb-0">ساناز عصمتجو</p>
+
+									<!-- Position -->
+									<p class="small text-muted mt-n1 mb-0">بنیانگذار ماگتو بیار</p>
+								</div>
+							</div>
+						</blockquote>
+					</div>
+					<div class="col-md-6 px-lg-9">
+						<!-- Blockquote -->
+						<blockquote class="mt-8">
+							<!-- Text -->
+							<p class="lead text-center mb-5 mb-md-8">
+								<q>
+									امسال هم کافه رئیس در #فریلند کنار ما خواهد بود تا با قهوه‌‌ها‌ی
+									خوش‌ عطر و نوشیدنی‌های جذابش، دو روز به یادمونی رو برامون رقم
+									بزنه.
+								</q>
+							</p>
+
+							<!-- Footer -->
+							<div class="d-flex align-items-center justify-content-center">
+								<!-- Avatar -->
+								<div class="avatar avatar-sm">
+									<img
+										class="avatar-img rounded-circle"
+										src="assets/img/avatars/amin.jpg"
+										alt="..."
+									/>
+								</div>
+
+								<!-- Body -->
+								<div class="ms-4">
+									<!-- Title -->
+									<p class="fw-bold mb-0">امین فرهنگ</p>
+
+									<!-- Position -->
+									<p class="small text-muted mt-n1 mb-0">
+										منابع انسانی در دیجی کالا
+									</p>
+								</div>
+							</div>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- SHAPE -->
+		<div class="position-relative">
+			<div class="shape shape-fluid-x shape-bottom text-light">
+				<div class="shape-img pb-8 pb-md-11">
+					<svg viewBox="0 0 100 50" preserveAspectRatio="none">
+						<path d="M0 0h100v50H75L25 25H0z" fill="currentColor" />
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<!-- ABOUT -->
+		<section class="p-11 pt-md-13">
+			<div class="container-lg">
+				<div class="row align-items-center justify-content-between">
+					<div class="col-md-6 col-lg-5">
+						<!-- Image -->
+						<img
+							class="img-fluid mb-8 mb-md-0 rounded"
+							src="assets/img/e-commerce/rasht.jpg"
+							alt="..."
+						/>
+					</div>
+					<div class="col-md-6 col-lg-6">
+						<!-- Heading -->
+						<h2 class="display-4 text-700 mb-4">جامعه‌ توسعه‌دهندگان</h2>
+
+						<!-- Text -->
+						<p class="text-muted mb-3">
+							اینجا محفلی برای گفتگوی توسعه‌دهنده‌های گیلانی است. ما اینجا قصد داریم
+							رویدادها، دوره‌های منتورشیپ و آموزش‌های تخصصی را برای افراد گیلانی
+							علاقه‌مند به برنامه نویسی فراهم کنیم.
+						</p>
+						<p class="text-muted mb-3">
+							به این ترتیب، علاوه بر ایجاد فضایی برای افراد مبتدی جهت ورود به بازار
+							کار، آماده معرفی بسیاری از توسعه دهندگان، به شرکت‌های نیازمند نیز هستیم.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ABOUT -->
+		<section class="pb-10">
+			<div class="container-lg position-relative" style="z-index: 1">
+				<div class="row align-items-center justify-content-between">
+					<div class="col-md-5 order-md-1 pt-10 py-md-8">
+						<!-- Image -->
+						<div class="position-relative">
+							<!-- Decoration -->
+							<div class="position-absolute bottom-end text-warning mb-n8 me-n8">
+								<svg
+									width="185"
+									height="186"
+									viewBox="0 0 185 186"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<circle cx="2" cy="2" r="2" fill="currentColor" />
+									<circle cx="22" cy="2" r="2" fill="currentColor" />
+									<circle cx="42" cy="2" r="2" fill="currentColor" />
+									<circle cx="62" cy="2" r="2" fill="currentColor" />
+									<circle cx="82" cy="2" r="2" fill="currentColor" />
+									<circle cx="102" cy="2" r="2" fill="currentColor" />
+									<circle cx="122" cy="2" r="2" fill="currentColor" />
+									<circle cx="142" cy="2" r="2" fill="currentColor" />
+									<circle cx="162" cy="2" r="2" fill="currentColor" />
+									<circle cx="182" cy="2" r="2" fill="currentColor" />
+									<circle cx="2" cy="22" r="2" fill="currentColor" />
+									<circle cx="22" cy="22" r="2" fill="currentColor" />
+									<circle cx="42" cy="22" r="2" fill="currentColor" />
+									<circle cx="62" cy="22" r="2" fill="currentColor" />
+									<circle cx="82" cy="22" r="2" fill="currentColor" />
+									<circle cx="102" cy="22" r="2" fill="currentColor" />
+									<circle cx="122" cy="22" r="2" fill="currentColor" />
+									<circle cx="142" cy="22" r="2" fill="currentColor" />
+									<circle cx="162" cy="22" r="2" fill="currentColor" />
+									<circle cx="182" cy="22" r="2" fill="currentColor" />
+									<circle cx="2" cy="42" r="2" fill="currentColor" />
+									<circle cx="22" cy="42" r="2" fill="currentColor" />
+									<circle cx="42" cy="42" r="2" fill="currentColor" />
+									<circle cx="62" cy="42" r="2" fill="currentColor" />
+									<circle cx="82" cy="42" r="2" fill="currentColor" />
+									<circle cx="102" cy="42" r="2" fill="currentColor" />
+									<circle cx="122" cy="42" r="2" fill="currentColor" />
+									<circle cx="142" cy="42" r="2" fill="currentColor" />
+									<circle cx="162" cy="42" r="2" fill="currentColor" />
+									<circle cx="182" cy="42" r="2" fill="currentColor" />
+									<circle cx="2" cy="62" r="2" fill="currentColor" />
+									<circle cx="22" cy="62" r="2" fill="currentColor" />
+									<circle cx="42" cy="62" r="2" fill="currentColor" />
+									<circle cx="62" cy="62" r="2" fill="currentColor" />
+									<circle cx="82" cy="62" r="2" fill="currentColor" />
+									<circle cx="102" cy="62" r="2" fill="currentColor" />
+									<circle cx="122" cy="62" r="2" fill="currentColor" />
+									<circle cx="142" cy="62" r="2" fill="currentColor" />
+									<circle cx="162" cy="62" r="2" fill="currentColor" />
+									<circle cx="182" cy="62" r="2" fill="currentColor" />
+									<circle cx="2" cy="82" r="2" fill="currentColor" />
+									<circle cx="22" cy="82" r="2" fill="currentColor" />
+									<circle cx="42" cy="82" r="2" fill="currentColor" />
+									<circle cx="62" cy="82" r="2" fill="currentColor" />
+									<circle cx="82" cy="82" r="2" fill="currentColor" />
+									<circle cx="102" cy="82" r="2" fill="currentColor" />
+									<circle cx="122" cy="82" r="2" fill="currentColor" />
+									<circle cx="142" cy="82" r="2" fill="currentColor" />
+									<circle cx="162" cy="82" r="2" fill="currentColor" />
+									<circle cx="182" cy="82" r="2" fill="currentColor" />
+									<circle cx="2" cy="102" r="2" fill="currentColor" />
+									<circle cx="22" cy="102" r="2" fill="currentColor" />
+									<circle cx="42" cy="102" r="2" fill="currentColor" />
+									<circle cx="62" cy="102" r="2" fill="currentColor" />
+									<circle cx="82" cy="102" r="2" fill="currentColor" />
+									<circle cx="102" cy="102" r="2" fill="currentColor" />
+									<circle cx="122" cy="102" r="2" fill="currentColor" />
+									<circle cx="142" cy="102" r="2" fill="currentColor" />
+									<circle cx="162" cy="102" r="2" fill="currentColor" />
+									<circle cx="182" cy="102" r="2" fill="currentColor" />
+									<circle cx="2" cy="122" r="2" fill="currentColor" />
+									<circle cx="22" cy="122" r="2" fill="currentColor" />
+									<circle cx="42" cy="122" r="2" fill="currentColor" />
+									<circle cx="62" cy="122" r="2" fill="currentColor" />
+									<circle cx="82" cy="122" r="2" fill="currentColor" />
+									<circle cx="102" cy="122" r="2" fill="currentColor" />
+									<circle cx="122" cy="122" r="2" fill="currentColor" />
+									<circle cx="142" cy="122" r="2" fill="currentColor" />
+									<circle cx="162" cy="122" r="2" fill="currentColor" />
+									<circle cx="182" cy="122" r="2" fill="currentColor" />
+									<circle cx="2" cy="142" r="2" fill="currentColor" />
+									<circle cx="22" cy="142" r="2" fill="currentColor" />
+									<circle cx="42" cy="142" r="2" fill="currentColor" />
+									<circle cx="62" cy="142" r="2" fill="currentColor" />
+									<circle cx="82" cy="142" r="2" fill="currentColor" />
+									<circle cx="102" cy="142" r="2" fill="currentColor" />
+									<circle cx="122" cy="142" r="2" fill="currentColor" />
+									<circle cx="142" cy="142" r="2" fill="currentColor" />
+									<circle cx="162" cy="142" r="2" fill="currentColor" />
+									<circle cx="182" cy="142" r="2" fill="currentColor" />
+									<circle cx="2" cy="162" r="2" fill="currentColor" />
+									<circle cx="22" cy="162" r="2" fill="currentColor" />
+									<circle cx="42" cy="162" r="2" fill="currentColor" />
+									<circle cx="62" cy="162" r="2" fill="currentColor" />
+									<circle cx="82" cy="162" r="2" fill="currentColor" />
+									<circle cx="102" cy="162" r="2" fill="currentColor" />
+									<circle cx="122" cy="162" r="2" fill="currentColor" />
+									<circle cx="142" cy="162" r="2" fill="currentColor" />
+									<circle cx="162" cy="162" r="2" fill="currentColor" />
+									<circle cx="182" cy="162" r="2" fill="currentColor" />
+									<circle cx="2" cy="182" r="2" fill="currentColor" />
+									<circle cx="22" cy="182" r="2" fill="currentColor" />
+									<circle cx="42" cy="182" r="2" fill="currentColor" />
+									<circle cx="62" cy="182" r="2" fill="currentColor" />
+									<circle cx="82" cy="182" r="2" fill="currentColor" />
+									<circle cx="102" cy="182" r="2" fill="currentColor" />
+									<circle cx="122" cy="182" r="2" fill="currentColor" />
+									<circle cx="142" cy="182" r="2" fill="currentColor" />
+									<circle cx="162" cy="182" r="2" fill="currentColor" />
+									<circle cx="182" cy="182" r="2" fill="currentColor" />
+								</svg>
+							</div>
+
+							<!-- Image -->
+							<img
+								class="img-fluid position-relative border border-7 border-white shadow-lg rounded"
+								src="assets/img/e-commerce/Mammadk9.jpg"
+								alt="..."
+							/>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-5 order-md-0 py-10 py-md-12">
+						<!-- Heading -->
+						<h2 class="display-4 text-700 mb-4">منتورینگ و پشتیبانی</h2>
+
+						<!-- Text -->
+						<p class="text-muted">
+							از این رو، با هدف گردآوری افراد متخصص و توسعه‌دهنده در گیلان، از
+							علاقه‌مندان به این حوزه دعوت می‌کنیم تا به جمع ما اضافه شوند و ما را در
+							راستای این اهداف بلند مدت همراهی کنند.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- SHAPE -->
+		<div class="position-relative">
+			<div class="shape shape-fluid-x shape-bottom text-white pb-18">
+				<div class="shape-img pb-9 pb-md-15">
+					<svg viewBox="0 0 100 50" preserveAspectRatio="none">
+						<path d="M0 0h100v25H75L25 50H0z" fill="currentColor"></path>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<section
+			class="pt-10 pb-14 pt-md-12 bg-gray-900"
+			style="background-image: url(assets/img/patterns/pattern-1.svg)"
+		>
+			<div class="container-lg">
+				<div class="row">
+					<div class="col-12">
+						<!-- Decoration -->
+						<div
+							class="position-absolute top-center top-md-start text-warning mt-n8 ms-md-n8"
+						>
+							<svg
+								width="185"
+								height="186"
+								viewBox="0 0 185 186"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<circle cx="2" cy="2" r="2" fill="currentColor" />
+								<circle cx="22" cy="2" r="2" fill="currentColor" />
+								<circle cx="42" cy="2" r="2" fill="currentColor" />
+								<circle cx="62" cy="2" r="2" fill="currentColor" />
+								<circle cx="82" cy="2" r="2" fill="currentColor" />
+								<circle cx="102" cy="2" r="2" fill="currentColor" />
+								<circle cx="122" cy="2" r="2" fill="currentColor" />
+								<circle cx="142" cy="2" r="2" fill="currentColor" />
+								<circle cx="162" cy="2" r="2" fill="currentColor" />
+								<circle cx="182" cy="2" r="2" fill="currentColor" />
+								<circle cx="2" cy="22" r="2" fill="currentColor" />
+								<circle cx="22" cy="22" r="2" fill="currentColor" />
+								<circle cx="42" cy="22" r="2" fill="currentColor" />
+								<circle cx="62" cy="22" r="2" fill="currentColor" />
+								<circle cx="82" cy="22" r="2" fill="currentColor" />
+								<circle cx="102" cy="22" r="2" fill="currentColor" />
+								<circle cx="122" cy="22" r="2" fill="currentColor" />
+								<circle cx="142" cy="22" r="2" fill="currentColor" />
+								<circle cx="162" cy="22" r="2" fill="currentColor" />
+								<circle cx="182" cy="22" r="2" fill="currentColor" />
+								<circle cx="2" cy="42" r="2" fill="currentColor" />
+								<circle cx="22" cy="42" r="2" fill="currentColor" />
+								<circle cx="42" cy="42" r="2" fill="currentColor" />
+								<circle cx="62" cy="42" r="2" fill="currentColor" />
+								<circle cx="82" cy="42" r="2" fill="currentColor" />
+								<circle cx="102" cy="42" r="2" fill="currentColor" />
+								<circle cx="122" cy="42" r="2" fill="currentColor" />
+								<circle cx="142" cy="42" r="2" fill="currentColor" />
+								<circle cx="162" cy="42" r="2" fill="currentColor" />
+								<circle cx="182" cy="42" r="2" fill="currentColor" />
+								<circle cx="2" cy="62" r="2" fill="currentColor" />
+								<circle cx="22" cy="62" r="2" fill="currentColor" />
+								<circle cx="42" cy="62" r="2" fill="currentColor" />
+								<circle cx="62" cy="62" r="2" fill="currentColor" />
+								<circle cx="82" cy="62" r="2" fill="currentColor" />
+								<circle cx="102" cy="62" r="2" fill="currentColor" />
+								<circle cx="122" cy="62" r="2" fill="currentColor" />
+								<circle cx="142" cy="62" r="2" fill="currentColor" />
+								<circle cx="162" cy="62" r="2" fill="currentColor" />
+								<circle cx="182" cy="62" r="2" fill="currentColor" />
+								<circle cx="2" cy="82" r="2" fill="currentColor" />
+								<circle cx="22" cy="82" r="2" fill="currentColor" />
+								<circle cx="42" cy="82" r="2" fill="currentColor" />
+								<circle cx="62" cy="82" r="2" fill="currentColor" />
+								<circle cx="82" cy="82" r="2" fill="currentColor" />
+								<circle cx="102" cy="82" r="2" fill="currentColor" />
+								<circle cx="122" cy="82" r="2" fill="currentColor" />
+								<circle cx="142" cy="82" r="2" fill="currentColor" />
+								<circle cx="162" cy="82" r="2" fill="currentColor" />
+								<circle cx="182" cy="82" r="2" fill="currentColor" />
+								<circle cx="2" cy="102" r="2" fill="currentColor" />
+								<circle cx="22" cy="102" r="2" fill="currentColor" />
+								<circle cx="42" cy="102" r="2" fill="currentColor" />
+								<circle cx="62" cy="102" r="2" fill="currentColor" />
+								<circle cx="82" cy="102" r="2" fill="currentColor" />
+								<circle cx="102" cy="102" r="2" fill="currentColor" />
+								<circle cx="122" cy="102" r="2" fill="currentColor" />
+								<circle cx="142" cy="102" r="2" fill="currentColor" />
+								<circle cx="162" cy="102" r="2" fill="currentColor" />
+								<circle cx="182" cy="102" r="2" fill="currentColor" />
+								<circle cx="2" cy="122" r="2" fill="currentColor" />
+								<circle cx="22" cy="122" r="2" fill="currentColor" />
+								<circle cx="42" cy="122" r="2" fill="currentColor" />
+								<circle cx="62" cy="122" r="2" fill="currentColor" />
+								<circle cx="82" cy="122" r="2" fill="currentColor" />
+								<circle cx="102" cy="122" r="2" fill="currentColor" />
+								<circle cx="122" cy="122" r="2" fill="currentColor" />
+								<circle cx="142" cy="122" r="2" fill="currentColor" />
+								<circle cx="162" cy="122" r="2" fill="currentColor" />
+								<circle cx="182" cy="122" r="2" fill="currentColor" />
+								<circle cx="2" cy="142" r="2" fill="currentColor" />
+								<circle cx="22" cy="142" r="2" fill="currentColor" />
+								<circle cx="42" cy="142" r="2" fill="currentColor" />
+								<circle cx="62" cy="142" r="2" fill="currentColor" />
+								<circle cx="82" cy="142" r="2" fill="currentColor" />
+								<circle cx="102" cy="142" r="2" fill="currentColor" />
+								<circle cx="122" cy="142" r="2" fill="currentColor" />
+								<circle cx="142" cy="142" r="2" fill="currentColor" />
+								<circle cx="162" cy="142" r="2" fill="currentColor" />
+								<circle cx="182" cy="142" r="2" fill="currentColor" />
+								<circle cx="2" cy="162" r="2" fill="currentColor" />
+								<circle cx="22" cy="162" r="2" fill="currentColor" />
+								<circle cx="42" cy="162" r="2" fill="currentColor" />
+								<circle cx="62" cy="162" r="2" fill="currentColor" />
+								<circle cx="82" cy="162" r="2" fill="currentColor" />
+								<circle cx="102" cy="162" r="2" fill="currentColor" />
+								<circle cx="122" cy="162" r="2" fill="currentColor" />
+								<circle cx="142" cy="162" r="2" fill="currentColor" />
+								<circle cx="162" cy="162" r="2" fill="currentColor" />
+								<circle cx="182" cy="162" r="2" fill="currentColor" />
+								<circle cx="2" cy="182" r="2" fill="currentColor" />
+								<circle cx="22" cy="182" r="2" fill="currentColor" />
+								<circle cx="42" cy="182" r="2" fill="currentColor" />
+								<circle cx="62" cy="182" r="2" fill="currentColor" />
+								<circle cx="82" cy="182" r="2" fill="currentColor" />
+								<circle cx="102" cy="182" r="2" fill="currentColor" />
+								<circle cx="122" cy="182" r="2" fill="currentColor" />
+								<circle cx="142" cy="182" r="2" fill="currentColor" />
+								<circle cx="162" cy="182" r="2" fill="currentColor" />
+								<circle cx="182" cy="182" r="2" fill="currentColor" />
+							</svg>
+						</div>
+
+						<!-- Stack -->
+						<div class="card-stack">
+							<!-- Card -->
+							<div class="card-stack-item mb-9">
+								<div class="card card-lg rounded overflow-hidden">
+									<div class="row gx-0">
+										<div
+											class="col-md order-md-1 d-flex align-items-end bg-primary"
+										>
+											<!-- Image -->
+											<a href="./robo-advisor.html">
+												<img
+													class="card-img-top"
+													src="assets/img/screenshots/ui-elements/landing-robo-investor.jpg"
+													alt="..."
+												/>
+											</a>
+										</div>
+										<div
+											class="col-md-5 order-md-0 d-flex align-items-center bg-white"
+										>
+											<div class="card-body text-center">
+												<!-- Icon -->
+												<div class="icon text-primary-light mx-auto mb-4">
+													<svg
+														width="24"
+														height="24"
+														viewBox="0 0 24 24"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<g fill="none" fill-rule="evenodd">
+															<path d="M0 0h24v24H0z" />
+															<path
+																d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2z"
+																fill="#335EEA"
+																opacity=".3"
+															/>
+															<path
+																d="M18.5 11h-13A1.5 1.5 0 004 12.5v.5h4.586a1 1 0 01.707.293l1 1a2.414 2.414 0 003.414 0l1-1a1 1 0 01.707-.293H20v-.5a1.5 1.5 0 00-1.5-1.5zM5.5 6A1.5 1.5 0 004 7.5V8h16v-.5A1.5 1.5 0 0018.5 6h-13z"
+																fill="#335EEA"
+															/>
+														</g>
+													</svg>
+												</div>
+
+												<!-- Heading -->
+												<h1 class="font-sans-serif mb-4 mt-auto">
+													Robo Advisor
+												</h1>
+
+												<!-- Text -->
+												<p>
+													Illustrated header, stat cards, testimonial
+													slider, app downloads, case studies, pricing,
+													and jumbo call to action.
+												</p>
+
+												<!-- Link -->
+												<a
+													class="h6 text-uppercase text-decoration-none mt-auto"
+													href="./robo-advisor.html"
+												>
+													View Landing <i class="fe fe-arrow-right"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Card -->
+							<div class="card-stack-item mb-9">
+								<div class="card card-lg rounded overflow-hidden">
+									<div class="row gx-0">
+										<div
+											class="col-md order-md-1 d-flex align-items-end bg-primary"
+										>
+											<!-- Image -->
+											<a href="./analytics-saas.html">
+												<img
+													class="card-img-top"
+													src="assets/img/screenshots/ui-elements/landing-analytics.jpg"
+													alt="..."
+												/>
+											</a>
+										</div>
+										<div
+											class="col-md-5 order-md-0 d-flex align-items-center bg-white"
+										>
+											<div class="card-body text-center">
+												<!-- Icon -->
+												<div class="icon text-primary-light mx-auto mb-4">
+													<svg
+														width="24"
+														height="24"
+														viewBox="0 0 24 24"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<g fill="none" fill-rule="evenodd">
+															<path d="M0 0h24v24H0z" />
+															<path
+																d="M4.002 12.2L13 14V4.062A8.001 8.001 0 0112 20a8 8 0 01-7.998-7.8z"
+																fill="#335EEA"
+																opacity=".3"
+															/>
+															<path
+																d="M3.06 10.012A8.001 8.001 0 0111 3v8.6l-7.94-1.588z"
+																fill="#335EEA"
+															/>
+														</g>
+													</svg>
+												</div>
+
+												<!-- Heading -->
+												<h1 class="font-sans-serif mb-4 mt-auto">
+													Analytics SaaS
+												</h1>
+
+												<!-- Text -->
+												<p>
+													Animated UI elements and product screenshots,
+													stepped processes, a rich testimonial slider and
+													beautiful pricing.
+												</p>
+
+												<!-- Link -->
+												<a
+													class="h6 text-uppercase text-decoration-none mt-auto"
+													href="./analytics-saas.html"
+												>
+													View Landing <i class="fe fe-arrow-right"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Card -->
+							<div class="card-stack-item mb-9">
+								<div class="card card-lg rounded overflow-hidden">
+									<div class="row gx-0">
+										<div
+											class="col-md order-md-1 d-flex align-items-end bg-primary"
+										>
+											<!-- Image -->
+											<a href="./e-commerce-platform.html">
+												<img
+													class="card-img-top"
+													src="assets/img/screenshots/ui-elements/landing-e-commerce.jpg"
+													alt="..."
+												/>
+											</a>
+										</div>
+										<div
+											class="col-md-5 order-md-0 d-flex align-items-center bg-white"
+										>
+											<div class="card-body text-center">
+												<!-- Icon -->
+												<div class="icon text-primary-light mx-auto mb-4">
+													<svg
+														width="24"
+														height="24"
+														viewBox="0 0 24 24"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<g fill="none" fill-rule="evenodd">
+															<path d="M0 0h24v24H0z" />
+															<path
+																d="M18.145 11.844l-.698 4.185a1 1 0 01-1.165.82L4.913 14.78a1 1 0 01-.783-.709L2.306 7.685a1 1 0 01.961-1.275h13.726l.613-2.627a1.18 1.18 0 011.15-.912h2.064a1.18 1.18 0 110 2.36h-1.128l-1.547 6.613z"
+																fill="#335EEA"
+																opacity=".3"
+															/>
+															<path
+																d="M6.5 21a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm9 0a1.5 1.5 0 110-3 1.5 1.5 0 010 3z"
+																fill="#335EEA"
+															/>
+														</g>
+													</svg>
+												</div>
+
+												<!-- Heading -->
+												<h1 class="font-sans-serif mb-4 mt-auto">
+													Store Platform
+												</h1>
+
+												<!-- Text -->
+												<p>
+													Unique hero slider, simple testimonials,
+													physical product shots, mobile screenshot
+													slider, and parallax image gallery.
+												</p>
+
+												<!-- Link -->
+												<a
+													class="h6 text-uppercase text-decoration-none mt-auto"
+													href="./e-commerce-platform.html"
+												>
+													View Landing <i class="fe fe-arrow-right"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Card -->
+							<div class="card-stack-item mb-9">
+								<div class="card card-lg rounded overflow-hidden">
+									<div class="row gx-0">
+										<div
+											class="col-md order-md-1 d-flex align-items-end bg-primary"
+										>
+											<!-- Image -->
+											<a href="./coworking.html">
+												<img
+													class="card-img-top"
+													src="assets/img/screenshots/ui-elements/landing-coworking.jpg"
+													alt="..."
+												/>
+											</a>
+										</div>
+										<div
+											class="col-md-5 order-md-0 d-flex align-items-center bg-white"
+										>
+											<div class="card-body text-center">
+												<!-- Icon -->
+												<div class="icon text-primary-light mx-auto mb-4">
+													<svg
+														width="24"
+														height="24"
+														viewBox="0 0 24 24"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<g fill="none" fill-rule="evenodd">
+															<path d="M0 0h24v24H0z" />
+															<path
+																d="M5.133 2.036c6.945 3.876 9.445 8.206 7.5 12.99-4.97-.79-7.47-5.12-7.5-12.99z"
+																fill="#335EEA"
+																opacity=".3"
+															/>
+															<path
+																d="M18.742 2.036c-6.945 3.876-9.445 8.206-7.5 12.99 4.97-.79 7.47-5.12 7.5-12.99z"
+																fill="#335EEA"
+																opacity=".3"
+															/>
+															<path
+																d="M12 1c-4.076 6.83-4.076 11.83 0 15 3.91-3.17 3.91-8.17 0-15z"
+																fill="#335EEA"
+																opacity=".3"
+															/>
+															<path
+																d="M6.344 13h11.312a1 1 0 01.958 1.287l-2.186 7.288A2 2 0 0114.512 23H9.488a2 2 0 01-1.916-1.425l-2.186-7.288A1 1 0 016.344 13z"
+																fill="#335EEA"
+															/>
+														</g>
+													</svg>
+												</div>
+
+												<!-- Heading -->
+												<h1 class="font-sans-serif mb-4 mt-auto">
+													Coworking
+												</h1>
+
+												<!-- Text -->
+												<p>
+													Hero slider, pricing tabs, animated company
+													stats, parallaxing galleries, FAQ, rich
+													testimonials, and a contact form.
+												</p>
+
+												<!-- Link -->
+												<a
+													class="h6 text-uppercase text-decoration-none mt-auto"
+													href="./coworking.html"
+												>
+													View Landing <i class="fe fe-arrow-right"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Card -->
+							<div class="card-stack-item mb-9">
+								<div class="card card-lg rounded overflow-hidden">
+									<div class="row gx-0">
+										<div
+											class="col-md order-md-1 d-flex align-items-end bg-primary"
+										>
+											<!-- Image -->
+											<a href="./course.html">
+												<img
+													class="card-img-top"
+													src="assets/img/screenshots/ui-elements/landing-course.jpg"
+													alt="..."
+												/>
+											</a>
+										</div>
+										<div
+											class="col-md-5 order-md-0 d-flex align-items-center bg-white"
+										>
+											<div class="card-body text-center">
+												<!-- Icon -->
+												<div class="icon text-primary-light mx-auto mb-4">
+													<svg
+														width="24"
+														height="24"
+														viewBox="0 0 24 24"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<g fill="none" fill-rule="evenodd">
+															<path d="M0 0h24v24H0z" />
+															<path
+																d="M6 3h12a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2zm-.5 2a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5h-1zm12 0a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5h-1zm-12 4a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5h-1zm12 0a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5h-1zm-12 4a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5h-1zm12 0a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5h-1zm0 4a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5h-1zm-12 0a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5h-1z"
+																fill="#335EEA"
+																opacity=".3"
+															/>
+															<path
+																d="M11.352 14.572l2.605-1.78a.5.5 0 00.001-.825l-2.605-1.792a.5.5 0 00-.783.412v3.572a.5.5 0 00.782.413z"
+																fill="#335EEA"
+															/>
+														</g>
+													</svg>
+												</div>
+
+												<!-- Heading -->
+												<h1 class="font-sans-serif mb-4 mt-auto">Course</h1>
+
+												<!-- Text -->
+												<p>
+													Takeover video modal, checklist value
+													propositions and illustrations, course outline
+													accordion, and testimonial gallery.
+												</p>
+
+												<!-- Link -->
+												<a
+													class="h6 text-uppercase text-decoration-none mt-auto"
+													href="./course.html"
+												>
+													View Landing <i class="fe fe-arrow-right"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Card -->
+							<div class="card-stack-item mb-9">
+								<div class="card card-lg rounded overflow-hidden">
+									<div class="row gx-0">
+										<div
+											class="col-md order-md-1 d-flex align-items-end bg-primary"
+										>
+											<!-- Image -->
+											<a href="./hiring-agency.html">
+												<img
+													class="card-img-top"
+													src="assets/img/screenshots/ui-elements/landing-hiring.jpg"
+													alt="..."
+												/>
+											</a>
+										</div>
+										<div
+											class="col-md-5 order-md-0 d-flex align-items-center bg-white"
+										>
+											<div class="card-body text-center">
+												<!-- Icon -->
+												<div class="icon text-primary-light mx-auto mb-4">
+													<svg
+														width="24"
+														height="24"
+														viewBox="0 0 24 24"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<g fill="none" fill-rule="evenodd">
+															<path d="M0 0h24v24H0z" />
+															<path
+																d="M12 11a4 4 0 110-8 4 4 0 010 8z"
+																fill="#335EEA"
+																opacity=".3"
+															/>
+															<path
+																d="M3 20.2c.388-4.773 4.262-7.2 8.983-7.2 4.788 0 8.722 2.293 9.015 7.2.012.195 0 .8-.751.8H3.727c-.25 0-.747-.54-.726-.8z"
+																fill="#335EEA"
+															/>
+														</g>
+													</svg>
+												</div>
+
+												<!-- Heading -->
+												<h1 class="font-sans-serif mb-4 mt-auto">
+													Hiring Platform
+												</h1>
+
+												<!-- Text -->
+												<p>
+													Minimal header, illustrated values, jumbo
+													parallax call-to-action form, profile card
+													masonry, and a pricing range slider.
+												</p>
+
+												<!-- Link -->
+												<a
+													class="h6 text-uppercase text-decoration-none mt-auto"
+													href="./hiring-agency.html"
+												>
+													View Landing <i class="fe fe-arrow-right"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Card -->
+							<div class="card-stack-item mb-9">
+								<div class="card card-lg rounded overflow-hidden">
+									<div class="row gx-0">
+										<div
+											class="col-md order-md-1 d-flex align-items-end bg-primary"
+										>
+											<!-- Image -->
+											<a href="./mobile-chat-app.html">
+												<img
+													class="card-img-top"
+													src="assets/img/screenshots/ui-elements/landing-mobile-chat.jpg"
+													alt="..."
+												/>
+											</a>
+										</div>
+										<div
+											class="col-md-5 order-md-0 d-flex align-items-center bg-white"
+										>
+											<div class="card-body text-center">
+												<!-- Icon -->
+												<div class="icon text-primary-light mx-auto mb-4">
+													<svg
+														width="24"
+														height="24"
+														viewBox="0 0 24 24"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<g fill="none" fill-rule="evenodd">
+															<path d="M0 0h24v24H0z" />
+															<path
+																d="M7.139 4v15h9.722V4H7.14zm.694-3h8.334c1.406 0 2.083.981 2.083 2.5v17c0 1.519-.677 2.5-2.083 2.5H7.833c-1.406 0-2.083-.981-2.083-2.5v-17c0-1.519.677-2.5 2.083-2.5z"
+																fill="#335EEA"
+															/>
+															<path
+																fill="#335EEA"
+																opacity=".3"
+																d="M7 4v15h10V4z"
+															/>
+															<circle
+																fill="#335EEA"
+																cx="12"
+																cy="21"
+																r="1"
+															/>
+														</g>
+													</svg>
+												</div>
+
+												<!-- Heading -->
+												<h1 class="font-sans-serif mb-4 mt-auto">
+													Enterprise Chat
+												</h1>
+
+												<!-- Text -->
+												<p>
+													Simple and visually lightweight. App screenshot
+													header, simple value sections, features grid,
+													and simple 2-tier pricing.
+												</p>
+
+												<!-- Link -->
+												<a
+													class="h6 text-uppercase text-decoration-none mt-auto"
+													href="./mobile-chat-app.html"
+												>
+													View Landing <i class="fe fe-arrow-right"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Card -->
+							<div class="card-stack-item mb-9">
+								<div class="card card-lg rounded overflow-hidden">
+									<div class="row gx-0">
+										<div
+											class="col-md order-md-1 d-flex align-items-end bg-primary"
+										>
+											<!-- Image -->
+											<a href="./software-automation.html">
+												<img
+													class="card-img-top"
+													src="assets/img/screenshots/ui-elements/landing-automation.jpg"
+													alt="..."
+												/>
+											</a>
+										</div>
+										<div
+											class="col-md-5 order-md-0 d-flex align-items-center bg-white"
+										>
+											<div class="card-body text-center">
+												<!-- Icon -->
+												<div class="icon text-primary-light mx-auto mb-4">
+													<svg
+														width="24"
+														height="24"
+														viewBox="0 0 24 24"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<g fill="none" fill-rule="evenodd">
+															<path d="M0 0h24v24H0z" />
+															<path
+																d="M8 7a1 1 0 110-2h8a4 4 0 110 8H8a2 2 0 100 4h9a1 1 0 010 2H8a4 4 0 110-8h8a2 2 0 100-4H8z"
+																fill="#335EEA"
+																opacity=".3"
+															/>
+															<path
+																d="M9.707 8.293a1 1 0 01-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 1.414L7.414 6l2.293 2.293zM14.293 20.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 00-1.414 1.414L16.586 18l-2.293 2.293z"
+																fill="#335EEA"
+															/>
+														</g>
+													</svg>
+												</div>
+
+												<!-- Heading -->
+												<h1 class="font-sans-serif mb-4 mt-auto">
+													Productivity SaaS
+												</h1>
+
+												<!-- Text -->
+												<p>
+													Minimal header, stacking feature cards, customer
+													companies slider, blog preview, 3-tier pricing
+													and jumbo call to action.
+												</p>
+
+												<!-- Link -->
+												<a
+													class="h6 text-uppercase text-decoration-none mt-auto"
+													href="./software-automation.html"
+												>
+													View Landing <i class="fe fe-arrow-right"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- SHAPE -->
+		<div class="position-relative">
+			<!-- Shape -->
+			<div class="shape shape-fluid-x shape-top text-white">
+				<div class="shape-img pb-9 pb-md-15">
+					<svg viewBox="0 0 100 50" preserveAspectRatio="none">
+						<path d="M0 0h25l50 25h25v75H0z" fill="currentColor" />
+					</svg>
+				</div>
+			</div>
+
+			<!-- Decoration -->
+			<div class="position-absolute top-end text-primary-dark mt-n12">
+				<svg
+					width="129"
+					height="208"
+					viewBox="0 0 129 208"
+					class="svg-shapes"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<g clip-path="url(#decoration5clip0)">
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M142.812 201.281a6.47 6.47 0 1112.94.002 6.47 6.47 0 01-12.94-.002zm1.618 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.811-4.811-4.811 4.811-1.143-1.144 4.811-4.811-4.811-4.811 1.143-1.143 4.811 4.811zm-32.343 1.143a6.468 6.468 0 1112.936 0 6.468 6.468 0 01-12.936 0zm1.617 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.811-4.811-4.811 4.811-1.143-1.144 4.811-4.811-4.811-4.811 1.143-1.143 4.811 4.811z"
+							fill="currentColor"
+						/>
+					</g>
+					<g clip-path="url(#decoration5clip1)">
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M142.812 149.281a6.47 6.47 0 1112.94.002 6.47 6.47 0 01-12.94-.002zm1.618 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.811-4.811-4.811 4.811-1.143-1.144 4.811-4.811-4.811-4.811 1.143-1.143 4.811 4.811zm-32.343 1.143a6.468 6.468 0 1112.936 0 6.468 6.468 0 01-12.936 0zm1.617 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.811-4.811-4.811 4.811-1.143-1.144 4.811-4.811-4.811-4.811 1.143-1.143 4.811 4.811z"
+							fill="currentColor"
+						/>
+					</g>
+					<g clip-path="url(#decoration5clip2)">
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M142.812 97.281a6.47 6.47 0 1112.939.002 6.47 6.47 0 01-12.939-.002zm1.618 0a4.851 4.851 0 119.703 0 4.851 4.851 0 01-9.703 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.811-4.811-4.811 4.81-1.143-1.143 4.811-4.81-4.811-4.812 1.143-1.143 4.811 4.81zm-32.343 1.143a6.469 6.469 0 1112.937 0 6.469 6.469 0 01-12.937 0zm1.617 0a4.851 4.851 0 119.703 0 4.851 4.851 0 01-9.703 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.811-4.811-4.811 4.811-1.143-1.144 4.811-4.81-4.811-4.812 1.143-1.143 4.811 4.81z"
+							fill="currentColor"
+						/>
+					</g>
+					<g clip-path="url(#decoration5clip3)">
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M38.813 149.281a6.47 6.47 0 1112.938 0 6.47 6.47 0 01-12.938 0zm1.617 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.811-1.143-1.144 4.81-4.811-4.81-4.811 1.143-1.143 4.811 4.811zm-32.343 1.143a6.469 6.469 0 1112.937.001 6.469 6.469 0 01-12.938-.001zm1.617 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.811-1.143-1.144 4.81-4.811-4.81-4.811 1.143-1.143 4.811 4.811z"
+							fill="currentColor"
+						/>
+					</g>
+					<g clip-path="url(#decoration5clip4)">
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M38.813 97.281a6.469 6.469 0 1112.937 0 6.469 6.469 0 01-12.938 0zm1.617 0a4.852 4.852 0 119.703 0 4.852 4.852 0 01-9.703 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.81-1.143-1.143 4.81-4.81-4.81-4.812 1.143-1.143 4.811 4.81zm-32.343 1.143a6.469 6.469 0 1112.937 0 6.469 6.469 0 01-12.938 0zm1.617 0a4.852 4.852 0 119.703 0 4.852 4.852 0 01-9.703 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.811-1.143-1.144 4.81-4.81-4.81-4.812 1.143-1.143 4.811 4.81z"
+							fill="currentColor"
+						/>
+					</g>
+					<g clip-path="url(#decoration5clip5)">
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M38.813 45.281a6.469 6.469 0 1112.937 0 6.469 6.469 0 01-12.938 0zm1.617 0a4.852 4.852 0 119.703 0 4.852 4.852 0 01-9.703 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.81-1.143-1.143 4.81-4.81-4.81-4.812 1.143-1.143 4.811 4.81zm-32.343 1.143a6.469 6.469 0 1112.937 0 6.469 6.469 0 01-12.938 0zm1.617 0a4.852 4.852 0 119.703 0 4.852 4.852 0 01-9.703 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.81-1.143-1.143 4.81-4.81-4.81-4.812 1.143-1.143 4.811 4.81z"
+							fill="currentColor"
+						/>
+					</g>
+					<g clip-path="url(#decoration5clip6)">
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M90.813 175.281a6.47 6.47 0 1112.938 0 6.47 6.47 0 01-12.939 0zm1.617 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.81-4.811-4.812 4.811-1.143-1.144 4.81-4.811-4.81-4.811 1.143-1.143 4.811 4.811zm-32.344 1.143a6.469 6.469 0 1112.938.001 6.469 6.469 0 01-12.938-.001zm1.618 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.811-1.143-1.144 4.81-4.811-4.81-4.811 1.143-1.143 4.811 4.811z"
+							fill="currentColor"
+						/>
+					</g>
+					<g clip-path="url(#decoration5clip7)">
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M90.813 123.281a6.47 6.47 0 1112.938 0 6.47 6.47 0 01-12.939 0zm1.617 0a4.851 4.851 0 119.702 0 4.851 4.851 0 01-9.702 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.81-4.811-4.812 4.811-1.143-1.144 4.81-4.81-4.81-4.812 1.143-1.143 4.811 4.81zm-32.344 1.143a6.469 6.469 0 1112.938 0 6.469 6.469 0 01-12.938 0zm1.618 0a4.852 4.852 0 119.703 0 4.852 4.852 0 01-9.703 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.811-1.143-1.144 4.81-4.811-4.81-4.811 1.143-1.143 4.811 4.811z"
+							fill="currentColor"
+						/>
+					</g>
+					<g clip-path="url(#decoration5clip8)">
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M90.813 71.281a6.469 6.469 0 1112.937 0 6.469 6.469 0 01-12.938 0zm1.617 0a4.852 4.852 0 119.703 0 4.852 4.852 0 01-9.703 0zm4.851-27.018l4.811-4.811 1.144 1.143-4.811 4.811 4.811 4.811-1.144 1.144-4.81-4.811-4.812 4.81-1.143-1.143 4.81-4.81-4.81-4.812 1.143-1.143 4.811 4.81zm-32.344 1.143a6.469 6.469 0 1112.938 0 6.469 6.469 0 01-12.938 0zm1.618 0a4.852 4.852 0 119.703 0 4.852 4.852 0 01-9.703 0zm4.851 24.732l4.811-4.811 1.144 1.143-4.811 4.811 4.81 4.811-1.143 1.144-4.81-4.811-4.812 4.81-1.143-1.143 4.81-4.81-4.81-4.812 1.143-1.143 4.811 4.81z"
+							fill="currentColor"
+						/>
+					</g>
+					<defs>
+						<clipPath id="decoration4clip0">
+							<path
+								transform="matrix(0 -1 -1 0 155.75 207.75)"
+								fill="#fff"
+								d="M0 0h51.75v51.75H0z"
+							/>
+						</clipPath>
+						<clipPath id="decoration4clip1">
+							<path
+								transform="rotate(-90 155.75 0)"
+								fill="#fff"
+								d="M0 0h51.75v51.75H0z"
+							/>
+						</clipPath>
+						<clipPath id="decoration4clip2">
+							<path
+								transform="matrix(0 -1 -1 0 155.75 103.75)"
+								fill="#fff"
+								d="M0 0h51.75v51.75H0z"
+							/>
+						</clipPath>
+						<clipPath id="decoration4clip3">
+							<path
+								transform="matrix(0 -1 -1 0 51.75 155.75)"
+								fill="#fff"
+								d="M0 0h51.75v51.75H0z"
+							/>
+						</clipPath>
+						<clipPath id="decoration4clip4">
+							<path
+								transform="matrix(0 -1 -1 0 51.75 103.75)"
+								fill="#fff"
+								d="M0 0h51.75v51.75H0z"
+							/>
+						</clipPath>
+						<clipPath id="decoration4clip5">
+							<path
+								transform="matrix(0 -1 -1 0 51.75 51.75)"
+								fill="#fff"
+								d="M0 0h51.75v51.75H0z"
+							/>
+						</clipPath>
+						<clipPath id="decoration4clip6">
+							<path
+								transform="matrix(0 -1 -1 0 103.75 181.75)"
+								fill="#fff"
+								d="M0 0h51.75v51.75H0z"
+							/>
+						</clipPath>
+						<clipPath id="decoration4clip7">
+							<path
+								transform="matrix(0 -1 -1 0 103.75 129.75)"
+								fill="#fff"
+								d="M0 0h51.75v51.75H0z"
+							/>
+						</clipPath>
+						<clipPath id="decoration4clip8">
+							<path
+								transform="matrix(0 -1 -1 0 103.75 77.75)"
+								fill="#fff"
+								d="M0 0h51.75v51.75H0z"
+							/>
+						</clipPath>
+					</defs>
+				</svg>
+			</div>
+		</div>
+
+		<!-- ABOUT -->
+		<section class="py-10 py-md-12">
+			<div class="container-lg mb-12">
+				<div class="row align-items-center justify-content-between">
+					<div class="col-md-6 order-md-1">
+						<!-- Image grid -->
+						<div class="img-grid img-grid-1 mb-8 mb-md-0 bg-checkered"></div>
+					</div>
+					<div class="col-md-6 col-lg-5 order-md-0 text-center text-md-end">
+						<!-- Heading -->
+						<h2 class="display-4 text-700 mb-6">داستان تیم‌ما</h2>
+
+						<!-- Subheading -->
+						<p class="fs-lg fw-bold mb-2">هدف</p>
+
+						<!-- Text -->
+						<p class="text-muted">
+							اینجا محفلی برای گفتگوی توسعه‌دهنده‌های گیلانی است. ما اینجا قصد داریم
+							رویدادها، دوره‌های منتورشیپ و آموزش‌های تخصصی را برای افراد گیلانی
+							علاقه‌مند به برنامه نویسی فراهم کنیم.
+						</p>
+
+						<!-- Subheading -->
+						<p class="fs-lg fw-bold mb-2">چشم انداز</p>
+
+						<!-- Text -->
+						<p class="text-muted mb-0">
+							به این ترتیب، علاوه بر ایجاد فضایی برای افراد مبتدی جهت ورود به بازار
+							کار، آماده معرفی بسیاری از توسعه دهندگان، به شرکت‌های نیازمند نیز هستیم.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="container-lg">
+				<div class="row align-items-center">
+					<div class="col-lg-4">
+						<!-- Heading -->
+						<h2 class="display-4 text-700 mb-6">اعضای عزیزمون</h2>
+					</div>
+					<div class="col-lg-8">
+						<div class="members-grid">
+							<div class="members-grid">
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(1).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(2).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(3).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(4).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(5).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(6).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(7).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(8).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(9).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(10).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(11).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(12).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(13).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(14).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(15).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(1).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(2).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(3).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(4).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(5).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(6).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(7).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(8).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(9).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(10).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(11).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(12).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(13).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(14).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(15).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(1).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(2).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(3).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(4).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(5).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(6).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(7).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(8).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(9).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="members-item">
+									<div class="member">
+										<div class="member-avatar">
+											<img src="/assets/img/member/(10).jpg" alt="" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ROLES -->
+		<section class="pb-16 pt-md-11" id="community">
+			<div class="container-lg">
+				<div class="row justify-content-center">
+					<div class="col-md-10 col-lg-8 text-center">
+						<!-- Preheading -->
+						<h6 class="text-primary mb-5">همه جا در کنار شما هستیم</h6>
+
+						<!-- Heading -->
+						<h2 class="display-4 text-700 mb-4">جامعه‌ توسعه‌دهنگان گیلان</h2>
+
+						<!-- Text -->
+						<p class="fs-lg text-muted mb-9">
+							به این ترتیب، علاوه بر ایجاد فضایی برای افراد مبتدی جهت ورود به بازار
+							کار، آماده معرفی بسیاری از توسعه دهندگان، به شرکت‌های نیازمند نیز هستیم.
+						</p>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-lg-10">
+						<!-- Table -->
+						<div class="table-responsive">
+							<table class="table table-flush table-clickable mb-0">
+								<thead>
+									<tr>
+										<th>نام</th>
+										<th>اعضا یا دنبال کننده</th>
+										<th class="text-end">لینک ورود</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr data-href="pricing.html">
+										<td class="table-clickable-hover d-flex align-items-center">
+											<div style="width: 28px; height: 28px" class="ms-2">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													viewBox="0 0 240 240"
+												>
+													<path
+														fill="currentColor"
+														d="M240 120c0 66.3-53.7 120-120 120S0 186.3 0 120 53.7 0 120 0s120 53.7 120 120z"
+													/>
+													<path
+														fill="currentColor"
+														class="st1"
+														d="M98 175c-3.9 0-3.2-1.5-4.6-5.2L82 132.2 152.8 88l8.3 2.2-6.9 18.8L98 175z"
+													/>
+													<path
+														fill="#FFFFFF"
+														class="st2"
+														d="M98 175c3 0 4.3-1.4 6-3 2.6-2.5 36-35 36-35l-20.5-5-19 12-2.5 30v1z"
+													/>
+
+													<path
+														fill="#FFFFFF"
+														d="M100 144.4l48.4 35.7c5.5 3 9.5 1.5 10.9-5.1L179 82.2c2-8.1-3.1-11.7-8.4-9.3L55 117.5c-7.9 3.2-7.8 7.6-1.4 9.5l29.7 9.3L152 93c3.2-2 6.2-.9 3.8 1.3L100 144.4z"
+													/>
+												</svg>
+											</div>
+											<span class="fs-5"> کانال اطلاع رسانی</span>
+										</td>
+										<td>
+											<div
+												class="fs-5 fw-bolder"
+												style="
+													line-height: 1.4;
+													position: relative;
+													top: 3px;
+												"
+											>
+												<span
+													data-countup='{"startVal": 1}'
+													data-to="200"
+													data-aos
+													data-aos-id="countup:in"
+													>1</span
+												>
+												نفر
+											</div>
+										</td>
+										<td class="text-end text-nowrap">
+											<a
+												class="h6 text-decoration-none"
+												href="./mobile-chat-app.html"
+											>
+												ورود به کانال<i
+													class="fe fe-arrow-left me-1 d-inline-block"
+												></i>
+											</a>
+										</td>
+									</tr>
+									<tr data-href="pricing.html">
+										<td class="table-clickable-hover d-flex align-items-center">
+											<div style="width: 28px; height: 28px" class="ms-2">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													viewBox="0 0 240 240"
+												>
+													<path
+														fill="currentColor"
+														d="M240 120c0 66.3-53.7 120-120 120S0 186.3 0 120 53.7 0 120 0s120 53.7 120 120z"
+													/>
+													<path
+														fill="currentColor"
+														class="st1"
+														d="M98 175c-3.9 0-3.2-1.5-4.6-5.2L82 132.2 152.8 88l8.3 2.2-6.9 18.8L98 175z"
+													/>
+													<path
+														fill="#FFFFFF"
+														class="st2"
+														d="M98 175c3 0 4.3-1.4 6-3 2.6-2.5 36-35 36-35l-20.5-5-19 12-2.5 30v1z"
+													/>
+
+													<path
+														fill="#FFFFFF"
+														d="M100 144.4l48.4 35.7c5.5 3 9.5 1.5 10.9-5.1L179 82.2c2-8.1-3.1-11.7-8.4-9.3L55 117.5c-7.9 3.2-7.8 7.6-1.4 9.5l29.7 9.3L152 93c3.2-2 6.2-.9 3.8 1.3L100 144.4z"
+													/>
+												</svg>
+											</div>
+											<span class="fs-5">کامیونیتی</span>
+										</td>
+										<td>
+											<div
+												class="fs-5 fw-bolder"
+												style="
+													line-height: 1.4;
+													position: relative;
+													top: 3px;
+												"
+											>
+												<span
+													data-countup='{"startVal": 1}'
+													data-to="350"
+													data-aos
+													data-aos-id="countup:in"
+													>1</span
+												>
+												نفر
+											</div>
+										</td>
+										<td class="text-end text-nowrap">
+											<a
+												class="h6 text-decoration-none"
+												href="./mobile-chat-app.html"
+											>
+												ورود به کامیونیتی<i
+													class="fe fe-arrow-left me-1 d-inline-block"
+												></i>
+											</a>
+										</td>
+									</tr>
+									<tr data-href="pricing.html">
+										<td class="table-clickable-hover d-flex align-items-center">
+											<div style="width: 28px; height: 28px" class="ms-2">
+												<svg
+													width="24px"
+													height="24px"
+													viewBox="0 0 24 24"
+													role="img"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														fill="currentColor"
+														d="M12 0c-.29 0-.58.068-.812.206L2.417 5.392c-.46.272-.804.875-.804 1.408v10.4c0 .533.344 1.135.804 1.407l8.77 5.187c.465.275 1.162.275 1.626 0l8.77-5.187c.46-.272.804-.874.804-1.407V6.8c0-.533-.344-1.136-.804-1.408L12.813.206A1.618 1.618 0 0012 0zm-.85 8.304c.394 0 .714.303.714.676v2.224c0 .207.191.375.427.375s.428-.168.428-.375V9.57c0-.373.32-.675.713-.675.394 0 .712.302.712.675v4.713c0 .374-.318.676-.712.676-.394 0-.713-.302-.713-.676v-1.31c0-.206-.192-.374-.428-.374s-.427.168-.427.374v1.226c0 .374-.32.676-.713.676-.394 0-.713-.302-.713-.676v-1.667c0-.207-.192-.375-.428-.375-.235 0-.427.168-.427.375v3.31c0 .373-.319.676-.712.676-.394 0-.713-.303-.713-.676v-2.427c0-.206-.191-.374-.428-.374-.235 0-.427.168-.427.374v.178a.71.71 0 01-.712.708.71.71 0 01-.713-.708v-2.123a.71.71 0 01.713-.708.71.71 0 01.712.708v.178c0 .206.192.373.427.373.237 0 .428-.167.428-.373v-1.53c0-.374.32-.676.713-.676.393 0 .712.303.712.676v.646c0 .206.192.374.427.374.236 0 .428-.168.428-.374V8.98c0-.373.319-.676.713-.676zm4.562 2.416c.393 0 .713.302.713.676v2.691c0 .374-.32.676-.713.676-.394 0-.712-.303-.712-.676v-2.691c0-.374.319-.676.712-.676zm2.28 1.368c.395 0 .713.303.713.676v.67c0 .374-.318.676-.712.676-.394 0-.713-.302-.713-.675v-.67c0-.374.32-.677.713-.677Z"
+													/>
+												</svg>
+											</div>
+											<span class="fs-5">کست باکس</span>
+										</td>
+										<td>
+											<div
+												class="fs-5 fw-bolder"
+												style="
+													line-height: 1.4;
+													position: relative;
+													top: 3px;
+												"
+											>
+												<span
+													data-countup='{"startVal": 1}'
+													data-to="350"
+													data-aos
+													data-aos-id="countup:in"
+													>1</span
+												>
+												نفر
+											</div>
+										</td>
+										<td class="text-end text-nowrap">
+											<a
+												class="h6 text-decoration-none"
+												href="./mobile-chat-app.html"
+											>
+												عضو شدن<i
+													class="fe fe-arrow-left me-1 d-inline-block"
+												></i>
+											</a>
+										</td>
+									</tr>
+									<tr class="block-row">
+										<td class="table-clickable-hover d-flex align-items-center">
+											<div style="width: 28px; height: 28px" class="ms-2">
+												<svg
+													viewBox="0 0 256 180"
+													version="1.1"
+													xmlns="http://www.w3.org/2000/svg"
+													xmlns:xlink="http://www.w3.org/1999/xlink"
+													preserveAspectRatio="xMidYMid"
+												>
+													<path
+														d="M101.6,123.2 L170.8,87.4 L101.6,51.3 L101.6,123.2 L101.6,123.2 Z"
+														fill="#FFFFFF"
+													></path>
+													<path
+														d="M101.6,51.3 L162.3,91.8 L170.8,87.4 L101.6,51.3 L101.6,51.3 Z"
+														opacity="0.12"
+														fill="currentColor"
+													></path>
+													<path
+														d="M253.301054,38.8 C253.301054,38.8 250.80203,21.2 243.105037,13.4 C233.408825,3.2 222.513081,3.2 217.415072,2.6 C181.729012,0 128.04998,0 128.04998,0 L127.95002,0 C127.95002,0 74.2709879,0 38.3850059,2.6 C33.3869582,3.2 22.4912144,3.2 12.695041,13.4 C5.09800859,21.2 2.59898477,38.8 2.59898477,38.8 C2.59898477,38.8 0,59.6 0,80.3 L0,99.7 C0,120.4 2.59898477,141.1 2.59898477,141.1 C2.59898477,141.1 5.09800859,158.7 12.795002,166.5 C22.4912144,176.7 35.2862163,176.4 40.9839906,177.4 C61.4759859,179.4 127.95002,180 127.95002,180 C127.95002,180 181.729012,179.9 217.515033,177.3 C222.513081,176.7 233.408825,176.7 243.204998,166.5 C250.901991,158.7 253.401015,141.1 253.401015,141.1 C253.401015,141.1 256,120.4 256,99.7 L256,80.3 C255.900039,59.6 253.301054,38.8 253.301054,38.8 L253.301054,38.8 Z M101.560328,123.2 L101.560328,51.3 L170.733307,87.4 L101.560328,123.2 L101.560328,123.2 Z"
+														fill="currentColor"
+													></path>
+												</svg>
+											</div>
+											<span class="fs-5"> کانال یوتوب</span>
+										</td>
+										<td></td>
+										<td class="text-end text-nowrap">
+											<div class="block-item"></div>
+										</td>
+									</tr>
+									<tr class="block-row">
+										<td class="table-clickable-hover d-flex align-items-center">
+											<div style="width: 28px; height: 28px" class="ms-2">
+												<svg
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M12 2.163C15.204 2.163 15.584 2.175 16.85 2.233C20.102 2.381 21.621 3.924 21.769 7.152C21.827 8.417 21.838 8.797 21.838 12.001C21.838 15.206 21.826 15.585 21.769 16.85C21.62 20.075 20.105 21.621 16.85 21.769C15.584 21.827 15.206 21.839 12 21.839C8.796 21.839 8.416 21.827 7.151 21.769C3.891 21.62 2.38 20.07 2.232 16.849C2.174 15.584 2.162 15.205 2.162 12C2.162 8.796 2.175 8.417 2.232 7.151C2.381 3.924 3.896 2.38 7.151 2.232C8.417 2.175 8.796 2.163 12 2.163ZM12 0C8.741 0 8.333 0.014 7.053 0.072C2.695 0.272 0.273 2.69 0.073 7.052C0.014 8.333 0 8.741 0 12C0 15.259 0.014 15.668 0.072 16.948C0.272 21.306 2.69 23.728 7.052 23.928C8.333 23.986 8.741 24 12 24C15.259 24 15.668 23.986 16.948 23.928C21.302 23.728 23.73 21.31 23.927 16.948C23.986 15.668 24 15.259 24 12C24 8.741 23.986 8.333 23.928 7.053C23.732 2.699 21.311 0.273 16.949 0.073C15.668 0.014 15.259 0 12 0V0ZM12 5.838C8.597 5.838 5.838 8.597 5.838 12C5.838 15.403 8.597 18.163 12 18.163C15.403 18.163 18.162 15.404 18.162 12C18.162 8.597 15.403 5.838 12 5.838ZM12 16C9.791 16 8 14.21 8 12C8 9.791 9.791 8 12 8C14.209 8 16 9.791 16 12C16 14.21 14.209 16 12 16ZM18.406 4.155C17.61 4.155 16.965 4.8 16.965 5.595C16.965 6.39 17.61 7.035 18.406 7.035C19.201 7.035 19.845 6.39 19.845 5.595C19.845 4.8 19.201 4.155 18.406 4.155Z"
+														fill="currentColor"
+													></path>
+												</svg>
+											</div>
+											<span class="fs-5">اینستاگرام</span>
+										</td>
+										<td></td>
+										<td class="text-end text-nowrap">
+											<div class="block-item"></div>
+										</td>
+									</tr>
+									<tr class="block-row">
+										<td class="table-clickable-hover d-flex align-items-center">
+											<div style="width: 28px; height: 28px" class="ms-2">
+												<svg
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M24 4.55705C23.117 4.94905 22.168 5.21305 21.172 5.33205C22.189 4.72305 22.97 3.75805 23.337 2.60805C22.386 3.17205 21.332 3.58205 20.21 3.80305C19.313 2.84605 18.032 2.24805 16.616 2.24805C13.437 2.24805 11.101 5.21405 11.819 8.29305C7.728 8.08805 4.1 6.12805 1.671 3.14905C0.381 5.36205 1.002 8.25705 3.194 9.72305C2.388 9.69705 1.628 9.47605 0.965 9.10705C0.911 11.388 2.546 13.522 4.914 13.997C4.221 14.185 3.462 14.229 2.69 14.081C3.316 16.037 5.134 17.46 7.29 17.5C5.22 19.123 2.612 19.848 0 19.54C2.179 20.937 4.768 21.752 7.548 21.752C16.69 21.752 21.855 14.031 21.543 7.10605C22.505 6.41105 23.34 5.54405 24 4.55705Z"
+														fill="currentColor"
+													></path>
+												</svg>
+											</div>
+											<span class="fs-5">توییتر</span>
+										</td>
+										<td></td>
+										<td class="text-end text-nowrap">
+											<div class="block-item"></div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- SHAPE -->
+		<div class="position-relative mt-md-n12">
+			<div class="shape shape-fluid-x shape-bottom text-white">
+				<div class="shape-img pb-9 mb-md-14">
+					<svg viewBox="0 0 100 50" preserveAspectRatio="none">
+						<path d="M0 0h100v50H75L25 25H0z" fill="currentColor" />
+					</svg>
+				</div>
+			</div>
+		</div>
+		<!-- SHARED BACKGROUND -->
+		<!-- <div class="bg-dark" style="background-image: url(assets/img/patterns/pattern-1.svg)"> -->
+		<div class="bg-dark">
+			<!-- STORIES -->
+			<section class="pt-8 pt-md-14 pb-10 pb-md-12">
+				<div class="container-lg">
+					<div class="row align-items-center justify-content-betwen mb-9">
+						<div class="col-md-5 text-center text-md-end">
+							<!-- Heading -->
+							<h2 class="display-4 text-700 text-white mb-4 mb-md-0">
+								ما تنها نیستیم
+							</h2>
+						</div>
+						<div class="col-md-6 text-center text-md-end">
+							<!-- Text -->
+							<p class="text-white mb-0">
+								قطعا رسیدن به این هدف که کشوری از متخصان بزرگ و کشوری پیشرو در علم و
+								صنعت داشته باشیم به تنهایی محقق نمیشود و نیاز به همیاری و حمایت یک
+								دیگر داریم
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<!-- Slider -->
+							<div
+								class="flickity-viewport-visible mx-n4"
+								data-flickity='{"cellAlign": "right", "imagesLoaded": true, "pageDots": false, "prevNextButtons": false,"rightToLeft": true, "contain": true}'
+							>
+								<div class="col-12 px-4" style="max-width: 300px">
+									<!-- Card -->
+									<div
+										class="card card-sm rounded-top-start rounded-bottom-end lift"
+									>
+										<!-- Image  -->
+										<img
+											class="card-img rounded-top-start"
+											src="assets/img/robo-advisor/innovation.jfif"
+											alt="..."
+										/>
+
+										<!-- SHAPE -->
+										<div class="position-relative">
+											<div class="shape shape-fluid-x shape-top text-white">
+												<div class="shape-img pb-4">
+													<svg
+														viewBox="0 0 100 50"
+														preserveAspectRatio="none"
+													>
+														<path
+															d="M0 25h25L75 0h25v50H0z"
+															fill="currentColor"
+														/>
+													</svg>
+												</div>
+											</div>
+										</div>
+
+										<!-- Body -->
+										<div class="card-body p-5">
+											<!-- Heading -->
+											<div class="d-flex align-items-center mb-3">
+												<!-- Logo -->
+												<div
+													class="img-fluid svg-shim mb-0"
+													style="max-width: 64px"
+												>
+													<img
+														src="assets/img/illustrations/innovation-1.jpg"
+														alt=""
+														height="35"
+													/>
+												</div>
+
+												<!-- Icon -->
+												<a
+													class="me-auto text-decoration-none text-innovation stretched-link"
+													href="#!"
+												>
+													<i class="fe fe-arrow-left"></i>
+												</a>
+											</div>
+
+											<!-- Text -->
+											<small style="font-size: 0.7rem">
+												کارخانه نوآوری گیلان بزرگترین ارائه دهنده خدمات فضای
+												کار اشتراکی ، ارائه دهنده خدمات شتابدهی، استودیو
+												خلاق آشپزی، استودیو پادکست، برگزاری رویداد، اتاق
+												جلسات در شمال کشور میباشد.
+											</small>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 px-4" style="max-width: 300px">
+									<!-- Card -->
+									<div
+										class="card card-sm rounded-top-start rounded-bottom-end lift"
+									>
+										<!-- Image  -->
+										<img
+											class="card-img rounded-top-start"
+											src="assets/img/robo-advisor/bani.jpg"
+											alt="..."
+										/>
+
+										<!-- SHAPE -->
+										<div class="position-relative">
+											<div class="shape shape-fluid-x shape-top text-white">
+												<div class="shape-img pb-4">
+													<svg
+														viewBox="0 0 100 50"
+														preserveAspectRatio="none"
+													>
+														<path
+															d="M0 25h25L75 0h25v50H0z"
+															fill="currentColor"
+														/>
+													</svg>
+												</div>
+											</div>
+										</div>
+
+										<!-- Body -->
+										<div class="card-body p-5">
+											<!-- Heading -->
+											<div class="d-flex align-items-center mb-3">
+												<!-- Logo -->
+												<div
+													class="img-fluid svg-shim mb-0"
+													style="max-width: 140px"
+												>
+													<img
+														src="assets/img/illustrations/banilogo.jpg"
+														alt=""
+														height="35"
+													/>
+												</div>
+
+												<!-- Icon -->
+												<a
+													class="me-auto text-decoration-none text-bani stretched-link"
+													href="#!"
+												>
+													<i class="fe fe-arrow-left"></i>
+												</a>
+											</div>
+
+											<!-- Text -->
+											<small style="font-size: 0.7rem">
+												بـانـی، تلاشی است برای مشاهده سبک زندگی و طرز فکر
+												بانـیان کشور و ترویج روحیه کارآفرینی. رويداد بانى با
+												تولید محتوای ناب آموزشی و فضاى شبكه سازى به راه
+												اندازی کسب و کار ها و استارتاپ كمك مى كند.
+											</small>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 px-4" style="max-width: 300px">
+									<!-- Card -->
+									<div
+										class="card card-sm rounded-top-start rounded-bottom-end lift"
+									>
+										<!-- Image  -->
+										<img
+											class="card-img rounded-top-start"
+											src="assets/img/robo-advisor/office-airbnb.jpg"
+											alt="..."
+										/>
+
+										<!-- SHAPE -->
+										<div class="position-relative">
+											<div class="shape shape-fluid-x shape-top text-white">
+												<div class="shape-img pb-4">
+													<svg
+														viewBox="0 0 100 50"
+														preserveAspectRatio="none"
+													>
+														<path
+															d="M0 25h25L75 0h25v50H0z"
+															fill="currentColor"
+														/>
+													</svg>
+												</div>
+											</div>
+										</div>
+
+										<!-- Body -->
+										<div class="card-body p-5">
+											<!-- Heading -->
+											<div class="d-flex align-items-center mb-3">
+												<!-- Logo -->
+												<div
+													class="img-fluid svg-shim mb-0"
+													style="max-width: 96px"
+												>
+													<img
+														src="assets/img/illustrations/station_logo.png"
+														alt=""
+														height="35"
+													/>
+												</div>
+
+												<!-- Icon -->
+												<a
+													class="me-auto text-decoration-none text-station stretched-link"
+													href="#!"
+												>
+													<i class="fe fe-arrow-left"></i>
+												</a>
+											</div>
+
+											<!-- Text -->
+											<small style="font-size: 0.7rem">
+												ایستگاه نوآوری با ارائه خدمات کامل مشابه یک دفتر کار
+												اختصاصی، در تلاش برای کاهش مشکلات و هزینه‌های راه
+												اندازی کسب و کار بوده تا بتوانند زمانی را به
+												شبکه‌سازی با افراد و استارتاپ‌های ارزشمند حاضر
+												اختصاص دهند
+											</small>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 px-4" style="max-width: 300px">
+									<!-- Card -->
+									<div
+										class="card card-sm rounded-top-start rounded-bottom-end lift"
+									>
+										<!-- Image  -->
+										<img
+											class="card-img rounded-top-start"
+											src="assets/img/robo-advisor/office-coinbase.jpg"
+											alt="..."
+										/>
+
+										<!-- SHAPE -->
+										<div class="position-relative">
+											<div class="shape shape-fluid-x shape-top text-white">
+												<div class="shape-img pb-4">
+													<svg
+														viewBox="0 0 100 50"
+														preserveAspectRatio="none"
+													>
+														<path
+															d="M0 25h25L75 0h25v50H0z"
+															fill="currentColor"
+														/>
+													</svg>
+												</div>
+											</div>
+										</div>
+
+										<!-- Body -->
+										<div class="card-body p-5">
+											<!-- Heading -->
+											<div class="d-flex align-items-center mb-3">
+												<!-- Logo -->
+												<div
+													class="img-fluid svg-shim mb-0"
+													style="max-width: 96px"
+												>
+													<img
+														src="assets/img/illustrations/hamfkr.png"
+														alt=""
+														height="35"
+													/>
+												</div>
+
+												<!-- Icon -->
+												<a
+													class="me-auto text-decoration-none text-hamfker stretched-link"
+													href="#!"
+												>
+													<i class="fe fe-arrow-left"></i>
+												</a>
+											</div>
+
+											<!-- Text -->
+											<small style="font-size: 0.7rem">
+												همفکر رشت شش سال پیش در استان گیلان شروع به فعالیت
+												نمود و در طول این مدت اتفاق‌های بسیار خوبی از
+												شبکه‌سازی و راه‌اندازی کسب و کار‌های استارت‌اپی و
+												همکاری‌های دوستان شرکت‌کننده در این دورهمی را رقم
+												زد.
+											</small>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 px-4" style="max-width: 300px">
+									<!-- Card -->
+									<div
+										class="card card-sm rounded-top-start rounded-bottom-end lift"
+									>
+										<!-- Image  -->
+										<img
+											class="card-img rounded-top-start"
+											src="assets/img/robo-advisor/freeland.jpg"
+											alt="..."
+										/>
+
+										<!-- SHAPE -->
+										<div class="position-relative">
+											<div class="shape shape-fluid-x shape-top text-white">
+												<div class="shape-img pb-4">
+													<svg
+														viewBox="0 0 100 50"
+														preserveAspectRatio="none"
+													>
+														<path
+															d="M0 25h25L75 0h25v50H0z"
+															fill="currentColor"
+														/>
+													</svg>
+												</div>
+											</div>
+										</div>
+
+										<!-- Body -->
+										<div class="card-body p-5">
+											<!-- Heading -->
+											<div class="d-flex align-items-center mb-3">
+												<!-- Logo -->
+												<div
+													class="img-fluid svg-shim mb-0"
+													style="max-width: 86px"
+												>
+													<img
+														src="assets/img/illustrations/logo.svg"
+														alt=""
+														height="35"
+													/>
+												</div>
+
+												<!-- Icon -->
+												<a
+													class="me-auto text-decoration-none text-freeland stretched-link"
+													href="#!"
+												>
+													<i class="fe fe-arrow-left"></i>
+												</a>
+											</div>
+
+											<!-- Text -->
+											<small style="font-size: 0.7rem">
+												زرگترین هدف فریلند این است که راه و روش درآمدزایی
+												بصورت فریلنسینگ را به شما بیاموزد. برای کسب درآمد
+												بصورت فریلنسینگ، شما نیاز به سرمایه ندارید. سرمایه
+												شما زمانی است که برای کسب مهارت صرف می‌کنید.
+											</small>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="container-lg">
+				<div class="row align-items-center">
+					<div class="col-12">
+						<!-- Divider -->
+						<hr class="bg-gray-900 mt-0 mb-8" />
+					</div>
+					<div class="col-md">
+						<!-- Heading -->
+						<h1 class="text-white mb-0">
+							شما هم میتوانید یکی از
+							<span class="text-primary-light">حامیان‌ما</span> باشد.
+						</h1>
+
+						<!-- Text -->
+						<p class="text-white-60 mb-4 mb-md-0">
+							با همیاری هم میتوانیم در این مسیر کنار هم باشیم
+						</p>
+					</div>
+					<div class="col-md-auto">
+						<!-- Button -->
+						<a class="btn btn-primary lift" href="#!">اطلاعات بیشتر</a>
+					</div>
+					<div class="col-12">
+						<!-- Divider -->
+						<hr class="bg-gray-900 mb-0 mt-8" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- FOOTER -->
+		<footer class="footer py-8 py-md-11 bg-dark">
+			<div class="container-lg">
+				<div class="row">
+					<div class="col-md-4">
+						<!-- Brand -->
+						<!-- <h2 class="font-serif text-white mb-1">G-devs</h2> -->
+						<img src="./assets/img/logo.png" alt="logo" class="navbar-logo" />
+						<!-- Text -->
+						<p class="text-white-60">راه راحت تر برای شبکه سازی!</p>
+					</div>
+					<div class="col-6 col-md">
+						<!-- Heading -->
+						<h6 class="text-uppercase text-dark mb-3 mb-md-5">Services</h6>
+
+						<!-- List -->
+						<ul class="list-unstyled">
+							<li class="mb-3">
+								<a class="text-white-60" href="#!">Help Center</a>
+							</li>
+							<li class="mb-3">
+								<a class="text-white-60" href="#!">Press</a>
+							</li>
+							<li>
+								<a class="text-white-60" href="#!">About us</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-6 col-md">
+						<!-- Heading -->
+						<h6 class="text-uppercase text-dark mb-3 mb-md-5">Products</h6>
+
+						<!-- List -->
+						<ul class="list-unstyled">
+							<li class="mb-3">
+								<a class="text-white-60" href="#!">Homepage</a>
+							</li>
+							<li class="mb-3">
+								<a class="text-white-60" href="#!">Pages</a>
+							</li>
+							<li class="mb-3">
+								<a class="text-white-60" href="#!">Legal</a>
+							</li>
+							<li>
+								<a class="text-white-60" href="#!">Terms</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-6 col-md">
+						<!-- Heading -->
+						<h6 class="text-uppercase text-dark mb-3 mb-md-5">Services</h6>
+
+						<!-- List -->
+						<ul class="list-unstyled">
+							<li class="mb-3">
+								<a class="text-white-60" href="#!">Help Center</a>
+							</li>
+							<li class="mb-3">
+								<a class="text-white-60" href="#!">Press</a>
+							</li>
+							<li>
+								<a class="text-white-60" href="#!">About us</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-6 col-md">
+						<!-- Heading -->
+						<h6 class="text-uppercase text-dark mb-3 mb-md-5">Connect</h6>
+
+						<!-- List -->
+						<ul class="list-unstyled">
+							<li class="mb-3">
+								<a class="text-white-60" href="#!">Help Center</a>
+							</li>
+							<li class="mb-3">
+								<a class="text-white-60" href="#!">Press</a>
+							</li>
+							<li class="mb-3">
+								<a class="text-white-60" href="#!">About us</a>
+							</li>
+							<li>
+								<a class="text-white-60" href="#!">Pages</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- JAVASCRIPT -->
+
+		<!-- Vendor JS -->
+		<script src="./assets/js/vendor.bundle.js"></script>
+
+		<!-- Theme JS -->
+		<script src="./assets/js/theme.bundle.js"></script>
+	</body>
 </html>
