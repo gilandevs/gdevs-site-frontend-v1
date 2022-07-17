@@ -211,21 +211,39 @@ body {
 .text-freeland {
 	color: #8cb3fd;
 }
-.table-clickable [data-href]:nth-child(1):hover .table-clickable-hover {
+[data-countup] {
+	transition: unset !important;
+}
+.table-clickable tr:nth-child(1):hover .table-clickable-hover,
+.table-clickable tr:nth-child(1):hover a,
+.table-clickable tr:nth-child(1):hover [data-counter] {
 	color: #2aabee;
 }
-.table-clickable [data-href]:nth-child(2):hover .table-clickable-hover {
+.table-clickable tr:nth-child(2):hover .table-clickable-hover,
+.table-clickable tr:nth-child(2):hover a,
+.table-clickable tr:nth-child(2):hover [data-counter] {
 	color: #2aabee;
 }
-.table-clickable [data-href]:nth-child(3):hover .table-clickable-hover {
+.table-clickable tr:nth-child(3):hover .table-clickable-hover,
+.table-clickable tr:nth-child(3):hover a,
+.table-clickable tr:nth-child(3):hover [data-counter] {
 	color: #ff7700;
 }
-.table-clickable [data-href]:nth-child(4):hover .table-clickable-hover {
+.table-clickable tr:nth-child(4):hover .table-clickable-hover,
+.table-clickable tr:nth-child(4):hover a,
+.table-clickable tr:nth-child(4):hover [data-counter] {
 	color: #ff0000;
 }
-.table-clickable [data-href]:nth-child(5):hover .table-clickable-hover {
+.table-clickable tr:nth-child(5):hover .table-clickable-hover,
+.table-clickable tr:nth-child(5):hover a,
+.table-clickable tr:nth-child(5):hover [data-counter] {
 	color: #c32aa3;
 }
-.table-clickable [data-href]:nth-child(6):hover .table-clickable-hover {
+.table-clickable tr:nth-child(6):hover .table-clickable-hover,
+.table-clickable tr:nth-child(6):hover a,
+.table-clickable tr:nth-child(6):hover [data-counter] {
 	color: #1da1f2;
+}
+.footer-logo {
+	filter: grayscale(1);
 }
