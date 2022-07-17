@@ -22,13 +22,10 @@
 		url("/assets/fonts/yekanbakh/woff2/YekanBakhFaNum-ExtraBlack.woff2") format("woff2");
 }
 
-:root {
-	/* --yellow-color: #ffbd00;
-	--bg-dark: #be941f; */
-}
 
-.bg-yellow-900 {
-	/* background-color: var(--yellow-color); */
+
+html {
+	scroll-behavior: auto;
 }
 body {
 	font-family: "Yekan Bakh FaNum";
@@ -38,6 +35,7 @@ body {
 	-ms-font-feature-settings: "kern" on, "liga" on, "dlig" on;
 	-o-font-feature-settings: "kern" on, "liga" on, "dlig" on; */
 	font-size: 1rem;
+	
 }
 
 /* utilities */
@@ -136,39 +134,48 @@ body {
 	/* height: 80px; */
 	object-fit: contain;
 }
-.dynamic-text {
-	/* font-size: 2rem; */
+
+.members-grid {
+	--gap: 1.5rem;
+	display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(50px,1fr));
+    grid-gap: var(--gap);
 }
-.btn-primary {
-	/* background-color: var(--yellow-color);
-	color: #fff !important; */
+
+.members-item {
+
 }
-.btn-primary:hover {
-	/* background-color: rgba(255, 189, 0, 0.7); */
+.member{
+
 }
-.flickity-button {
-	/* background-color: var(--yellow-color);
-	border-color: var(--yellow-color); */
+.member-avatar{
+	position: relative;
+    overflow: hidden;
+    border-radius: 0.25rem;
+    margin-bottom: 0;
+    min-height: 50px;
+    width: 50px;
+	background: hsla(250, 3%, 59%, 0.658);
 }
-.flickity-button:hover {
-	/* background-color: rgba(255, 189, 0, 0.7); */
+.member-avatar:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #2b265a ;
+    mix-blend-mode: lighten!important;
+    filter: contrast(1.1)!important;
 }
-.svg-shapes {
-	/* color: #333; */
-}
-.text-primary,
-.text-primary-dark,
-a,
-.text-primary-light,
-.text-dark {
-	/* color: var(--yellow-color) !important; */
-}
-.bg-dark {
-	/* background-color: #333 !important; */
-}
-.nav-link {
-	/* color: #333 !important; */
-}
-.table-clickable [data-href]:hover .table-clickable-hover {
-	/* color: var(--yellow-color); */
+.member-avatar img{
+	display: block;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+    filter: grayscale(100%) contrast(1.2);
+    mix-blend-mode: darken;
 }
