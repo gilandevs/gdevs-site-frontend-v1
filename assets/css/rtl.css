@@ -194,18 +194,30 @@ body {
 }
 
 .block-row {
-  filter: blur(0.5px);
+
   pointer-events: none;
 }
+.block-row span,.block-row svg{
+  filter: blur(1px);
+ }
 .block-item {
   position: relative;
-  width: 6rem;
-  height: 1.8rem;
+  width: 4rem;
+  height: 1.4rem;
 }
+@media (min-width: 768px) {
+  .block-item {
+   
+    width: 5.5rem;
+    height: 1.6rem;
+  }
+  
+}
+
 .block-item::after {
   content: "";
-  width: 120%;
-  height: 170%;
+  width: 110%;
+  height: 160%;
   background: url(/assets/img/illustrations/comming-soon.png) center no-repeat;
   position: absolute;
   background-size: contain;
@@ -275,15 +287,22 @@ body {
   
 }
 
+@media (min-width: 768px) {
+  .display-md-4 {
+    font-size: 2.5rem;
+  }
+}
+
+
 @media (min-width: 992px) {
   .display-lg-4 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
 @media (min-width: 1200px) {
   .display-xl-3 {
-    font-size: 4rem;
+    font-size: 3.25rem;
   }
 }
 
@@ -293,7 +312,7 @@ body {
 
 @media (min-width: 992px) {
   .fs-lg {
-    font-size: 1.25rem !important;
+    font-size: 1.2rem !important;
   }
 }
 
@@ -324,6 +343,57 @@ body {
   .feature-img {
     margin-right: 0;
     margin-left: 0;
+  }
+  
+}
+
+.navbar {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.table > :not(caption) > * > * {
+  padding: 0.5rem;
+}
+
+
+@media (min-width: 768px) {
+  .table > :not(caption) > * > * {
+    padding: 1.5rem;
+  }
+  
+}
+
+.community-icon {
+  display: none;
+}
+
+@media (min-width: 576px) {
+
+  .community-icon {
+    width: 18px;
+    display: block;
+  }
+  
+}
+
+@media (min-width: 768px) {
+  .community-icon {
+    width: 25px;
   }
   
 }
