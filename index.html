@@ -14,81 +14,118 @@
     <meta name="msapplication-TileColor" content="#603cba" />
     <meta name="theme-color" content="#ffffff" />
 
+    <!-- COMMON TAGS -->
+    <meta charset="utf-8" />
+    <title>GDEVS | جامعه توسعه‌دهندگان گیلان</title>
+
+    <!-- Search Engine -->
+    <meta
+      name="description"
+      content="اینجا محفلی برای گفتگوی توسعه‌دهنده‌های گیلانی است. ما اینجا قصد داریم رویدادها، دوره‌های منتورشیپ و آموزش‌های تخصصی را برای افراد گیلانی علاقه‌مند به برنامه نویسی فراهم کنیم."
+    />
+    <meta
+      name="image"
+      content="https://dev.gilandevs.ir/assets/img/e-commerce/gilandevs_preview.jpg"
+    />
+
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="GDEVS | جامعه توسعه‌دهندگان گیلان" />
+    <meta
+      itemprop="description"
+      content="اینجا محفلی برای گفتگوی توسعه‌دهنده‌های گیلانی است. ما اینجا قصد داریم رویدادها، دوره‌های منتورشیپ و آموزش‌های تخصصی را برای افراد گیلانی علاقه‌مند به برنامه نویسی فراهم کنیم."
+    />
+    <meta
+      itemprop="image"
+      content="https://dev.gilandevs.ir/assets/img/e-commerce/gilandevs_preview.jpg"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="GDEVS | جامعه توسعه‌دهندگان گیلان" />
+    <meta property="twitter:url" content="https://dev.gilandevs.ir/" />
+    <meta
+      name="twitter:description"
+      content="اینجا محفلی برای گفتگوی توسعه‌دهنده‌های گیلانی است. ما اینجا قصد داریم رویدادها، دوره‌های منتورشیپ و آموزش‌های تخصصی را برای افراد گیلانی علاقه‌مند به برنامه نویسی فراهم کنیم."
+    />
+    <meta
+      name="twitter:image:src"
+      content="https://dev.gilandevs.ir/assets/img/e-commerce/gilandevs_preview.jpg"
+    />
+
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta property="og:title" content="GDEVS | جامعه توسعه‌دهندگان گیلان" />
+    <meta
+      property="og:description"
+      content="اینجا محفلی برای گفتگوی توسعه‌دهنده‌های گیلانی است. ما اینجا قصد داریم رویدادها، دوره‌های منتورشیپ و آموزش‌های تخصصی را برای افراد گیلانی علاقه‌مند به برنامه نویسی فراهم کنیم."
+    />
+    <meta property="og:url" content="https://dev.gilandevs.ir" />
+    <meta property="og:site_name" content="GDEVS | جامعه توسعه‌دهندگان گیلان" />
+    <meta property="og:locale" content="fa_IR" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://dev.gilandevs.ir/assets/img/e-commerce/gilandevs_preview.jpg"
+    />
+
     <!-- Libs CSS -->
-    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+    <link rel="stylesheet" href="/assets/css/libs.bundle.css" />
     <!-- Theme CSS -->
-    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
-    <!-- RTL STYLES -->
-    <link rel="stylesheet" href="./assets/css/rtl.css" />
+    <link rel="stylesheet" href="/assets/css/theme.bundle.css" />
+    <!-- Rtl CSS -->
+    <link rel="stylesheet" href="/assets/css/rtl.css" />
     <!-- Title -->
-    <title>جامعه توسعه‌دهندگان گیلان | GDEVS</title>
   </head>
   <body style="padding-top: 108px">
     <!-- NAVBAR -->
     <nav
-      class="navbar navbar-expand-lg navbar-light navbar-reveal fixed-top bg-white"
+      class="navbar navbar-expand-lg navbar-reveal fixed-top navbar-light navbar-togglable"
     >
       <div class="container-lg">
+        <!-- Brand -->
+        <a class="navbar-brand d-lg-none" href="./index.html">
+          <img src="/assets/img/logo.png" alt="logo" />
+        </a>
+
+        <!-- Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
         <!-- Collapse -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="mainNavbar">
           <!-- Navigation -->
           <ul class="navbar-nav justify-content-end w-100">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                id="landingsDropdown"
-                href="#"
-                role="button"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                کی هستیم
-              </a>
+            <li class="nav-item">
+              <a class="nav-link" href="#events"> رویدادها</a>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                id="pagesDropdown"
-                href="#"
-                role="button"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                هدفمون
-              </a>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">ویژگی‌ها</a>
             </li>
           </ul>
 
           <!-- Brand -->
-          <a class="navbar-brand d-none d-lg-block px-lg-6" href="/">
-            <img src="./assets/img/logo.png" alt="logo" class="navbar-logo" />
+          <a
+            class="navbar-brand d-none d-lg-block"
+            href="https://dev.gilandevs.ir"
+          >
+            <img src="/assets/img/logo.png" alt="logo" />
           </a>
 
           <!-- Navigation -->
           <ul class="navbar-nav justify-content-start w-100">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                id="accountDropdown"
-                href="#"
-                role="button"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                برنامه ها
-              </a>
+            <li class="nav-item">
+              <a class="nav-link" href="#targets"> اهداف </a>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                id="docsDropdown"
-                href="#"
-                role="button"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                گروهمون
-              </a>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">داستان‌ما</a>
             </li>
           </ul>
         </div>
@@ -101,7 +138,7 @@
         <div class="row justify-content-center">
           <div class="col-md-12 text-center" data-aos="fade-up">
             <!-- Heading -->
-            <h1 class="display-3 mb-4 text-900 mb-4">
+            <h1 class="display-lg-4 display-xl-3 mb-4 text-900 mb-4">
               جامعه توسعه‌دهندگان گیلان
               <br />
               <span
@@ -116,10 +153,9 @@
 
             <!-- Text -->
             <p class="fs-lg text-muted">
-             فضایی برای ساخت آینده 
-			  <br />
-			  جامعه‌ای برای رشد حرفه‌ای، همگرایی توسعه‌دهندگان و شبکه سازی
-
+              فضایی برای ساخت آینده
+              <br />
+              جامعه‌ای برای رشد حرفه‌ای، همگرایی توسعه‌دهندگان و شبکه سازی
             </p>
 
             <!-- Button -->
@@ -142,8 +178,8 @@
       </div>
     </div>
 
-    <!-- SLIDER -->
-    <section class="bg-light">
+    <!-- EVENT -->
+    <section class="bg-light pb-10 pb-md-0" id="events">
       <!-- Slider -->
       <div
         class="flickity-buttons-responsive flickity-items-fade"
@@ -155,18 +191,18 @@
             <img
               class="img-fluid rounded"
               src="assets/img/screenshots/desktop/page-blog-article.jpg"
-              alt=""
+              alt="ایونت شروع برنامه‌نویسی<"
             />
           </a>
 
           <!-- Body -->
           <div class="flickity-hidden py-6 text-center">
             <!-- Heading -->
-            <h6 class="text-uppercase text-dark">Blog Article</h6>
+            <h6 class="text-dark">شروع برنامه‌نویسی</h6>
 
             <!-- Text -->
             <p class="fs-sm text-center text-primary-dark mb-0">
-              Featured image with beautiful type and galleries.
+              گفتگوی با حسین قنبری در رابطه با شروع برنامه‌نویسی
             </p>
           </div>
         </div>
@@ -363,7 +399,7 @@
     </section>
 
     <!-- TESTIMONIALS -->
-    <section class="pt-8 pt-md-10 pb-7 pb-md-11 bg-light">
+    <section class="pt-8 pt-md-11 pb-8 pb-md-11 bg-light">
       <div class="container-lg">
         <div class="row justify-content-center mt-n8">
           <div class="col-md-6 px-lg-9 border-end-md">
@@ -385,12 +421,12 @@
                   <img
                     class="avatar-img rounded-circle"
                     src="assets/img/avatars/sani.jpg"
-                    alt="..."
+                    alt="ساناز عصمتجو<"
                   />
                 </div>
 
                 <!-- Body -->
-                <div class="ms-4">
+                <div class="me-4">
                   <!-- Title -->
                   <p class="fw-bold mb-0">ساناز عصمتجو</p>
 
@@ -421,12 +457,12 @@
                   <img
                     class="avatar-img rounded-circle"
                     src="assets/img/avatars/amin.jpg"
-                    alt="..."
+                    alt="امین فرهنگ"
                   />
                 </div>
 
                 <!-- Body -->
-                <div class="ms-4">
+                <div class="me-4">
                   <!-- Title -->
                   <p class="fw-bold mb-0">امین فرهنگ</p>
 
@@ -453,19 +489,21 @@
       </div>
     </div>
 
-    <!-- ABOUT -->
-    <section class="p-11 pt-md-13">
+    <!-- FEATURES -->
+    <section class="p-4 pt-12 pt-md-14" id="features">
       <div class="container-lg">
         <div class="row align-items-center justify-content-between">
-          <div class="col-md-6 col-lg-5">
+          <div class="col-12 col-md-5 col-lg-5">
             <!-- Image -->
-            <img
-              class="img-fluid mb-8 mb-md-0 rounded"
-              src="assets/img/e-commerce/shardari-rasht.jpg"
-              alt="شهرداری رشت"
-            />
+            <div class="position-relative feature-img">
+              <img
+                class="img-fluid mb-8 mb-md-0 rounded border border-7 border-white mx-w-400 shadow-lg feature-img"
+                src="assets/img/e-commerce/shardari-rasht.jpg"
+                alt="شهرداری رشت"
+              />
+            </div>
           </div>
-          <div class="col-md-6 col-lg-6">
+          <div class="col-md-7 col-lg-6">
             <!-- Heading -->
             <h2 class="display-4 text-700 mb-4">جامعه‌ توسعه‌دهندگان</h2>
 
@@ -485,13 +523,13 @@
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section class="pb-10">
+    <!-- FEATURES -->
+    <section class="p-4 pb-10">
       <div class="container-lg position-relative" style="z-index: 1">
         <div class="row align-items-center justify-content-between">
-          <div class="col-md-5 order-md-1 pt-10 py-md-8">
+          <div class="col-12 col-md-5 order-md-1 pt-10 py-md-8">
             <!-- Image -->
-            <div class="position-relative">
+            <div class="position-relative feature-img">
               <!-- Decoration -->
               <div
                 class="position-absolute bottom-end text-warning mb-n8 me-n8"
@@ -608,13 +646,13 @@
 
               <!-- Image -->
               <img
-                class="img-fluid position-relative border border-7 border-white shadow-lg rounded"
-                src="assets/img/e-commerce/Mammadk9.jpg"
-                alt="..."
+                class="img-fluid position-relative border border-7 border-white shadow-lg rounded mx-w-400"
+                src="assets/img/e-commerce/mohammad-kamalipour.jpg"
+                alt="منتورشیپ"
               />
             </div>
           </div>
-          <div class="col-md-6 col-lg-5 order-md-0 py-10 py-md-12">
+          <div class="col-md-7 col-lg-6 order-md-0 py-9 py-md-12">
             <!-- Heading -->
             <h2 class="display-4 text-700 mb-4">مسیرراه و منتورینگ</h2>
 
@@ -640,10 +678,11 @@
         </div>
       </div>
     </div>
-
+    <!-- TARGETS -->
     <section
       class="pt-10 pb-14 pt-md-12 bg-gray-900"
       style="background-image: url(assets/img/patterns/pattern-1.svg)"
+      id="targets"
     >
       <div class="container-lg">
         <div class="row">
@@ -1319,6 +1358,7 @@
         </div>
       </div>
     </section>
+
     <!-- SHAPE -->
     <div class="position-relative">
       <!-- Shape -->
@@ -1481,8 +1521,8 @@
       </div>
     </div>
 
-    <!-- ABOUT -->
-    <section class="py-10 py-md-12">
+    <!-- STORY -->
+    <section class="py-10 py-md-12" id="about">
       <div class="container-lg mb-12">
         <div class="row align-items-center justify-content-between">
           <div class="col-md-6 order-md-1">
@@ -1491,7 +1531,7 @@
           </div>
           <div class="col-md-6 col-lg-5 order-md-0 text-center text-md-end">
             <!-- Heading -->
-            <h2 class="display-4 text-700 mb-6">داستان تیم‌ما</h2>
+            <h2 class="display-4 text-700 mb-6">داستان‌ما</h2>
 
             <!-- Subheading -->
             <p class="fs-lg fw-bold mb-2">دلیل شروع</p>
@@ -1816,7 +1856,7 @@
       </div>
     </section>
 
-    <!-- ROLES -->
+    <!-- COMMUNITY -->
     <section class="pb-16 pt-md-11" id="community">
       <div class="container-lg">
         <div class="row justify-content-center">
@@ -2091,7 +2131,7 @@
       </div>
     </div>
     <!-- SHARED BACKGROUND -->
-    <div class="bg-dark">
+    <div class="bg-dark" id="frineds">
       <!-- STORIES -->
       <section class="pt-8 pt-md-14 pb-10 pb-md-12">
         <div class="container-lg">
@@ -2478,7 +2518,7 @@
               class="navbar-logo footer-logo mx-auto d-table mb-3"
             />
             <!-- Text -->
-            <p class="text-white-60 text-center" dir="ltr">
+            <p class="text-white-60 text-center mb-0" dir="ltr">
               Made with &lt;Love/&gt; by Gdevs Group.
             </p>
           </div>

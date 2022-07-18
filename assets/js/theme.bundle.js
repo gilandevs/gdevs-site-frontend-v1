@@ -80,7 +80,7 @@
             })(e);
         }
         function n(e) {
-          e.classList.remove("navbar-light"), e.classList.add("navbar-dark"), r(e);
+          // e.classList.remove("navbar-light"), e.classList.add("navbar-dark"), r(e);
         }
         function r(e) {
           e.style.boxShadow = "";
