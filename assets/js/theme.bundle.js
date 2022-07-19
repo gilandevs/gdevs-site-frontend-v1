@@ -11,14 +11,27 @@
             window.addEventListener(e, () => {
               const e = [].slice.call(o).reverse();
               e.reduce((t, o, a) => {
-                const n = o.clientHeight + parseInt(window.getComputedStyle(o).getPropertyValue("margin-bottom")),
-                  r = t + (n - (e[a - 1] ? e[a - 1].offsetTop - o.offsetTop : n)) / n,
+                const n =
+                    o.clientHeight +
+                    parseInt(
+                      window
+                        .getComputedStyle(o)
+                        .getPropertyValue("margin-bottom")
+                    ),
+                  r =
+                    t +
+                    (n - (e[a - 1] ? e[a - 1].offsetTop - o.offsetTop : n)) / n,
                   l = o.firstElementChild,
                   s = l.firstElementChild,
                   c = "calc(-1rem * " + r + ")",
                   d = "calc(1 - .2 * " + r + ")",
                   i = "calc(1 - .03 * " + r + ")";
-                return (l.style.transform = "translateY(" + c + ") scale(" + i + ")"), (s.style.opacity = d), r;
+                return (
+                  (l.style.transform =
+                    "translateY(" + c + ") scale(" + i + ")"),
+                  (s.style.opacity = d),
+                  r
+                );
               }, 0);
             });
           });
@@ -49,7 +62,8 @@
           document.documentElement.style.overflowX = "";
         }
         document.querySelectorAll(".modal").forEach((o) => {
-          o.addEventListener("show.bs.modal", e), o.addEventListener("hidden.bs.modal", t);
+          o.addEventListener("show.bs.modal", e),
+            o.addEventListener("hidden.bs.modal", t);
         });
       },
       5141: () => {
@@ -120,19 +134,23 @@
         });
       },
       2789: () => {
-        document.querySelectorAll('[data-toggle="table-features"]').forEach((e) => {
-          e.addEventListener("change", () => {
-            const t = e.dataset.target;
-            document.querySelector(t).classList.toggle("table-features-alt");
+        document
+          .querySelectorAll('[data-toggle="table-features"]')
+          .forEach((e) => {
+            e.addEventListener("change", () => {
+              const t = e.dataset.target;
+              document.querySelector(t).classList.toggle("table-features-alt");
+            });
           });
-        });
       },
       8558: () => {
-        document.querySelectorAll(".table-clickable [data-href]").forEach(function (e) {
-          e.addEventListener("click", function (t) {
-            t.preventDefault(), (document.location.href = e.dataset.href);
+        document
+          .querySelectorAll(".table-clickable [data-href]")
+          .forEach(function (e) {
+            e.addEventListener("click", function (t) {
+              t.preventDefault(), (document.location.href = e.dataset.href);
+            });
           });
-        });
       },
       801: (e, t, o) => {
         "use strict";
@@ -142,7 +160,12 @@
           l = (o(1105), o(7541), o(3031), o(4878)),
           s = o(2711),
           c = o.n(s);
-        c().init({ duration: 700, easing: "ease-out-quad", once: !0, startEvent: "load" }),
+        c().init({
+          duration: 700,
+          easing: "ease-out-quad",
+          once: !0,
+          startEvent: "load",
+        }),
           (window.AOS = c()),
           (window.Alert = a.bZ),
           (window.Button = a.zx),
@@ -180,7 +203,9 @@
           document.addEventListener("aos:in:countup:in", function (e) {
             (e.detail instanceof Element
               ? [e.detail]
-              : document.querySelectorAll('.aos-animate[data-aos-id="countup:in"]:not(.counted)')
+              : document.querySelectorAll(
+                  '.aos-animate[data-aos-id="countup:in"]:not(.counted)'
+                )
             ).forEach((e) => {
               f(e);
             });
@@ -232,7 +257,9 @@
         }),
           (window.Isotope = L()),
           (window.imagesLoaded = E());
-        const O = document.querySelectorAll("[data-jarallax], [data-jarallax-element]");
+        const O = document.querySelectorAll(
+          "[data-jarallax], [data-jarallax-element]"
+        );
         (0, l.jarallaxVideo)(),
           (0, l.jarallaxElement)(),
           (0, l.jarallax)(O),
@@ -241,7 +268,9 @@
           (window.jarallaxVideo = l.jarallaxVideo);
         o(9328), o(5060);
         var k = o(804);
-        const j = document.querySelectorAll(".navbar-nav .dropdown, .navbar-nav .dropend"),
+        const j = document.querySelectorAll(
+            ".navbar-nav .dropdown, .navbar-nav .dropend"
+          ),
           T = document.querySelectorAll(".navbar-nav .dropdown-toggle"),
           I = document.querySelectorAll(".navbar-collapse"),
           J = 992;
@@ -275,7 +304,8 @@
               !(function (e, t) {
                 window.innerWidth < J ||
                   (t.classList.contains("show") &&
-                    (("click" === e.type && e.target.closest(".dropdown-menu form")) ||
+                    (("click" === e.type &&
+                      e.target.closest(".dropdown-menu form")) ||
                       (t.classList.add("showing"),
                       t.classList.remove("show"),
                       setTimeout(() => {
@@ -343,7 +373,8 @@
         const V = {
           header: ".navbar.fixed-top",
           offset: function (e, t) {
-            return t.dataset.scroll && void 0 !== JSON.parse(t.dataset.scroll).offset
+            return t.dataset.scroll &&
+              void 0 !== JSON.parse(t.dataset.scroll).offset
               ? JSON.parse(t.dataset.scroll).offset
               : 24;
           },
@@ -402,7 +433,10 @@
       return a.d(t, { a: t }), t;
     }),
     (a.d = (e, t) => {
-      for (var o in t) a.o(t, o) && !a.o(e, o) && Object.defineProperty(e, o, { enumerable: !0, get: t[o] });
+      for (var o in t)
+        a.o(t, o) &&
+          !a.o(e, o) &&
+          Object.defineProperty(e, o, { enumerable: !0, get: t[o] });
     }),
     (a.g = (function () {
       if ("object" == typeof globalThis) return globalThis;
@@ -431,7 +465,8 @@
             for (n in s) a.o(s, n) && (a.m[n] = s[n]);
             if (c) var i = c(a);
           }
-          for (t && t(o); d < l.length; d++) (r = l[d]), a.o(e, r) && e[r] && e[r][0](), (e[l[d]] = 0);
+          for (t && t(o); d < l.length; d++)
+            (r = l[d]), a.o(e, r) && e[r] && e[r][0](), (e[l[d]] = 0);
           return a.O(i);
         },
         o = (self.webpackChunkgoodkit = self.webpackChunkgoodkit || []);
@@ -441,8 +476,6 @@
   var n = a.O(void 0, [736], () => a(2250));
   n = a.O(n);
 
-
-  
   var imageGrid = document.querySelector(".img-grid");
   var members = [
     {
@@ -482,43 +515,35 @@
       name: "hossein",
     },
   ];
-    var parallax = [
-		"-30",
-		"-85",
-		"-45",
-		"-50",
-		"-20",
-		"-15",
-		"-10",
-  ];
+  var parallax = ["-30", "-85", "-45", "-50", "-20", "-15", "-10"];
 
   var shuffleArray = (arr) =>
     arr.sort(function () {
       return 0.5 - Math.random();
     });
 
-
-
   var shuffleMembers = shuffleArray(members);
   var maxImage = 7;
   counter = 1;
-  
+
   while (counter <= maxImage) {
     const imgWrapper = document.createElement("div");
     const avatar = document.createElement("img");
     imgWrapper.className = "img-grid-item";
 
-	avatar.src = shuffleMembers[counter].avatar;
-	avatar.alt = shuffleMembers[counter].alt;
-	avatar.dataset.jarallaxElement = parallax[counter];
+    avatar.src = shuffleMembers[counter].avatar;
+    avatar.alt = shuffleMembers[counter].alt;
+    avatar.dataset.jarallaxElement = parallax[counter];
     if (counter === 1) {
-      avatar.className = "img-fluid rounded-top-start-3 rounded-bottom-end-3 shadow-lg";
+      avatar.className =
+        "img-fluid rounded-top-start-3 rounded-bottom-end-3 shadow-lg";
     } else {
-      avatar.className = "img-fluid rounded-top-start rounded-bottom-end shadow-lg";
+      avatar.className =
+        "img-fluid rounded-top-start rounded-bottom-end shadow-lg";
     }
 
-	imgWrapper.appendChild(avatar)
+    imgWrapper.appendChild(avatar);
     imageGrid.appendChild(imgWrapper);
-	counter++
+    counter++;
   }
 })();
