@@ -546,3 +546,6 @@ body {
 #submitform.loading .loader {
   opacity: 1;
 }
+#submitform:disabled {
+  opacity: 0.8;
+}

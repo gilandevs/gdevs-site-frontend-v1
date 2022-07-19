@@ -82,7 +82,7 @@ const submitBtn = document.getElementById("submitform");
 const formSubmitHandler = (e) => {
   e.preventDefault();
   submitBtn.classList.add("loading");
-
+  submitBtn.setAttribute("disabled", "");
   const name = formEl.elements["name"].value;
   const email = formEl.elements["email"].value;
   const message = formEl.elements["message"].value;
@@ -97,6 +97,8 @@ const formSubmitHandler = (e) => {
     if (ajax.readyState == 4 && ajax.status == 200) {
       if (ajax.responseText == "success") {
         submitBtn.classList.remove("loading");
+        submitBtn.removeAttribute("disabled");
+
         Toastify({
           text: "پیام شما با موفقیت ارسال شد.",
           duration: 3000,
@@ -113,6 +115,8 @@ const formSubmitHandler = (e) => {
         }).showToast();
       } else if (ajax.responseText == "error") {
         submitBtn.classList.remove("loading");
+        submitBtn.removeAttribute("disabled");
+
         Toastify({
           text: "نشد که بشه! ‌:(",
           duration: 3000,
@@ -130,6 +134,7 @@ const formSubmitHandler = (e) => {
   };
   if (nameInput.value === "") {
     submitBtn.classList.remove("loading");
+    submitBtn.removeAttribute("disabled");
 
     Toastify({
       text: "اسمتو وارد نکردیا!",
@@ -146,6 +151,8 @@ const formSubmitHandler = (e) => {
   }
   if (emailInput.value === "") {
     submitBtn.classList.remove("loading");
+    submitBtn.removeAttribute("disabled");
+
     Toastify({
       text: "ایمیلتو وارد نکردیا!",
       duration: 3000,
@@ -161,6 +168,7 @@ const formSubmitHandler = (e) => {
   }
   if (messageInput.value === "") {
     submitBtn.classList.remove("loading");
+    submitBtn.removeAttribute("disabled");
 
     Toastify({
       text: "پیامتو وارد نکردیا!",
