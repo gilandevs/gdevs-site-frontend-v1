@@ -145,11 +145,7 @@
       },
       8558: () => {
         document
-<<<<<<< HEAD
-          .querySelectorAll(".table-clickable [data-href]")
-=======
           .querySelectorAll(".gd-table-clickable [data-href]")
->>>>>>> 2ee69be4e8f666dc23f6d2b0c2002f408a7dc834
           .forEach(function (e) {
             e.addEventListener("click", function (t) {
               t.preventDefault(), (document.location.href = e.dataset.href);
@@ -479,5 +475,4 @@
     a.O(void 0, [736], () => a(801));
   var n = a.O(void 0, [736], () => a(2250));
   n = a.O(n);
-
 })();

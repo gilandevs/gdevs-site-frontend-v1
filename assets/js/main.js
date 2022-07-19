@@ -68,3 +68,6 @@ while (counter <= maxImage) {
   imageGrid.appendChild(imgWrapper);
   counter++;
 }
+
+
+
