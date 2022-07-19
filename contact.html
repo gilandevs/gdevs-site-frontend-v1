@@ -66,6 +66,12 @@
       property="og:image"
       content="https://dev.gilandevs.ir/assets/img/e-commerce/gilandevs_preview.jpg"
     />
+    <!-- Toastify -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
 
     <!-- Libs CSS -->
     <link rel="stylesheet" href="/assets/css/libs.bundle.css" />
@@ -201,7 +207,8 @@
                     </label>
                     <input
                       class="form-control"
-                      id="n"
+                      id="name"
+                      name="name"
                       type="text"
                       placeholder="نام و نام خانوادگی"
                     />
@@ -215,8 +222,9 @@
                     </label>
                     <input
                       class="form-control"
-                      id="e"
+                      id="email"
                       type="email"
+                      name="email"
                       placeholder="ایمیل"
                     />
                   </div>
@@ -229,9 +237,10 @@
                     </label>
                     <textarea
                       class="form-control"
-                      id="m"
+                      id="message"
                       placeholder="پیامتون"
                       rows="7"
+                      name="message"
                     ></textarea>
                   </div>
                 </div>
@@ -242,7 +251,8 @@
                 class="btn w-100 btn-primary"
                 type="submit"
               >
-                ارسال پیام
+                <span class="submit-text"> ارسال پیام </span>
+                <div class="loader"></div>
               </button>
             </form>
           </div>
@@ -251,18 +261,72 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer py-8 bg-dark border-multicolor">
+
+    <footer class="footer py-5 py-md-8 bg-dark border-multicolor">
       <div class="container-lg">
-        <div class="row justify-content-end">
-          <div class="col-md-12">
+        <div class="row align-items-end">
+          <div class="col-md-6">
+            <!-- Brand -->
+
+            <div class="d-flex align-items-center">
+              <div class="icon text-light ms-2" style="width: 35px">
+                <svg
+                  style="width: 100%; height: auto"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g fill="none" fill-rule="evenodd">
+                    <path d="M0 0h24v24H0z"></path>
+                    <path
+                      d="M13.08 14.784l2.204-2.204a2 2 0 00.375-2.309l-.125-.25a2 2 0 01.374-2.308l2.733-2.733a.5.5 0 01.801.13l1.104 2.208a4.387 4.387 0 01-.822 5.065l-5.999 5.998a5.427 5.427 0 01-5.553 1.311l-2.415-.804a.5.5 0 01-.195-.828l2.65-2.652a2 2 0 012.31-.374l.25.125a2 2 0 002.308-.375z"
+                      fill="#335EEA"
+                    ></path>
+                    <path
+                      d="M14.148 6.007l-.191 1.991a4.987 4.987 0 00-4.018 1.441 4.987 4.987 0 00-1.442 4.004l-1.992.185a6.986 6.986 0 012.02-5.603 6.987 6.987 0 015.623-2.018zm.35-3.985l-.185 1.992A8.978 8.978 0 007.111 6.61a8.978 8.978 0 00-2.598 7.191l-1.992.183a10.977 10.977 0 013.176-8.788 10.977 10.977 0 018.801-3.175z"
+                      fill="#335EEA"
+                      opacity=".3"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <span class="fs-4 text-700 text-light">09031842637</span>
+            </div>
+            <!-- Text -->
+            <div class="d-flex align-items-center">
+              <div class="icon text-light ms-2" style="width: 35px">
+                <svg
+                  style="width: 100%; height: auto"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g fill="none" fill-rule="evenodd">
+                    <path d="M0 0h24v24H0z"></path>
+                    <path
+                      d="M6 2h12a1 1 0 011 1v9a1 1 0 01-1 1H6a1 1 0 01-1-1V3a1 1 0 011-1zm1.5 3a.5.5 0 000 1h6a.5.5 0 100-1h-6zm0 2a.5.5 0 000 1h3a.5.5 0 100-1h-3z"
+                      fill="#335EEA"
+                      opacity=".3"
+                    ></path>
+                    <path
+                      d="M3.793 6.573L12 12.5l8.207-5.927a.5.5 0 01.793.405V17a2 2 0 01-2 2H5a2 2 0 01-2-2V6.978a.5.5 0 01.793-.405z"
+                      fill="#335EEA"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <a class="text-white-60 text-end text-700" href="/contact.html">
+                تماس با ما
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
             <!-- Brand -->
             <img
-              src="./assets/img/final-white.png"
+              src="/assets/img/final-white.png"
               alt="logo"
-              class="navbar-logo footer-logo mx-auto d-table mb-3"
+              class="navbar-logo footer-logo me-auto d-table mb-3"
             />
             <!-- Text -->
-            <p class="text-white-60 text-center mb-0" dir="ltr">
+            <p class="text-white-60 text-start mb-0" dir="ltr">
               Made with &lt;Love/&gt; by Gdevs Group.
             </p>
           </div>
@@ -271,6 +335,14 @@
     </footer>
 
     <!-- JAVASCRIPT -->
+
+    <!-- MAIN -->
+    <script src="/assets/js/main.js"></script>
+    <!-- Toastify -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
     <!-- Map JS -->
     <script src="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
 
