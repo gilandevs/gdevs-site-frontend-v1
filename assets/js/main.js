@@ -41,7 +41,7 @@
       name: "hossein",
     },
   ];
-  var parallax = ["-30", "-85", "-45", "-50", "-20", "-15", "-10"];
+  var parallax = ["-30", "-30", "-45", "-50", "-20", "-15", "-10"];
 
   var shuffleArray = (arr) =>
     arr.sort(function () {
