@@ -19570,10 +19570,10 @@ html {
 	padding-bottom: 1.5rem;
 	padding-top: 1.5rem;
 }
-.table-clickable [data-href]:hover {
+.gd-table-clickable [data-href]:hover {
 	cursor: pointer;
 }
-.table-clickable [data-href]:hover .table-clickable-hover {
+.gd-table-clickable [data-href]:hover .gd-table-clickable-hover {
 	color: #5546e8;
 }
 @media (max-width: 575.98px) {

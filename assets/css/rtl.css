@@ -193,34 +193,36 @@ body {
   mix-blend-mode: darken;
 }
 
-.block-row {
-
+.gd-table-row-block {
   pointer-events: none;
 }
-.block-row span,.block-row svg{
+.gd-table-row-block span,
+.gd-table-row-block svg {
   filter: blur(1px);
- }
+}
+
 .block-item {
   position: relative;
-  width: 4rem;
-  height: 1.4rem;
+  box-sizing: content-box;
+  width: 3rem;
+  height: 1rem;
+  padding: 0.6125rem 1rem;
 }
 @media (min-width: 768px) {
   .block-item {
-   
     width: 5.5rem;
     height: 1.6rem;
   }
-  
 }
 
 .block-item::after {
   content: "";
-  width: 110%;
-  height: 160%;
+  width: 100%;
+  height: 100%;
   background: url(/assets/img/illustrations/comming-soon.png) center no-repeat;
   position: absolute;
   background-size: contain;
+  background-position: center center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-7deg);
@@ -244,47 +246,17 @@ body {
 [data-countup] {
   transition: unset !important;
 }
-.table-clickable tr:nth-child(1):hover .table-clickable-hover,
-.table-clickable tr:nth-child(1):hover a,
-.table-clickable tr:nth-child(1):hover [data-counter] {
-  color: #2aabee;
-}
-.table-clickable tr:nth-child(2):hover .table-clickable-hover,
-.table-clickable tr:nth-child(2):hover a,
-.table-clickable tr:nth-child(2):hover [data-counter] {
-  color: #2aabee;
-}
-.table-clickable tr:nth-child(3):hover .table-clickable-hover,
-.table-clickable tr:nth-child(3):hover a,
-.table-clickable tr:nth-child(3):hover [data-counter] {
-  color: #ff7700;
-}
-.table-clickable tr:nth-child(4):hover .table-clickable-hover,
-.table-clickable tr:nth-child(4):hover a,
-.table-clickable tr:nth-child(4):hover [data-counter] {
-  color: #ff0000;
-}
-.table-clickable tr:nth-child(5):hover .table-clickable-hover,
-.table-clickable tr:nth-child(5):hover a,
-.table-clickable tr:nth-child(5):hover [data-counter] {
-  color: #c32aa3;
-}
-.table-clickable tr:nth-child(6):hover .table-clickable-hover,
-.table-clickable tr:nth-child(6):hover a,
-.table-clickable tr:nth-child(6):hover [data-counter] {
-  color: #1da1f2;
-}
+
 .footer-logo {
-  width: 6rem;
+  width: 5.5rem;
   filter: grayscale(1);
 }
 
 @media (min-width: 768px) {
   .footer-logo {
-    width: 10rem;
+    width: 8rem;
     filter: grayscale(1);
   }
-  
 }
 
 @media (min-width: 768px) {
@@ -292,7 +264,6 @@ body {
     font-size: 2.5rem;
   }
 }
-
 
 @media (min-width: 992px) {
   .display-lg-4 {
@@ -322,9 +293,8 @@ body {
   }
 }
 
-#frineds{
+#frineds {
   overflow-x: hidden;
-
 }
 
 .mx-w-400 {
@@ -339,12 +309,10 @@ body {
 }
 
 @media (min-width: 767.98px) {
-
   .feature-img {
     margin-right: 0;
     margin-left: 0;
   }
-  
 }
 
 .navbar {
@@ -366,34 +334,174 @@ body {
   }
 }
 
-.table > :not(caption) > * > * {
-  padding: 0.5rem;
-}
-
-
-@media (min-width: 768px) {
-  .table > :not(caption) > * > * {
-    padding: 1.5rem;
-  }
-  
-}
-
 .community-icon {
   display: none;
 }
 
 @media (min-width: 576px) {
-
   .community-icon {
     width: 18px;
     display: block;
   }
-  
 }
 
 @media (min-width: 768px) {
   .community-icon {
     width: 25px;
   }
-  
+}
+.gd-table {
+  --bs-table-bg: transparent;
+  --bs-table-accent-bg: transparent;
+  --bs-table-striped-color: #1b1642;
+  --bs-table-striped-bg: #f3f8ff;
+  --bs-table-active-color: #1b1642;
+  --bs-table-active-bg: #f3f8ff;
+  --bs-table-hover-color: #1b1642;
+  --bs-table-hover-bg: #f3f8ff;
+  border-color: #eaf2fe;
+  color: #1b1642;
+  margin-bottom: 1rem;
+  vertical-align: top;
+  width: 100%;
+}
+
+.gd-table > header > div:first-child,
+.gd-table .gd-table-row > div:first-child {
+  padding-left: 0;
+}
+.gd-table > header > div {
+  color: #8d9aae;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: initial;
+  flex: 1;
+  background-color: var(--bs-table-bg);
+  box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+  padding: 0.75rem;
+  border-bottom-width: 2px;
+  border-bottom-color: rgb(234, 242, 254);
+  border-bottom-style: solid;
+}
+
+.gd-table > header > div:first-child {
+  min-width: 100px;
+  flex-grow: 0;
+}
+
+@media (min-width: 567px) {
+  .gd-table > header > div:first-child {
+    
+    flex-grow: 1;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .gd-table > header > div {
+    padding: 1.25rem;
+  }
+}
+
+.gd-table-body {
+}
+
+.gd-table-row {
+  display: flex;
+}
+.gd-table-row > div {
+  flex: 1;
+  padding: 1rem;
+  font-weight: 700;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(234, 242, 254);
+  border-bottom-style: solid;
+}
+.gd-table-row > div:first-child {
+  min-width: 100px;
+  flex-grow: 0;
+}
+
+@media (min-width: 567px) {
+  .gd-table-row > div:first-child {
+    
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .gd-table-row > div {
+    padding: 1rem;
+  }
+}
+
+.gd-table-row > div > * {
+  transition: all 0.2s ease-in-out !important;
+}
+
+.gd-table-clickable .gd-table-row:nth-child(1):hover .gd-table-clickable-hover,
+.gd-table-clickable .gd-table-row:nth-child(1):hover a,
+.gd-table-clickable .gd-table-row:nth-child(1):hover [data-counter] {
+  color: #2aabee;
+}
+.gd-table-clickable .gd-table-row:nth-child(2):hover .gd-table-clickable-hover,
+.gd-table-clickable .gd-table-row:nth-child(2):hover a,
+.gd-table-clickable .gd-table-row:nth-child(2):hover [data-counter] {
+  color: #2aabee;
+}
+.gd-table-clickable .gd-table-row:nth-child(3):hover .gd-table-clickable-hover,
+.gd-table-clickable .gd-table-row:nth-child(3):hover a,
+.gd-table-clickable .gd-table-row:nth-child(3):hover [data-counter] {
+  color: #ff7700;
+}
+.gd-table-clickable .gd-table-row:nth-child(4):hover .gd-table-clickable-hover,
+.gd-table-clickable .gd-table-row:nth-child(4):hover a,
+.gd-table-clickable .gd-table-row:nth-child(4):hover [data-counter] {
+  color: #ff0000;
+}
+.gd-table-clickable .gd-table-row:nth-child(5):hover .gd-table-clickable-hover,
+.gd-table-clickable .gd-table-row:nth-child(5):hover a,
+.gd-table-clickable .gd-table-row:nth-child(5):hover [data-counter] {
+  color: #c32aa3;
+}
+.gd-table-clickable .gd-table-row:nth-child(6):hover .gd-table-clickable-hover,
+.gd-table-clickable .gd-table-row:nth-child(6):hover a,
+.gd-table-clickable .gd-table-row:nth-child(6):hover [data-counter] {
+  color: #1da1f2;
+}
+
+.btn-ghost {
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1.5;
+  border: 0.0625rem solid transparent;
+  padding: 0.6125rem 1rem;
+  margin-bottom: 0 !important;
+  border-radius: 0.3125rem;
+  user-select: none;
+  background-color: transparent;
+  color: var(--bs-body-color);
+}
+.gd-table-clickable .gd-table-row:nth-child(1):hover .btn-ghost {
+  background-color: rgba(55, 125, 255, 0.1);
+}
+.gd-table-clickable .gd-table-row:nth-child(2):hover .btn-ghost {
+  background-color: rgba(55, 125, 255, 0.1);
+}
+
+
+.border-flit {
+  border-radius: 1.5rem 0 1.5rem 0;
+}
+
+.navbar-togglable {
+  box-shadow: hsla(0, 0%, 100%, 1) 1000px 1000px 1000px inset!important;
+}
+
+@media (min-width: 1200px) {
+  .navbar-togglable {
+    box-shadow: hsla(0, 0%, 100%, 0.85) 1000px 1000px 1000px inset!important;
+  }
 }
