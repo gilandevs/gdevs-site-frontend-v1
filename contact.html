@@ -16,7 +16,7 @@
 
     <!-- COMMON TAGS -->
     <meta charset="utf-8" />
-    <title>GDEVS | جامعه توسعه‌دهندگان گیلان</title>
+    <title>GDEVS | تماس باما</title>
 
     <!-- Search Engine -->
     <meta
@@ -84,8 +84,7 @@
   <body style="margin-top: 108px">
     <!-- NAVBAR -->
     <nav
-      class="navbar navbar-expand-lg fixed-top navbar-light"
-      style="background-color: #fff"
+      class="navbar navbar-expand-lg navbar-reveal fixed-top navbar-light navbar-togglable"
     >
       <div class="container-lg">
         <!-- Brand -->
@@ -93,11 +92,29 @@
           <img src="/assets/img/illustrations/logo.png" alt="logo" />
         </a>
 
-        <!-- Collapse -->
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="mainNavbar"
+        <!-- Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <!-- Navigation -->
+          <ul class="navbar-nav justify-content-end w-100">
+            <li class="nav-item">
+              <a class="nav-link" href="https://dev.gilandevs.ir"> صفحه نخست</a>
+            </li>
+        
+          </ul>
+
           <!-- Brand -->
           <a
             class="navbar-brand d-none d-lg-block"
@@ -105,9 +122,18 @@
           >
             <img src="/assets/img/illustrations/logo.png" alt="logo" />
           </a>
+
+          <!-- Navigation -->
+          <ul class="navbar-nav justify-content-start w-100">
+       
+            <li class="nav-item">
+              <a class="nav-link" href="/landing/support.html">حمایت از ما</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
+
 
     <!-- CONTENT -->
     <section class="pt-6 pt-md-6 pb-10 pb-md-12">
@@ -115,22 +141,21 @@
         <div class="row justify-content-center">
           <div class="col-md-10 col-lg-8 text-center">
             <!-- Preheading -->
-            <h6 class="text-uppercase text-primary mb-5">تماس با ما</h6>
+            <h6 class="text-primary mb-5">تماس با ما</h6>
 
             <!-- Heading -->
-            <h1 class="display-3 mb-4">چجوری میتونیم کمکتون کنیم؟</h1>
+            <h1 class="display-md-3 text-700 mb-4">چجوری میتونیم کمکتون کنیم؟</h1>
 
             <!-- Text -->
             <p class="fs-lg text-muted mb-9">
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-              استفاده از طراحان گرافیک است، چاپگرها و
+              دوست داری عضو تیم ما بشی؟ ایده‌ای تو ذهن داری؟ به حمایت از تیم علاقه‌مندی؟
             </p>
 
             <!-- Items -->
             <div class="row mb-9">
               <div class="col-md py-md-4 mb-6 mb-md-0 border-start-md">
                 <!-- Chat -->
-                <a class="text-reset text-decoration-none" href="mailto:#!">
+                <a class="text-reset text-decoration-none" href="mailto:info@gilandevs.ir">
                   <!-- Icon -->
                   <div class="icon text-primary-light mb-3">
                     <svg
@@ -155,15 +180,15 @@
                   </div>
 
                   <!-- Heading -->
-                  <h6 class="text-uppercase mb-0">ایمیل</h6>
+                  <h6 class=" mb-0">ایمیل</h6>
 
                   <!-- Text -->
                   <small class="text-muted">زیر ۲۴ ساعت جوابتونو میدیم</small>
                 </a>
               </div>
-              <div class="col-md py-md-4 border-start-md">
+              <div class="col-md py-md-4 ">
                 <!-- Chat -->
-                <a class="text-reset text-decoration-none" href="tel:#!">
+                <a class="text-reset text-decoration-none" href="tel:09031842637">
                   <!-- Icon -->
                   <div class="icon text-primary-light mb-3">
                     <svg
@@ -188,7 +213,7 @@
                   </div>
 
                   <!-- Heading -->
-                  <h6 class="text-uppercase mb-0">تماس</h6>
+                  <h6 class="mb-0">تماس</h6>
 
                   <!-- Text -->
                   <small class="text-muted"> ۸ - ۲۱ زمان پاسخگویی </small>
@@ -262,7 +287,35 @@
 
     <!-- FOOTER -->
 
-    <footer class="footer py-5 py-md-8 bg-dark border-multicolor">
+    <footer class="footer py-5 py-md-8  bg-dark border-multicolor ">
+      <div class="container-lg mb-5 mb-md-8">
+        <div class="row align-items-center">
+          <!-- Divider -->
+          <!-- <div class="col-12">
+            <hr class="bg-gray-900 mt-0 mb-8" />
+          </div> -->
+          <div class="col-md">
+            <!-- Heading -->
+            <h2 class="text-white mb-0 text-700">
+              شما هم میتونید تو این مسیر
+              <span class="text-primary-light">کنار ما</span> باشید.
+            </h2>
+
+            <!-- Text -->
+            <p class="text-white-60 mb-4 mb-md-0">
+              با همیاری هم میتونیم به هدفای بزرگمون برسیم
+            </p>
+          </div>
+          <div class="col-md-auto">
+            <!-- Button -->
+            <a class="btn btn-primary lift" href="/landing/support.html">حمایت معنوی ツ</a>
+          </div>
+          <div class="col-12">
+            <!-- Divider -->
+            <hr class="bg-gray-900 mb-0 mt-5 mt-md-8" />
+          </div>
+        </div>
+      </div>
       <div class="container-lg">
         <div class="row align-items-end">
           <div class="col-md-6">
@@ -338,6 +391,7 @@
 
     <!-- MAIN -->
     <script src="/assets/js/main.js?v=3"></script>
+    
     <!-- Toastify -->
     <script
       type="text/javascript"
