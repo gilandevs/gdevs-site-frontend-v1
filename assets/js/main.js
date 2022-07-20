@@ -92,7 +92,7 @@ const formSubmitHandler = (e) => {
   formdata.append("message", message);
 
   var ajax = new XMLHttpRequest();
-  ajax.open("POST", "../../mailer.php");
+  ajax.open("POST", "/service/mailer.php");
   ajax.onreadystatechange = function () {
     if (ajax.readyState == 4 && ajax.status == 200) {
       if (ajax.responseText == "success") {

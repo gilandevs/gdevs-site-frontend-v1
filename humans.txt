@@ -2,8 +2,11 @@
 # The humans responsible & technology colophon
 
 # TEAM
-
-    <name> -- <role> -- <twitter>
+    Arash Mokhtari(Milani) -- FrontEnd -- www.linkedin.com/in/mohammad-mokhtari
+    Mohammad Javad Kamalipour -- FrontEnd -- www.linkedin.com/in/mohammad-kamalipour-aba4701ba/
+    Sina Pirani -- FrontEnd -- www.linkedin.com/in/sinapirani
+    Taha Hasan Pour —- Back End --  www.linkedin.com/in/taha-hasanpour
+    Ali Houshangi —- Back End --  www.linkedin.com/in/ali-houshangi-102757207/
 
 # THANKS
 
