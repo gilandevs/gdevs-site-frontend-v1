@@ -5,35 +5,35 @@
   }
   var members = [
     {
-      avatar: "assets/img/avatars/avatar-jumbo-1.jpg",
+      avatar: "assets/img/avatars/avatar-1.jpg",
       name: "mohammad kamalipour",
     },
     {
-      avatar: "assets/img/avatars/avatar-7.jpg",
+      avatar: "assets/img/avatars/avatar-2.jpg",
       name: "arad",
     },
     {
-      avatar: "assets/img/avatars/avatar-8.jpg",
+      avatar: "assets/img/avatars/avatar-3.jpg",
       name: "sina",
     },
     {
-      avatar: "assets/img/avatars/avatar-10.jpg",
+      avatar: "assets/img/avatars/avatar-4.jpg",
       name: "Arash Milani",
     },
     {
-      avatar: "assets/img/avatars/avatar-6.jpg",
+      avatar: "assets/img/avatars/avatar-5.jpg",
       name: "Hassan",
     },
     {
-      avatar: "assets/img/avatars/avatar-4.jpg",
+      avatar: "assets/img/avatars/avatar-6.jpg",
       name: "Aryan",
     },
     {
-      avatar: "assets/img/avatars/avatar-3.jpg",
+      avatar: "assets/img/avatars/avatar-7.jpg",
       name: "Samira",
     },
     {
-      avatar: "assets/img/avatars/avatar-1.jpeg",
+      avatar: "assets/img/avatars/avatar-8.jpg",
       name: "ali",
     },
     {
