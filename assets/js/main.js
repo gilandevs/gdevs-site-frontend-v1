@@ -13,7 +13,7 @@
       name: "arad",
     },
     {
-      avatar: "assets/img/avatars/avatar-3.jpg",
+      avatar: "assets/img/avatars/avatar-3-1.jpg",
       name: "sina",
     },
     {
