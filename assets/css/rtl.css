@@ -287,9 +287,12 @@ body {
   }
 }
 
-@media (max-width: 767.98px) {
+.lead {
+  font-size: 1.15rem;
+}
+@media (min-width: 767.98px) {
   .lead {
-    font-size: 1.15rem;
+    font-size: 1.35rem;
   }
 }
 
