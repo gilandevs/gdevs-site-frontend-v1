@@ -1,12 +1,538 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=D, initial-scale=1.0">
-    <title>Support</title>
-</head>
-<body>
-    حمایت
-</body>
+<html lang="fa_IR" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- COMMON TAGS -->
+    <meta charset="utf-8" />
+    <title>GDEVS | تماس باما</title>
+
+    <!-- Search Engine -->
+    <meta
+      name="description"
+      content="اینجا محفلی برای گفتگوی توسعه‌دهنده‌های گیلانی است. ما اینجا قصد داریم رویدادها، دوره‌های منتورشیپ و آموزش‌های تخصصی را برای افراد گیلانی علاقه‌مند به برنامه نویسی فراهم کنیم."
+    />
+    <meta
+      name="image"
+      content="https://gilandevs.ir/assets/img/e-commerce/gilandevs_preview.jpg"
+    />
+
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="GDEVS | جامعه توسعه‌دهندگان گیلان" />
+    <meta
+      itemprop="description"
+      content="اینجا محفلی برای گفتگوی توسعه‌دهنده‌های گیلانی است. ما اینجا قصد داریم رویدادها، دوره‌های منتورشیپ و آموزش‌های تخصصی را برای افراد گیلانی علاقه‌مند به برنامه نویسی فراهم کنیم."
+    />
+    <meta
+      itemprop="image"
+      content="https://gilandevs.ir/assets/img/e-commerce/gilandevs_preview.jpg"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="GDEVS | جامعه توسعه‌دهندگان گیلان" />
+    <meta property="twitter:url" content="https://gilandevs.ir/" />
+    <meta
+      name="twitter:description"
+      content="اینجا محفلی برای گفتگوی توسعه‌دهنده‌های گیلانی است. ما اینجا قصد داریم رویدادها، دوره‌های منتورشیپ و آموزش‌های تخصصی را برای افراد گیلانی علاقه‌مند به برنامه نویسی فراهم کنیم."
+    />
+    <meta
+      name="twitter:image:src"
+      content="https://gilandevs.ir/assets/img/e-commerce/gilandevs_preview.jpg"
+    />
+
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta property="og:title" content="GDEVS | جامعه توسعه‌دهندگان گیلان" />
+    <meta
+      property="og:description"
+      content="اینجا محفلی برای گفتگوی توسعه‌دهنده‌های گیلانی است. ما اینجا قصد داریم رویدادها، دوره‌های منتورشیپ و آموزش‌های تخصصی را برای افراد گیلانی علاقه‌مند به برنامه نویسی فراهم کنیم."
+    />
+    <meta property="og:url" content="https://gilandevs.ir" />
+    <meta property="og:site_name" content="GDEVS | جامعه توسعه‌دهندگان گیلان" />
+    <meta property="og:locale" content="fa_IR" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://gilandevs.ir/assets/img/e-commerce/gilandevs_preview.jpg"
+    />
+    <!-- Toastify -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="/assets/css/libs.bundle.css?v=4" />
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="/assets/css/theme.bundle.css?v=4" />
+    <!-- Rtl CSS -->
+    <link rel="stylesheet" href="/assets/css/rtl.css?v=4" />
+    <!-- Title -->
+  </head>
+  <body style="margin-top: 108px">
+    <!-- NAVBAR -->
+    <nav
+      class="navbar navbar-expand-lg navbar-reveal fixed-top navbar-light navbar-togglable"
+    >
+      <div class="container-lg">
+        <!-- Brand -->
+        <a class="navbar-brand d-lg-none" href="./index.html">
+          <img src="/assets/img/illustrations/logo.png" alt="logo" />
+        </a>
+
+        <!-- Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <!-- Navigation -->
+          <ul class="navbar-nav justify-content-end w-100">
+            <li class="nav-item">
+              <a class="nav-link" href="/"> صفحه نخست</a>
+            </li>
+          </ul>
+
+          <!-- Brand -->
+          <a class="navbar-brand d-none d-lg-block" href="/">
+            <img src="/assets/img/illustrations/logo.png" alt="logo" />
+          </a>
+
+          <!-- Navigation -->
+          <ul class="navbar-nav justify-content-start w-100">
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">تماس باما</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- DOWNLOAD -->
+    <section>
+      <div class="container-lg position-relative" style="z-index: 1">
+        <div
+          class="row align-items-center justify-content-between flex-row-reverse"
+        >
+          <div class="col-md-5 col-lg-4 pt-10 pt-md-12 d-none d-md-block">
+            <!-- Image -->
+            <div class="position-relative">
+              <!-- Decoration -->
+              <div class="position-absolute top-end text-warning mt-n8 me-n8">
+                <svg
+                  width="185"
+                  height="186"
+                  viewBox="0 0 185 186"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="2" cy="2" r="2" fill="currentColor" />
+                  <circle cx="22" cy="2" r="2" fill="currentColor" />
+                  <circle cx="42" cy="2" r="2" fill="currentColor" />
+                  <circle cx="62" cy="2" r="2" fill="currentColor" />
+                  <circle cx="82" cy="2" r="2" fill="currentColor" />
+                  <circle cx="102" cy="2" r="2" fill="currentColor" />
+                  <circle cx="122" cy="2" r="2" fill="currentColor" />
+                  <circle cx="142" cy="2" r="2" fill="currentColor" />
+                  <circle cx="162" cy="2" r="2" fill="currentColor" />
+                  <circle cx="182" cy="2" r="2" fill="currentColor" />
+                  <circle cx="2" cy="22" r="2" fill="currentColor" />
+                  <circle cx="22" cy="22" r="2" fill="currentColor" />
+                  <circle cx="42" cy="22" r="2" fill="currentColor" />
+                  <circle cx="62" cy="22" r="2" fill="currentColor" />
+                  <circle cx="82" cy="22" r="2" fill="currentColor" />
+                  <circle cx="102" cy="22" r="2" fill="currentColor" />
+                  <circle cx="122" cy="22" r="2" fill="currentColor" />
+                  <circle cx="142" cy="22" r="2" fill="currentColor" />
+                  <circle cx="162" cy="22" r="2" fill="currentColor" />
+                  <circle cx="182" cy="22" r="2" fill="currentColor" />
+                  <circle cx="2" cy="42" r="2" fill="currentColor" />
+                  <circle cx="22" cy="42" r="2" fill="currentColor" />
+                  <circle cx="42" cy="42" r="2" fill="currentColor" />
+                  <circle cx="62" cy="42" r="2" fill="currentColor" />
+                  <circle cx="82" cy="42" r="2" fill="currentColor" />
+                  <circle cx="102" cy="42" r="2" fill="currentColor" />
+                  <circle cx="122" cy="42" r="2" fill="currentColor" />
+                  <circle cx="142" cy="42" r="2" fill="currentColor" />
+                  <circle cx="162" cy="42" r="2" fill="currentColor" />
+                  <circle cx="182" cy="42" r="2" fill="currentColor" />
+                  <circle cx="2" cy="62" r="2" fill="currentColor" />
+                  <circle cx="22" cy="62" r="2" fill="currentColor" />
+                  <circle cx="42" cy="62" r="2" fill="currentColor" />
+                  <circle cx="62" cy="62" r="2" fill="currentColor" />
+                  <circle cx="82" cy="62" r="2" fill="currentColor" />
+                  <circle cx="102" cy="62" r="2" fill="currentColor" />
+                  <circle cx="122" cy="62" r="2" fill="currentColor" />
+                  <circle cx="142" cy="62" r="2" fill="currentColor" />
+                  <circle cx="162" cy="62" r="2" fill="currentColor" />
+                  <circle cx="182" cy="62" r="2" fill="currentColor" />
+                  <circle cx="2" cy="82" r="2" fill="currentColor" />
+                  <circle cx="22" cy="82" r="2" fill="currentColor" />
+                  <circle cx="42" cy="82" r="2" fill="currentColor" />
+                  <circle cx="62" cy="82" r="2" fill="currentColor" />
+                  <circle cx="82" cy="82" r="2" fill="currentColor" />
+                  <circle cx="102" cy="82" r="2" fill="currentColor" />
+                  <circle cx="122" cy="82" r="2" fill="currentColor" />
+                  <circle cx="142" cy="82" r="2" fill="currentColor" />
+                  <circle cx="162" cy="82" r="2" fill="currentColor" />
+                  <circle cx="182" cy="82" r="2" fill="currentColor" />
+                  <circle cx="2" cy="102" r="2" fill="currentColor" />
+                  <circle cx="22" cy="102" r="2" fill="currentColor" />
+                  <circle cx="42" cy="102" r="2" fill="currentColor" />
+                  <circle cx="62" cy="102" r="2" fill="currentColor" />
+                  <circle cx="82" cy="102" r="2" fill="currentColor" />
+                  <circle cx="102" cy="102" r="2" fill="currentColor" />
+                  <circle cx="122" cy="102" r="2" fill="currentColor" />
+                  <circle cx="142" cy="102" r="2" fill="currentColor" />
+                  <circle cx="162" cy="102" r="2" fill="currentColor" />
+                  <circle cx="182" cy="102" r="2" fill="currentColor" />
+                  <circle cx="2" cy="122" r="2" fill="currentColor" />
+                  <circle cx="22" cy="122" r="2" fill="currentColor" />
+                  <circle cx="42" cy="122" r="2" fill="currentColor" />
+                  <circle cx="62" cy="122" r="2" fill="currentColor" />
+                  <circle cx="82" cy="122" r="2" fill="currentColor" />
+                  <circle cx="102" cy="122" r="2" fill="currentColor" />
+                  <circle cx="122" cy="122" r="2" fill="currentColor" />
+                  <circle cx="142" cy="122" r="2" fill="currentColor" />
+                  <circle cx="162" cy="122" r="2" fill="currentColor" />
+                  <circle cx="182" cy="122" r="2" fill="currentColor" />
+                  <circle cx="2" cy="142" r="2" fill="currentColor" />
+                  <circle cx="22" cy="142" r="2" fill="currentColor" />
+                  <circle cx="42" cy="142" r="2" fill="currentColor" />
+                  <circle cx="62" cy="142" r="2" fill="currentColor" />
+                  <circle cx="82" cy="142" r="2" fill="currentColor" />
+                  <circle cx="102" cy="142" r="2" fill="currentColor" />
+                  <circle cx="122" cy="142" r="2" fill="currentColor" />
+                  <circle cx="142" cy="142" r="2" fill="currentColor" />
+                  <circle cx="162" cy="142" r="2" fill="currentColor" />
+                  <circle cx="182" cy="142" r="2" fill="currentColor" />
+                  <circle cx="2" cy="162" r="2" fill="currentColor" />
+                  <circle cx="22" cy="162" r="2" fill="currentColor" />
+                  <circle cx="42" cy="162" r="2" fill="currentColor" />
+                  <circle cx="62" cy="162" r="2" fill="currentColor" />
+                  <circle cx="82" cy="162" r="2" fill="currentColor" />
+                  <circle cx="102" cy="162" r="2" fill="currentColor" />
+                  <circle cx="122" cy="162" r="2" fill="currentColor" />
+                  <circle cx="142" cy="162" r="2" fill="currentColor" />
+                  <circle cx="162" cy="162" r="2" fill="currentColor" />
+                  <circle cx="182" cy="162" r="2" fill="currentColor" />
+                  <circle cx="2" cy="182" r="2" fill="currentColor" />
+                  <circle cx="22" cy="182" r="2" fill="currentColor" />
+                  <circle cx="42" cy="182" r="2" fill="currentColor" />
+                  <circle cx="62" cy="182" r="2" fill="currentColor" />
+                  <circle cx="82" cy="182" r="2" fill="currentColor" />
+                  <circle cx="102" cy="182" r="2" fill="currentColor" />
+                  <circle cx="122" cy="182" r="2" fill="currentColor" />
+                  <circle cx="142" cy="182" r="2" fill="currentColor" />
+                  <circle cx="162" cy="182" r="2" fill="currentColor" />
+                  <circle cx="182" cy="182" r="2" fill="currentColor" />
+                </svg>
+              </div>
+
+              <!-- Decoration -->
+              <div
+                class="position-absolute bottom-start text-warning ms-n10 mb-8"
+              >
+                <svg
+                  width="185"
+                  height="186"
+                  viewBox="0 0 185 186"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="2" cy="2" r="2" fill="currentColor" />
+                  <circle cx="22" cy="2" r="2" fill="currentColor" />
+                  <circle cx="42" cy="2" r="2" fill="currentColor" />
+                  <circle cx="62" cy="2" r="2" fill="currentColor" />
+                  <circle cx="82" cy="2" r="2" fill="currentColor" />
+                  <circle cx="102" cy="2" r="2" fill="currentColor" />
+                  <circle cx="122" cy="2" r="2" fill="currentColor" />
+                  <circle cx="142" cy="2" r="2" fill="currentColor" />
+                  <circle cx="162" cy="2" r="2" fill="currentColor" />
+                  <circle cx="182" cy="2" r="2" fill="currentColor" />
+                  <circle cx="2" cy="22" r="2" fill="currentColor" />
+                  <circle cx="22" cy="22" r="2" fill="currentColor" />
+                  <circle cx="42" cy="22" r="2" fill="currentColor" />
+                  <circle cx="62" cy="22" r="2" fill="currentColor" />
+                  <circle cx="82" cy="22" r="2" fill="currentColor" />
+                  <circle cx="102" cy="22" r="2" fill="currentColor" />
+                  <circle cx="122" cy="22" r="2" fill="currentColor" />
+                  <circle cx="142" cy="22" r="2" fill="currentColor" />
+                  <circle cx="162" cy="22" r="2" fill="currentColor" />
+                  <circle cx="182" cy="22" r="2" fill="currentColor" />
+                  <circle cx="2" cy="42" r="2" fill="currentColor" />
+                  <circle cx="22" cy="42" r="2" fill="currentColor" />
+                  <circle cx="42" cy="42" r="2" fill="currentColor" />
+                  <circle cx="62" cy="42" r="2" fill="currentColor" />
+                  <circle cx="82" cy="42" r="2" fill="currentColor" />
+                  <circle cx="102" cy="42" r="2" fill="currentColor" />
+                  <circle cx="122" cy="42" r="2" fill="currentColor" />
+                  <circle cx="142" cy="42" r="2" fill="currentColor" />
+                  <circle cx="162" cy="42" r="2" fill="currentColor" />
+                  <circle cx="182" cy="42" r="2" fill="currentColor" />
+                  <circle cx="2" cy="62" r="2" fill="currentColor" />
+                  <circle cx="22" cy="62" r="2" fill="currentColor" />
+                  <circle cx="42" cy="62" r="2" fill="currentColor" />
+                  <circle cx="62" cy="62" r="2" fill="currentColor" />
+                  <circle cx="82" cy="62" r="2" fill="currentColor" />
+                  <circle cx="102" cy="62" r="2" fill="currentColor" />
+                  <circle cx="122" cy="62" r="2" fill="currentColor" />
+                  <circle cx="142" cy="62" r="2" fill="currentColor" />
+                  <circle cx="162" cy="62" r="2" fill="currentColor" />
+                  <circle cx="182" cy="62" r="2" fill="currentColor" />
+                  <circle cx="2" cy="82" r="2" fill="currentColor" />
+                  <circle cx="22" cy="82" r="2" fill="currentColor" />
+                  <circle cx="42" cy="82" r="2" fill="currentColor" />
+                  <circle cx="62" cy="82" r="2" fill="currentColor" />
+                  <circle cx="82" cy="82" r="2" fill="currentColor" />
+                  <circle cx="102" cy="82" r="2" fill="currentColor" />
+                  <circle cx="122" cy="82" r="2" fill="currentColor" />
+                  <circle cx="142" cy="82" r="2" fill="currentColor" />
+                  <circle cx="162" cy="82" r="2" fill="currentColor" />
+                  <circle cx="182" cy="82" r="2" fill="currentColor" />
+                  <circle cx="2" cy="102" r="2" fill="currentColor" />
+                  <circle cx="22" cy="102" r="2" fill="currentColor" />
+                  <circle cx="42" cy="102" r="2" fill="currentColor" />
+                  <circle cx="62" cy="102" r="2" fill="currentColor" />
+                  <circle cx="82" cy="102" r="2" fill="currentColor" />
+                  <circle cx="102" cy="102" r="2" fill="currentColor" />
+                  <circle cx="122" cy="102" r="2" fill="currentColor" />
+                  <circle cx="142" cy="102" r="2" fill="currentColor" />
+                  <circle cx="162" cy="102" r="2" fill="currentColor" />
+                  <circle cx="182" cy="102" r="2" fill="currentColor" />
+                  <circle cx="2" cy="122" r="2" fill="currentColor" />
+                  <circle cx="22" cy="122" r="2" fill="currentColor" />
+                  <circle cx="42" cy="122" r="2" fill="currentColor" />
+                  <circle cx="62" cy="122" r="2" fill="currentColor" />
+                  <circle cx="82" cy="122" r="2" fill="currentColor" />
+                  <circle cx="102" cy="122" r="2" fill="currentColor" />
+                  <circle cx="122" cy="122" r="2" fill="currentColor" />
+                  <circle cx="142" cy="122" r="2" fill="currentColor" />
+                  <circle cx="162" cy="122" r="2" fill="currentColor" />
+                  <circle cx="182" cy="122" r="2" fill="currentColor" />
+                  <circle cx="2" cy="142" r="2" fill="currentColor" />
+                  <circle cx="22" cy="142" r="2" fill="currentColor" />
+                  <circle cx="42" cy="142" r="2" fill="currentColor" />
+                  <circle cx="62" cy="142" r="2" fill="currentColor" />
+                  <circle cx="82" cy="142" r="2" fill="currentColor" />
+                  <circle cx="102" cy="142" r="2" fill="currentColor" />
+                  <circle cx="122" cy="142" r="2" fill="currentColor" />
+                  <circle cx="142" cy="142" r="2" fill="currentColor" />
+                  <circle cx="162" cy="142" r="2" fill="currentColor" />
+                  <circle cx="182" cy="142" r="2" fill="currentColor" />
+                  <circle cx="2" cy="162" r="2" fill="currentColor" />
+                  <circle cx="22" cy="162" r="2" fill="currentColor" />
+                  <circle cx="42" cy="162" r="2" fill="currentColor" />
+                  <circle cx="62" cy="162" r="2" fill="currentColor" />
+                  <circle cx="82" cy="162" r="2" fill="currentColor" />
+                  <circle cx="102" cy="162" r="2" fill="currentColor" />
+                  <circle cx="122" cy="162" r="2" fill="currentColor" />
+                  <circle cx="142" cy="162" r="2" fill="currentColor" />
+                  <circle cx="162" cy="162" r="2" fill="currentColor" />
+                  <circle cx="182" cy="162" r="2" fill="currentColor" />
+                  <circle cx="2" cy="182" r="2" fill="currentColor" />
+                  <circle cx="22" cy="182" r="2" fill="currentColor" />
+                  <circle cx="42" cy="182" r="2" fill="currentColor" />
+                  <circle cx="62" cy="182" r="2" fill="currentColor" />
+                  <circle cx="82" cy="182" r="2" fill="currentColor" />
+                  <circle cx="102" cy="182" r="2" fill="currentColor" />
+                  <circle cx="122" cy="182" r="2" fill="currentColor" />
+                  <circle cx="142" cy="182" r="2" fill="currentColor" />
+                  <circle cx="162" cy="182" r="2" fill="currentColor" />
+                  <circle cx="182" cy="182" r="2" fill="currentColor" />
+                </svg>
+              </div>
+
+              <!-- Image -->
+              <img
+                class="position-relative img-fluid rounded shadow-lg"
+                data-jarallax-element="-50"
+                src="/assets/img/illustrations/instagram.png"
+                alt="instagram"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 pt-8 pb-10 py-md-12 text-center text-md-end">
+            <!-- Heading -->
+            <h2 class="display-md-4 text-700 mb-4">تو هم میتونی سهیم باشی!</h2>
+
+            <!-- Text -->
+            <p class="mb-0">مارو استوری کن قول میدم بعدش ی خبر خوب میشنوی</p>
+            <p class="">نه فورا ولی حتما:))</p>
+            <p class="mb-0">
+              برای اینکار کافیه رشته استوری زیر دانلود کنی و ما رو معرفی کنی
+            </p>
+            <p>
+              یادت باشه در اسلاید آخر باید سایت
+              <mark>https://gilandevs.ir</mark> لینک کنی
+            </p>
+
+            <!-- Buttons -->
+            <div
+              class="d-flex flex-wrap justify-content-center justify-content-md-start"
+              href="#"
+            >
+              <a
+                class="btn btn-success btn-sm ms-2 mb-1"
+                href="/storage/img/instagram/Instagram-story-1.png"
+                download
+              >
+                دانلود استوری اول
+              </a>
+              <a
+                class="btn btn-success btn-sm ms-2 mb-1"
+                href="/storage/img/instagram/Instagram-story-2.png"
+                download
+              >
+                دانلود استوری دوم
+              </a>
+              <a
+                class="btn btn-success btn-sm ms-2 mb-1"
+                href="/storage/img/instagram/Instagram-story-3.png"
+                download
+              >
+                دانلود استوری سوم
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative mt-md-n12">
+      <div class="shape shape-fluid-x shape-bottom text-white">
+        <div class="shape-img pb-9 mb-md-14">
+          <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+            <path d="M0 0h100v50H75L25 25H0z" fill="currentColor" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+
+    <footer class="footer pb-5 pb-md-8 pt-10 pt-md-14 bg-dark">
+      <div class="container-lg">
+        <div class="row align-items-end">
+          <div class="col-md-6">
+            <!-- Brand -->
+
+            <div class="d-flex align-items-center">
+              <div class="icon text-light ms-2" style="width: 35px">
+                <svg
+                  style="width: 100%; height: auto"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g fill="none" fill-rule="evenodd">
+                    <path d="M0 0h24v24H0z"></path>
+                    <path
+                      d="M13.08 14.784l2.204-2.204a2 2 0 00.375-2.309l-.125-.25a2 2 0 01.374-2.308l2.733-2.733a.5.5 0 01.801.13l1.104 2.208a4.387 4.387 0 01-.822 5.065l-5.999 5.998a5.427 5.427 0 01-5.553 1.311l-2.415-.804a.5.5 0 01-.195-.828l2.65-2.652a2 2 0 012.31-.374l.25.125a2 2 0 002.308-.375z"
+                      fill="#335EEA"
+                    ></path>
+                    <path
+                      d="M14.148 6.007l-.191 1.991a4.987 4.987 0 00-4.018 1.441 4.987 4.987 0 00-1.442 4.004l-1.992.185a6.986 6.986 0 012.02-5.603 6.987 6.987 0 015.623-2.018zm.35-3.985l-.185 1.992A8.978 8.978 0 007.111 6.61a8.978 8.978 0 00-2.598 7.191l-1.992.183a10.977 10.977 0 013.176-8.788 10.977 10.977 0 018.801-3.175z"
+                      fill="#335EEA"
+                      opacity=".3"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <span class="fs-4 text-700 text-light">09031842637</span>
+            </div>
+            <!-- Text -->
+            <div class="d-flex align-items-center">
+              <div class="icon text-light ms-2" style="width: 35px">
+                <svg
+                  style="width: 100%; height: auto"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g fill="none" fill-rule="evenodd">
+                    <path d="M0 0h24v24H0z"></path>
+                    <path
+                      d="M6 2h12a1 1 0 011 1v9a1 1 0 01-1 1H6a1 1 0 01-1-1V3a1 1 0 011-1zm1.5 3a.5.5 0 000 1h6a.5.5 0 100-1h-6zm0 2a.5.5 0 000 1h3a.5.5 0 100-1h-3z"
+                      fill="#335EEA"
+                      opacity=".3"
+                    ></path>
+                    <path
+                      d="M3.793 6.573L12 12.5l8.207-5.927a.5.5 0 01.793.405V17a2 2 0 01-2 2H5a2 2 0 01-2-2V6.978a.5.5 0 01.793-.405z"
+                      fill="#335EEA"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <a class="text-white-60 text-end text-700" href="/contact.html">
+                تماس با ما
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!-- Brand -->
+            <img
+              src="/assets/img/illustrations/logo-white.png"
+              alt="logo"
+              class="navbar-logo footer-logo me-auto d-table mb-3"
+            />
+            <!-- Text -->
+            <p class="text-white-60 text-start mb-0" dir="ltr">
+              Made with &lt;Love/&gt; by Gdevs Group.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+
+    <!-- MAIN -->
+    <script src="/assets/js/main.js?v=4"></script>
+
+    <!-- Toastify -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+
+    <!-- Vendor JS -->
+    <script src="/assets/js/vendor.bundle.js?v=4"></script>
+
+    <!-- Theme JS -->
+    <script src="/assets/js/theme.bundle.js?v=4"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-0MQKH0F5XL"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-0MQKH0F5XL");
+    </script>
+  </body>
 </html>
